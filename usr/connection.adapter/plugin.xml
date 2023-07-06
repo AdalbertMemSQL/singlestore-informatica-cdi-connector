@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension point="com.informatica.sdk.connection.presentation.connectionPresentation" id="SINGLESTOREConnectionPresentation">
+      <connectionPresentation resourceType="com.singlestore.adapter.singlestore.connection.SingleStoreConnectInfo" adapterClass="com.singlestore.adapter.singlestore.connection.adapter.SingleStoreConnectInfoAdapter"/>
+   </extension>
+   <extension point="com.informatica.sdk.connection.connectInfo" id="SINGLESTORECONNECTIONADAPTER">
+      <connectionType metaClass="com.singlestore.adapter.singlestore.connection.SingleStoreConnectInfo" id="SINGLESTORE" displayName="%connectionType.name" categoryId="com.singlestore.database.category" description="%connectionType.description"/>
+      <category displayName="%category.name" id="com.singlestore.database.category" description="%category.description"/>
+   </extension>
+</plugin>

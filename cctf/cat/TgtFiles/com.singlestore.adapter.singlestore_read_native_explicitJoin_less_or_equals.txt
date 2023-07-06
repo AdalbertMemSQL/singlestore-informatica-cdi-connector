@@ -1,0 +1,10 @@
+3|o|3|
+2|uio|3|
+2|uio|2|null
+1|rty|1|o
+1|rty|3|
+1|rty|2|null
+0|qwe|1|o
+0|qwe|0|a
+0|qwe|3|
+0|qwe|2|null

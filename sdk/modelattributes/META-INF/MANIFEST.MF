@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: SingleStore Adapter Model Attributes Bundle
+Bundle-SymbolicName: com.singlestore.adapter.singlestore.modelattributes;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Vendor: SingleStore
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Require-Bundle: com.informatica.sdk.modelattributes,
+ com.singlestore.adapter.singlestore.metadata.model,
+ com.singlestore.adapter.singlestore.metadata.semantic,
+ com.singlestore.adapter.singlestore.runtime.model,
+ com.singlestore.adapter.singlestore.runtime.semantic

@@ -1,0 +1,7 @@
+6|awc
+5|
+4|null
+3|o
+2|uio
+1|rty
+0|qwe

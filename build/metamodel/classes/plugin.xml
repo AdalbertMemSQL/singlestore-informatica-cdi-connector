@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension point="com.informatica.sdk.metamodel.metamodel" id="TABLESINGLESTOREMETAMODEL">
+      <metaModel metaModelName="SingleStore Adapter Connection, NMO and ASO Models-MetaModels">
+         <package packageName="com.singlestore.adapter.singlestore.connection">
+            <metaClass baseMetaClass="com.informatica.metadata.infasdk.connectinfo.sdkadapter.SDKConnectInfo" metaClassName="com.singlestore.adapter.singlestore.connection.SingleStoreConnectInfo" name="SingleStore Connect Info"/>
+            <metaClass baseMetaClass="com.informatica.metadata.infasdk.connectinfo.common.sdkmodelextension.SDKConnectInfoModelExtension" metaClassName="com.singlestore.adapter.singlestore.connection.SingleStoreConnectInfoExtension" name="SingleStore Connect Info Extension"/>
+         </package>
+         <package packageName="com.singlestore.adapter.singlestore.table.metadata">
+            <metaClass baseMetaClass="com.informatica.adapter.sdkadapter.logical.L_ModelExtensionFieldBase" metaClassName="com.singlestore.adapter.singlestore.table.metadata.TableFieldExtensions" name="SingleStore Field Extension"/>
+            <metaClass baseMetaClass="com.informatica.adapter.sdkadapter.logical.L_ModelExtensionNode" metaClassName="com.singlestore.adapter.singlestore.table.metadata.TableRecordExtensions" name="SingleStore Record Extension"/>
+         </package>
+         <package packageName="com.singlestore.adapter.singlestore.runtime.aso">
+            <metaClass baseMetaClass="com.informatica.adapter.sdkadapter.aso.D_ComplexASO" metaClassName="com.singlestore.adapter.singlestore.runtime.aso.ComplexASO" name="SingleStore Complex ASO"/>
+         </package>
+         <package packageName="com.singlestore.adapter.singlestore.table.runtime.capability">
+            <metaClass baseMetaClass="com.informatica.adapter.sdkadapter.asoextension.D_ModelExtensionWriteCapAttributes" metaClassName="com.singlestore.adapter.singlestore.table.runtime.capability.TableWriteCapabilityAttributesExtension" name="SingleStore Write Capability Attributes"/>
+            <metaClass baseMetaClass="com.informatica.adapter.sdkadapter.asoextension.D_ModelExtensionReadCapAttributes" metaClassName="com.singlestore.adapter.singlestore.table.runtime.capability.TableReadCapabilityAttributesExtension" name="SingleStore Read Capability Attributes"/>
+            <metaClass baseMetaClass="com.informatica.adapter.sdkadapter.asoextension.D_ModelExtensionLookupCapAttributes" metaClassName="com.singlestore.adapter.singlestore.table.runtime.capability.TableLookupCapabilityAttributesExtension" name="SingleStore Lookup Capability Attributes"/>
+            <metaClass baseMetaClass="com.informatica.adapter.sdkadapter.asoextension.D_ModelExtensionCallCapAttributes" metaClassName="com.singlestore.adapter.singlestore.table.runtime.capability.TableCallCapabilityAttributesExtension" name="SingleStore Call Capability Attributes"/>
+         </package>
+      </metaModel>
+   </extension>
+</plugin>

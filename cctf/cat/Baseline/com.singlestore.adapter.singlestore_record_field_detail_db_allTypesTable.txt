@@ -1,0 +1,44 @@
+Flat record Name: allTypesTable
+
+          Field Name|     Data Type| precision|Scale|         Native Name|Description
+--------------------+--------------+----------+-----+--------------------+-----------
+          boolColumn|          BOOL|         1|    0|          boolColumn|           
+       booleanColumn|          BOOL|         1|    0|       booleanColumn|           
+           bitColumn|           BIT|        64|    0|           bitColumn|           
+       tinyintColumn|       TINYINT|         3|    0|       tinyintColumn|           
+     mediumintColumn|     MEDIUMINT|         7|    0|     mediumintColumn|           
+      smallintColumn|      SMALLINT|         5|    0|      smallintColumn|           
+           intColumn|           INT|        10|    0|           intColumn|           
+       integerColumn|           INT|        10|    0|       integerColumn|           
+        bigintColumn|        BIGINT|        19|    0|        bigintColumn|           
+         floatColumn|         FLOAT|         8|    8|         floatColumn|           
+        doubleColumn|        DOUBLE|        15|   11|        doubleColumn|           
+          realColumn|        DOUBLE|        15|   11|          realColumn|           
+          dateColumn|          DATE|        10|    0|          dateColumn|           
+          timeColumn|          TIME|        10|    0|          timeColumn|           
+         time6Column|          TIME|        17|    0|         time6Column|           
+      datetimeColumn|      DATETIME|        19|    0|      datetimeColumn|           
+     datetime6Column|      DATETIME|        26|    0|     datetime6Column|           
+     timestampColumn|     TIMESTAMP|        19|    0|     timestampColumn|           
+    timestamp6Column|     TIMESTAMP|        26|    0|    timestamp6Column|           
+          yearColumn|          YEAR|         0|    0|          yearColumn|           
+       decimalColumn|       DECIMAL|        65|   30|       decimalColumn|           
+           decColumn|       DECIMAL|        10|    0|           decColumn|           
+         fixedColumn|       DECIMAL|        10|    0|         fixedColumn|           
+       numericColumn|       DECIMAL|        10|    0|       numericColumn|           
+          charColumn|          CHAR|         1|    0|          charColumn|           
+    mediumtextColumn|    MEDIUMTEXT|   5592405|    0|    mediumtextColumn|           
+        binaryColumn|        BINARY|         1|    0|        binaryColumn|           
+       varcharColumn|       VARCHAR|       100|    0|       varcharColumn|           
+     varbinaryColumn|     VARBINARY|       100|    0|     varbinaryColumn|           
+      longtextColumn|      LONGTEXT|1431655765|    0|      longtextColumn|           
+          textColumn|          TEXT|     21845|    0|          textColumn|           
+      tinytextColumn|      TINYTEXT|        85|    0|      tinytextColumn|           
+      longblobColumn|      LONGBLOB|2147483647|    0|      longblobColumn|           
+    mediumblobColumn|    MEDIUMBLOB|  16777215|    0|    mediumblobColumn|           
+          blobColumn|          BLOB|     65535|    0|          blobColumn|           
+      tinyblobColumn|      TINYBLOB|       255|    0|      tinyblobColumn|           
+          jsonColumn|          JSON|2147483647|    0|          jsonColumn|           
+     geographyColumn|     GEOGRAPHY|2147483647|    0|     geographyColumn|           
+geographypointColumn|GEOGRAPHYPOINT|2147483647|    0|geographypointColumn|           
+

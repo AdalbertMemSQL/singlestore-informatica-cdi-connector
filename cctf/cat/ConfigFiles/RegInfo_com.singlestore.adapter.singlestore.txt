@@ -1,0 +1,1830 @@
+########################## Adapter Attributes #####################################Adapter name: SingleStore
+Adapter short name: SingleStore
+Vendor id: SingleStore
+Vendor name: SingleStore
+Adapter version: 1.0.0
+########### Native Metadata Object Details ###########
+
+Total NMO Supported: 1
+
+*************************************
+NMO 1: table
+*************************************
+License Check Class: com.singlestore.adapter.singlestore.licensechecker.SingleStoreLicenseChecker
+Metadata Pattern: SingleStoreSingleStore_Table_Pattern
+NMO Name: table
+Null Connection Supported?: false
+Anon DSO Supported?: false
+CDO Supported?: false
+Complex ASO Supported?: false
+Simple ASO Supported?: false
+Custom SQL Supported?: false
+Object Path Override Supported?: false
+Multi Selection Supported?: false
+Multi Group Supported?: false
+OSP Supported?: true
+Package Import Supported?: false
+Use Sequence Field Enabled?: false
+
+++++++++ Connection Type Details ++++++++
+
+ConnectionDescription: SingleStore connector allows Informatica to connect to SingleStoreDB and SingleStore Managed Service, to allow transfer and integration of data between SingleStore databases and other sources and targets supported by Informatica.
+ConnectionDisplayName: SingleStore
+ConnectionShortName: SINGLESTORE
+ConnectionType: com.singlestore.adapter.singlestore.connection.SingleStoreConnectInfo
+AdapterId: com.singlestore.adapter.singlestore
+NMOType: table
+
+++++++++ Connection Category Details ++++++++
+ConnectionCategory description: %category.description
+ConnectionCategory display name: Database
+ConnectionCategory id: com.singlestore.database.category
+
+++++++++ Connection Attributes Parameters ++++++++
+
+1] Attribute display name: database
+		Attribute description: null
+		isEncrypted: false
+		isGenericAttribute: false
+		isMandatory: false
+		isUsed: true
+		AttributeName: database
+		AttributeValue: null
+		DefaultValue: 
+		MaxLength: 255
+		MaxOccursValue: 1
+		MaxRangeValue: null
+		MinLength: 0
+		Size: 255
+		MinOccursValue: 0
+		MinRangeValue: null
+		AttributeType: STRING
+		ValidList: null
+2] Attribute display name: disableSslHostnameVerification
+		Attribute description: null
+		isEncrypted: false
+		isGenericAttribute: false
+		isMandatory: false
+		isUsed: true
+		AttributeName: disableSslHostnameVerification
+		AttributeValue: null
+		DefaultValue: false
+		MaxLength: 0
+		MaxOccursValue: 1
+		MaxRangeValue: null
+		MinLength: 0
+		Size: 0
+		MinOccursValue: 0
+		MinRangeValue: null
+		AttributeType: BOOLEAN
+		ValidList: null
+3] Attribute display name: hostname
+		Attribute description: null
+		isEncrypted: false
+		isGenericAttribute: false
+		isMandatory: true
+		isUsed: true
+		AttributeName: hostname
+		AttributeValue: null
+		DefaultValue: 
+		MaxLength: 511
+		MaxOccursValue: 1
+		MaxRangeValue: null
+		MinLength: 0
+		Size: 511
+		MinOccursValue: 1
+		MinRangeValue: null
+		AttributeType: STRING
+		ValidList: null
+4] Attribute display name: keyPassword
+		Attribute description: null
+		isEncrypted: true
+		isGenericAttribute: false
+		isMandatory: false
+		isUsed: true
+		AttributeName: keyPassword
+		AttributeValue: null
+		DefaultValue: 
+		MaxLength: 255
+		MaxOccursValue: 1
+		MaxRangeValue: null
+		MinLength: 0
+		Size: 255
+		MinOccursValue: 0
+		MinRangeValue: null
+		AttributeType: STRING
+		ValidList: null
+5] Attribute display name: keyStore
+		Attribute description: null
+		isEncrypted: false
+		isGenericAttribute: false
+		isMandatory: false
+		isUsed: true
+		AttributeName: keyStore
+		AttributeValue: null
+		DefaultValue: 
+		MaxLength: 1023
+		MaxOccursValue: 1
+		MaxRangeValue: null
+		MinLength: 0
+		Size: 1023
+		MinOccursValue: 0
+		MinRangeValue: null
+		AttributeType: STRING
+		ValidList: null
+6] Attribute display name: keyStorePassword
+		Attribute description: null
+		isEncrypted: true
+		isGenericAttribute: false
+		isMandatory: false
+		isUsed: true
+		AttributeName: keyStorePassword
+		AttributeValue: null
+		DefaultValue: 
+		MaxLength: 255
+		MaxOccursValue: 1
+		MaxRangeValue: null
+		MinLength: 0
+		Size: 255
+		MinOccursValue: 0
+		MinRangeValue: null
+		AttributeType: STRING
+		ValidList: null
+7] Attribute display name: password
+		Attribute description: null
+		isEncrypted: true
+		isGenericAttribute: false
+		isMandatory: false
+		isUsed: true
+		AttributeName: password
+		AttributeValue: null
+		DefaultValue: 
+		MaxLength: 255
+		MaxOccursValue: 1
+		MaxRangeValue: null
+		MinLength: 0
+		Size: 255
+		MinOccursValue: 0
+		MinRangeValue: null
+		AttributeType: STRING
+		ValidList: null
+8] Attribute display name: port
+		Attribute description: null
+		isEncrypted: false
+		isGenericAttribute: false
+		isMandatory: false
+		isUsed: true
+		AttributeName: port
+		AttributeValue: null
+		DefaultValue: 3306
+		MaxLength: 0
+		MaxOccursValue: 1
+		MaxRangeValue: 65353
+		MinLength: 0
+		Size: 0
+		MinOccursValue: 1
+		MinRangeValue: 0
+		AttributeType: INTEGER
+		ValidList: null
+9] Attribute display name: serverSslCert
+		Attribute description: null
+		isEncrypted: false
+		isGenericAttribute: false
+		isMandatory: false
+		isUsed: true
+		AttributeName: serverSslCert
+		AttributeValue: null
+		DefaultValue: 
+		MaxLength: 24576
+		MaxOccursValue: 1
+		MaxRangeValue: null
+		MinLength: 0
+		Size: 24576
+		MinOccursValue: 0
+		MinRangeValue: null
+		AttributeType: STRING
+		ValidList: null
+10] Attribute display name: trustServerCertificate
+		Attribute description: null
+		isEncrypted: false
+		isGenericAttribute: false
+		isMandatory: false
+		isUsed: true
+		AttributeName: trustServerCertificate
+		AttributeValue: null
+		DefaultValue: false
+		MaxLength: 0
+		MaxOccursValue: 1
+		MaxRangeValue: null
+		MinLength: 0
+		Size: 0
+		MinOccursValue: 0
+		MinRangeValue: null
+		AttributeType: BOOLEAN
+		ValidList: null
+11] Attribute display name: trustStore
+		Attribute description: null
+		isEncrypted: false
+		isGenericAttribute: false
+		isMandatory: false
+		isUsed: true
+		AttributeName: trustStore
+		AttributeValue: null
+		DefaultValue: 
+		MaxLength: 1023
+		MaxOccursValue: 1
+		MaxRangeValue: null
+		MinLength: 0
+		Size: 1023
+		MinOccursValue: 0
+		MinRangeValue: null
+		AttributeType: STRING
+		ValidList: null
+12] Attribute display name: trustStorePassword
+		Attribute description: null
+		isEncrypted: true
+		isGenericAttribute: false
+		isMandatory: false
+		isUsed: true
+		AttributeName: trustStorePassword
+		AttributeValue: null
+		DefaultValue: 
+		MaxLength: 255
+		MaxOccursValue: 1
+		MaxRangeValue: null
+		MinLength: 0
+		Size: 255
+		MinOccursValue: 0
+		MinRangeValue: null
+		AttributeType: STRING
+		ValidList: null
+13] Attribute display name: useSsl
+		Attribute description: null
+		isEncrypted: false
+		isGenericAttribute: false
+		isMandatory: false
+		isUsed: true
+		AttributeName: useSsl
+		AttributeValue: null
+		DefaultValue: false
+		MaxLength: 0
+		MaxOccursValue: 1
+		MaxRangeValue: null
+		MinLength: 0
+		Size: 0
+		MinOccursValue: 0
+		MinRangeValue: null
+		AttributeType: BOOLEAN
+		ValidList: null
+14] Attribute display name: user
+		Attribute description: null
+		isEncrypted: false
+		isGenericAttribute: false
+		isMandatory: true
+		isUsed: true
+		AttributeName: user
+		AttributeValue: null
+		DefaultValue: root
+		MaxLength: 255
+		MaxOccursValue: 1
+		MaxRangeValue: null
+		MinLength: 0
+		Size: 255
+		MinOccursValue: 1
+		MinRangeValue: null
+		AttributeType: STRING
+		ValidList: null
+
+++++++++ Connection Presentation Information Based On Groups ++++++++
+connGroups GroupDescription: null
+connGroups GroupName: Connection Details
+connGroups GroupTitle: Connection Details
+connGroups GroupToolTip: Connection Details
+
+***** Connection attributes *****
+Attribute name: Host Name
+		Attribute type: com.informatica.cci.reginfo.connection.impl.ConnectionAttributeImpl@559991f5
+		Attribute tool tip: An IP address or DNS name of the SingleStoreDB Aggregator or SingleStoreDB Cloud workspace to run queries against
+		Attribute is hidden: false
+		Attribute is enabled: true
+Attribute name: Port
+		Attribute type: com.informatica.cci.reginfo.connection.impl.ConnectionAttributeImpl@78d92eef
+		Attribute tool tip: Port of the SingleStoreDB Aggregator or SingleStoreDB Cloud workspace to run queries against
+		Attribute is hidden: false
+		Attribute is enabled: true
+Attribute name: Database
+		Attribute type: com.informatica.cci.reginfo.connection.impl.ConnectionAttributeImpl@61d60e38
+		Attribute tool tip: If set, all connections will default to using this database
+		Attribute is hidden: false
+		Attribute is enabled: true
+Attribute name: User Name
+		Attribute type: com.informatica.cci.reginfo.connection.impl.ConnectionAttributeImpl@6e95973c
+		Attribute tool tip: User Name for the database
+		Attribute is hidden: false
+		Attribute is enabled: true
+Attribute name: Password
+		Attribute type: com.informatica.cci.reginfo.connection.impl.ConnectionAttributeImpl@404ced67
+		Attribute tool tip: The password of the database user
+		Attribute is hidden: false
+		Attribute is enabled: true
+connGroups GroupDescription: null
+connGroups GroupName: TLS Details
+connGroups GroupTitle: TLS Details
+connGroups GroupToolTip: TLS Details
+
+***** Connection attributes *****
+Attribute name: Use SSL
+		Attribute type: com.informatica.cci.reginfo.connection.impl.ConnectionAttributeImpl@71531dd7
+		Attribute tool tip: Force enables SSL/TLS on the connection. 
+		Attribute is hidden: false
+		Attribute is enabled: true
+Attribute name: Server SSL Certificate
+		Attribute type: com.informatica.cci.reginfo.connection.impl.ConnectionAttributeImpl@20256a0b
+		Attribute tool tip: Use this parameter to specify the server's certificate in DER format or specify the server's CA certificate. You can specify the server certificate in one of the following formats: complete path (/full_path/cert.pem), relative path (classpath:relative/cert.pem), DER-encoded certificate (------BEGIN CERTIFICATE-----...)
+		Attribute is hidden: false
+		Attribute is enabled: true
+Attribute name: Key Store
+		Attribute type: com.informatica.cci.reginfo.connection.impl.ConnectionAttributeImpl@624b3544
+		Attribute tool tip: Specifies the path of the Key Store file that contains the client private keys and associated certificates
+		Attribute is hidden: false
+		Attribute is enabled: true
+Attribute name: Key Store Password
+		Attribute type: com.informatica.cci.reginfo.connection.impl.ConnectionAttributeImpl@454bcbbf
+		Attribute tool tip: Specifies the password for the Key Store file
+		Attribute is hidden: false
+		Attribute is enabled: true
+Attribute name: Key Password
+		Attribute type: com.informatica.cci.reginfo.connection.impl.ConnectionAttributeImpl@2c9fdb64
+		Attribute tool tip: Specifies the password for the private key in the client certificate file (Key Store))
+		Attribute is hidden: false
+		Attribute is enabled: true
+Attribute name: Trust Store
+		Attribute type: com.informatica.cci.reginfo.connection.impl.ConnectionAttributeImpl@27e199ce
+		Attribute tool tip: Specifies the path of the Trust Store file, and uses the specified file for trusted root certificates. If this parameter is set, it overrides the Server SSL Certificate parameter
+		Attribute is hidden: false
+		Attribute is enabled: true
+Attribute name: Trust Store Password
+		Attribute type: com.informatica.cci.reginfo.connection.impl.ConnectionAttributeImpl@1c3b6963
+		Attribute tool tip: Specifies the password for the trusted root certificate file.
+		Attribute is hidden: false
+		Attribute is enabled: true
+Attribute name: Trust Server Certificate
+		Attribute type: com.informatica.cci.reginfo.connection.impl.ConnectionAttributeImpl@7364f68
+		Attribute tool tip: Enable this parameter to skip checking the server's certificate when used in conjunction with SSL/TLS
+		Attribute is hidden: false
+		Attribute is enabled: true
+Attribute name: Disable SSL Hostname Verification
+		Attribute type: com.informatica.cci.reginfo.connection.impl.ConnectionAttributeImpl@55a0f011
+		Attribute tool tip: Disables hostname verification against the server's identity as specified in the server's certificate to prevent man-in-the-middle attacks.
+		Attribute is hidden: false
+		Attribute is enabled: true
+
+++++++++ Metadata Pattern Details ++++++++
+Metadata Pattern Name: SingleStoreSingleStore_Table_Pattern
+Metadata Pattern Attributes: [FlatRecords, Fields, Containers, Packages]
+Metadata Pattern Template Type: TypeA
+Metadata Pattern Type System: com.informatica.cci.reginfo.typesystem.impl.TypeSystemImpl@3f048c86
+
+++++++++ DataType Details ++++++++
+
+1] Data type Name:BOOL
+	 Type: IntegerStorageSemantic
+	 isEditablePrecision: false
+	 getDefaultPrecision: 1
+	 getMaxPrecision: 1
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: string
+	 foreignType.getStorageSemantic: LengthStorageSemantic
+	 localTypeName: BOOL
+	 localType.getStorageSemantic: IntegerStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: decimal
+	 foreignType.getStorageSemantic: IntegerStorageSemantic
+	 localTypeName: BOOL
+	 localType.getStorageSemantic: IntegerStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: true
+	 foreignTypeName: double
+	 foreignType.getStorageSemantic: FloatStorageSemantic
+	 localTypeName: BOOL
+	 localType.getStorageSemantic: IntegerStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: true
+	 isLossyToNative: false
+	 foreignTypeName: bigint
+	 foreignType.getStorageSemantic: MachineIntegerStorageSemantic
+	 localTypeName: BOOL
+	 localType.getStorageSemantic: IntegerStorageSemantic
+	 isBestMapFromForeign: true
+	 isBestMapFromNative: true
+	 isLossyToForeign: false
+	 isLossyToNative: true
+	 foreignTypeName: integer
+	 foreignType.getStorageSemantic: MachineIntegerStorageSemantic
+	 localTypeName: BOOL
+	 localType.getStorageSemantic: IntegerStorageSemantic
+2] Data type Name:BOOLEAN
+	 Type: IntegerStorageSemantic
+	 isEditablePrecision: false
+	 getDefaultPrecision: 1
+	 getMaxPrecision: 1
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: true
+	 isLossyToNative: false
+	 foreignTypeName: bigint
+	 foreignType.getStorageSemantic: MachineIntegerStorageSemantic
+	 localTypeName: BOOLEAN
+	 localType.getStorageSemantic: IntegerStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: true
+	 isLossyToForeign: false
+	 isLossyToNative: true
+	 foreignTypeName: integer
+	 foreignType.getStorageSemantic: MachineIntegerStorageSemantic
+	 localTypeName: BOOLEAN
+	 localType.getStorageSemantic: IntegerStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: string
+	 foreignType.getStorageSemantic: LengthStorageSemantic
+	 localTypeName: BOOLEAN
+	 localType.getStorageSemantic: IntegerStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: decimal
+	 foreignType.getStorageSemantic: IntegerStorageSemantic
+	 localTypeName: BOOLEAN
+	 localType.getStorageSemantic: IntegerStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: true
+	 foreignTypeName: double
+	 foreignType.getStorageSemantic: FloatStorageSemantic
+	 localTypeName: BOOLEAN
+	 localType.getStorageSemantic: IntegerStorageSemantic
+3] Data type Name:BIT
+	 Type: LengthStorageSemantic
+	 isEditableLength: true
+	 isVariableAllocation: true
+	 getDefaultLength: 8
+	 getMaxLength:8
+	 getLengthUnit:characters
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: true
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: binary
+	 foreignType.getStorageSemantic: LengthStorageSemantic
+	 localTypeName: BIT
+	 localType.getStorageSemantic: LengthStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: string
+	 foreignType.getStorageSemantic: LengthStorageSemantic
+	 localTypeName: BIT
+	 localType.getStorageSemantic: LengthStorageSemantic
+4] Data type Name:TINYINT
+	 Type: IntegerStorageSemantic
+	 isEditablePrecision: false
+	 getDefaultPrecision: 3
+	 getMaxPrecision: 3
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: true
+	 isLossyToForeign: false
+	 isLossyToNative: true
+	 foreignTypeName: integer
+	 foreignType.getStorageSemantic: MachineIntegerStorageSemantic
+	 localTypeName: TINYINT
+	 localType.getStorageSemantic: IntegerStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: true
+	 foreignTypeName: double
+	 foreignType.getStorageSemantic: FloatStorageSemantic
+	 localTypeName: TINYINT
+	 localType.getStorageSemantic: IntegerStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: true
+	 isLossyToNative: false
+	 foreignTypeName: bigint
+	 foreignType.getStorageSemantic: MachineIntegerStorageSemantic
+	 localTypeName: TINYINT
+	 localType.getStorageSemantic: IntegerStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: decimal
+	 foreignType.getStorageSemantic: IntegerStorageSemantic
+	 localTypeName: TINYINT
+	 localType.getStorageSemantic: IntegerStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: string
+	 foreignType.getStorageSemantic: LengthStorageSemantic
+	 localTypeName: TINYINT
+	 localType.getStorageSemantic: IntegerStorageSemantic
+5] Data type Name:MEDIUMINT
+	 Type: IntegerStorageSemantic
+	 isEditablePrecision: false
+	 getDefaultPrecision: 7
+	 getMaxPrecision: 7
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: true
+	 isLossyToNative: false
+	 foreignTypeName: bigint
+	 foreignType.getStorageSemantic: MachineIntegerStorageSemantic
+	 localTypeName: MEDIUMINT
+	 localType.getStorageSemantic: IntegerStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: string
+	 foreignType.getStorageSemantic: LengthStorageSemantic
+	 localTypeName: MEDIUMINT
+	 localType.getStorageSemantic: IntegerStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: true
+	 isLossyToForeign: false
+	 isLossyToNative: true
+	 foreignTypeName: integer
+	 foreignType.getStorageSemantic: MachineIntegerStorageSemantic
+	 localTypeName: MEDIUMINT
+	 localType.getStorageSemantic: IntegerStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: true
+	 foreignTypeName: double
+	 foreignType.getStorageSemantic: FloatStorageSemantic
+	 localTypeName: MEDIUMINT
+	 localType.getStorageSemantic: IntegerStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: decimal
+	 foreignType.getStorageSemantic: IntegerStorageSemantic
+	 localTypeName: MEDIUMINT
+	 localType.getStorageSemantic: IntegerStorageSemantic
+6] Data type Name:SMALLINT
+	 Type: IntegerStorageSemantic
+	 isEditablePrecision: false
+	 getDefaultPrecision: 5
+	 getMaxPrecision: 5
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: true
+	 isLossyToNative: false
+	 foreignTypeName: bigint
+	 foreignType.getStorageSemantic: MachineIntegerStorageSemantic
+	 localTypeName: SMALLINT
+	 localType.getStorageSemantic: IntegerStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: string
+	 foreignType.getStorageSemantic: LengthStorageSemantic
+	 localTypeName: SMALLINT
+	 localType.getStorageSemantic: IntegerStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: decimal
+	 foreignType.getStorageSemantic: IntegerStorageSemantic
+	 localTypeName: SMALLINT
+	 localType.getStorageSemantic: IntegerStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: true
+	 isLossyToForeign: false
+	 isLossyToNative: true
+	 foreignTypeName: integer
+	 foreignType.getStorageSemantic: MachineIntegerStorageSemantic
+	 localTypeName: SMALLINT
+	 localType.getStorageSemantic: IntegerStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: true
+	 foreignTypeName: double
+	 foreignType.getStorageSemantic: FloatStorageSemantic
+	 localTypeName: SMALLINT
+	 localType.getStorageSemantic: IntegerStorageSemantic
+7] Data type Name:INT
+	 Type: IntegerStorageSemantic
+	 isEditablePrecision: false
+	 getDefaultPrecision: 10
+	 getMaxPrecision: 10
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: true
+	 isLossyToNative: false
+	 foreignTypeName: bigint
+	 foreignType.getStorageSemantic: MachineIntegerStorageSemantic
+	 localTypeName: INT
+	 localType.getStorageSemantic: IntegerStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: string
+	 foreignType.getStorageSemantic: LengthStorageSemantic
+	 localTypeName: INT
+	 localType.getStorageSemantic: IntegerStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: true
+	 isLossyToForeign: false
+	 isLossyToNative: true
+	 foreignTypeName: integer
+	 foreignType.getStorageSemantic: MachineIntegerStorageSemantic
+	 localTypeName: INT
+	 localType.getStorageSemantic: IntegerStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: decimal
+	 foreignType.getStorageSemantic: IntegerStorageSemantic
+	 localTypeName: INT
+	 localType.getStorageSemantic: IntegerStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: true
+	 foreignTypeName: double
+	 foreignType.getStorageSemantic: FloatStorageSemantic
+	 localTypeName: INT
+	 localType.getStorageSemantic: IntegerStorageSemantic
+8] Data type Name:INTEGER
+	 Type: IntegerStorageSemantic
+	 isEditablePrecision: false
+	 getDefaultPrecision: 10
+	 getMaxPrecision: 10
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: true
+	 foreignTypeName: double
+	 foreignType.getStorageSemantic: FloatStorageSemantic
+	 localTypeName: INTEGER
+	 localType.getStorageSemantic: IntegerStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: string
+	 foreignType.getStorageSemantic: LengthStorageSemantic
+	 localTypeName: INTEGER
+	 localType.getStorageSemantic: IntegerStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: true
+	 isLossyToNative: false
+	 foreignTypeName: bigint
+	 foreignType.getStorageSemantic: MachineIntegerStorageSemantic
+	 localTypeName: INTEGER
+	 localType.getStorageSemantic: IntegerStorageSemantic
+	 isBestMapFromForeign: true
+	 isBestMapFromNative: true
+	 isLossyToForeign: false
+	 isLossyToNative: true
+	 foreignTypeName: integer
+	 foreignType.getStorageSemantic: MachineIntegerStorageSemantic
+	 localTypeName: INTEGER
+	 localType.getStorageSemantic: IntegerStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: decimal
+	 foreignType.getStorageSemantic: IntegerStorageSemantic
+	 localTypeName: INTEGER
+	 localType.getStorageSemantic: IntegerStorageSemantic
+9] Data type Name:BIGINT
+	 Type: IntegerStorageSemantic
+	 isEditablePrecision: false
+	 getDefaultPrecision: 19
+	 getMaxPrecision: 19
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: decimal
+	 foreignType.getStorageSemantic: IntegerStorageSemantic
+	 localTypeName: BIGINT
+	 localType.getStorageSemantic: IntegerStorageSemantic
+	 isBestMapFromForeign: true
+	 isBestMapFromNative: true
+	 isLossyToForeign: true
+	 isLossyToNative: false
+	 foreignTypeName: bigint
+	 foreignType.getStorageSemantic: MachineIntegerStorageSemantic
+	 localTypeName: BIGINT
+	 localType.getStorageSemantic: IntegerStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: string
+	 foreignType.getStorageSemantic: LengthStorageSemantic
+	 localTypeName: BIGINT
+	 localType.getStorageSemantic: IntegerStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: true
+	 foreignTypeName: integer
+	 foreignType.getStorageSemantic: MachineIntegerStorageSemantic
+	 localTypeName: BIGINT
+	 localType.getStorageSemantic: IntegerStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: true
+	 foreignTypeName: double
+	 foreignType.getStorageSemantic: FloatStorageSemantic
+	 localTypeName: BIGINT
+	 localType.getStorageSemantic: IntegerStorageSemantic
+10] Data type Name:FLOAT
+	 Type: FloatStorageSemantic
+	 isEditablePrecision: false
+	 getDefaultPrecision: 8
+	 getMaxPrecision: 8
+	 getPrecisionRadix: decimal
+	 getExponentMax: 8
+	 getExponentMin: 0
+	 getExponentRadix: binary
+	 isBestMapFromForeign: true
+	 isBestMapFromNative: true
+	 isLossyToForeign: false
+	 isLossyToNative: true
+	 foreignTypeName: double
+	 foreignType.getStorageSemantic: FloatStorageSemantic
+	 localTypeName: FLOAT
+	 localType.getStorageSemantic: FloatStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: true
+	 foreignTypeName: integer
+	 foreignType.getStorageSemantic: MachineIntegerStorageSemantic
+	 localTypeName: FLOAT
+	 localType.getStorageSemantic: FloatStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: true
+	 isLossyToNative: false
+	 foreignTypeName: bigint
+	 foreignType.getStorageSemantic: MachineIntegerStorageSemantic
+	 localTypeName: FLOAT
+	 localType.getStorageSemantic: FloatStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: decimal
+	 foreignType.getStorageSemantic: IntegerStorageSemantic
+	 localTypeName: FLOAT
+	 localType.getStorageSemantic: FloatStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: string
+	 foreignType.getStorageSemantic: LengthStorageSemantic
+	 localTypeName: FLOAT
+	 localType.getStorageSemantic: FloatStorageSemantic
+11] Data type Name:DOUBLE
+	 Type: FloatStorageSemantic
+	 isEditablePrecision: false
+	 getDefaultPrecision: 15
+	 getMaxPrecision: 15
+	 getPrecisionRadix: decimal
+	 getExponentMax: 11
+	 getExponentMin: 0
+	 getExponentRadix: binary
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: true
+	 isLossyToNative: false
+	 foreignTypeName: bigint
+	 foreignType.getStorageSemantic: MachineIntegerStorageSemantic
+	 localTypeName: DOUBLE
+	 localType.getStorageSemantic: FloatStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: decimal
+	 foreignType.getStorageSemantic: IntegerStorageSemantic
+	 localTypeName: DOUBLE
+	 localType.getStorageSemantic: FloatStorageSemantic
+	 isBestMapFromForeign: true
+	 isBestMapFromNative: true
+	 isLossyToForeign: false
+	 isLossyToNative: true
+	 foreignTypeName: double
+	 foreignType.getStorageSemantic: FloatStorageSemantic
+	 localTypeName: DOUBLE
+	 localType.getStorageSemantic: FloatStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: true
+	 foreignTypeName: integer
+	 foreignType.getStorageSemantic: MachineIntegerStorageSemantic
+	 localTypeName: DOUBLE
+	 localType.getStorageSemantic: FloatStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: string
+	 foreignType.getStorageSemantic: LengthStorageSemantic
+	 localTypeName: DOUBLE
+	 localType.getStorageSemantic: FloatStorageSemantic
+12] Data type Name:REAL
+	 Type: FloatStorageSemantic
+	 isEditablePrecision: false
+	 getDefaultPrecision: 15
+	 getMaxPrecision: 15
+	 getPrecisionRadix: decimal
+	 getExponentMax: 11
+	 getExponentMin: 0
+	 getExponentRadix: binary
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: true
+	 isLossyToForeign: false
+	 isLossyToNative: true
+	 foreignTypeName: double
+	 foreignType.getStorageSemantic: FloatStorageSemantic
+	 localTypeName: REAL
+	 localType.getStorageSemantic: FloatStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: true
+	 foreignTypeName: integer
+	 foreignType.getStorageSemantic: MachineIntegerStorageSemantic
+	 localTypeName: REAL
+	 localType.getStorageSemantic: FloatStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: decimal
+	 foreignType.getStorageSemantic: IntegerStorageSemantic
+	 localTypeName: REAL
+	 localType.getStorageSemantic: FloatStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: string
+	 foreignType.getStorageSemantic: LengthStorageSemantic
+	 localTypeName: REAL
+	 localType.getStorageSemantic: FloatStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: true
+	 isLossyToNative: false
+	 foreignTypeName: bigint
+	 foreignType.getStorageSemantic: MachineIntegerStorageSemantic
+	 localTypeName: REAL
+	 localType.getStorageSemantic: FloatStorageSemantic
+13] Data type Name:DATE
+	 Type: GregorianTimeStorageSemantic
+	 getDefaultScale: 0
+	 getMaxScale: 0
+	 isEditableScale: false
+	 isDaySupported: true
+	 isHourSupported: false
+	 isMinuteSupported: false
+	 isMonthSupported: true
+	 isSecondSupported: false
+	 isTimezoneSupported: false
+	 isYearSupported: true
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: string
+	 foreignType.getStorageSemantic: LengthStorageSemantic
+	 localTypeName: DATE
+	 localType.getStorageSemantic: GregorianTimeStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: true
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: date/time
+	 foreignType.getStorageSemantic: GregorianTimeStorageSemantic
+	 localTypeName: DATE
+	 localType.getStorageSemantic: GregorianTimeStorageSemantic
+14] Data type Name:TIME
+	 Type: GregorianTimeStorageSemantic
+	 getDefaultScale: 0
+	 getMaxScale: 6
+	 isEditableScale: true
+	 isDaySupported: false
+	 isHourSupported: true
+	 isMinuteSupported: true
+	 isMonthSupported: false
+	 isSecondSupported: true
+	 isTimezoneSupported: false
+	 isYearSupported: false
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: string
+	 foreignType.getStorageSemantic: LengthStorageSemantic
+	 localTypeName: TIME
+	 localType.getStorageSemantic: GregorianTimeStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: true
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: date/time
+	 foreignType.getStorageSemantic: GregorianTimeStorageSemantic
+	 localTypeName: TIME
+	 localType.getStorageSemantic: GregorianTimeStorageSemantic
+15] Data type Name:DATETIME
+	 Type: GregorianTimeStorageSemantic
+	 getDefaultScale: 0
+	 getMaxScale: 6
+	 isEditableScale: true
+	 isDaySupported: true
+	 isHourSupported: true
+	 isMinuteSupported: true
+	 isMonthSupported: true
+	 isSecondSupported: true
+	 isTimezoneSupported: false
+	 isYearSupported: true
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: true
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: date/time
+	 foreignType.getStorageSemantic: GregorianTimeStorageSemantic
+	 localTypeName: DATETIME
+	 localType.getStorageSemantic: GregorianTimeStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: string
+	 foreignType.getStorageSemantic: LengthStorageSemantic
+	 localTypeName: DATETIME
+	 localType.getStorageSemantic: GregorianTimeStorageSemantic
+16] Data type Name:TIMESTAMP
+	 Type: GregorianTimeStorageSemantic
+	 getDefaultScale: 0
+	 getMaxScale: 6
+	 isEditableScale: true
+	 isDaySupported: true
+	 isHourSupported: true
+	 isMinuteSupported: true
+	 isMonthSupported: true
+	 isSecondSupported: true
+	 isTimezoneSupported: false
+	 isYearSupported: true
+	 isBestMapFromForeign: true
+	 isBestMapFromNative: true
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: date/time
+	 foreignType.getStorageSemantic: GregorianTimeStorageSemantic
+	 localTypeName: TIMESTAMP
+	 localType.getStorageSemantic: GregorianTimeStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: string
+	 foreignType.getStorageSemantic: LengthStorageSemantic
+	 localTypeName: TIMESTAMP
+	 localType.getStorageSemantic: GregorianTimeStorageSemantic
+17] Data type Name:YEAR
+	 Type: GregorianTimeStorageSemantic
+	 getDefaultScale: 0
+	 getMaxScale: 0
+	 isEditableScale: false
+	 isDaySupported: false
+	 isHourSupported: false
+	 isMinuteSupported: false
+	 isMonthSupported: false
+	 isSecondSupported: false
+	 isTimezoneSupported: false
+	 isYearSupported: true
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: true
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: date/time
+	 foreignType.getStorageSemantic: GregorianTimeStorageSemantic
+	 localTypeName: YEAR
+	 localType.getStorageSemantic: GregorianTimeStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: string
+	 foreignType.getStorageSemantic: LengthStorageSemantic
+	 localTypeName: YEAR
+	 localType.getStorageSemantic: GregorianTimeStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: true
+	 foreignTypeName: double
+	 foreignType.getStorageSemantic: FloatStorageSemantic
+	 localTypeName: YEAR
+	 localType.getStorageSemantic: GregorianTimeStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: true
+	 isLossyToNative: false
+	 foreignTypeName: bigint
+	 foreignType.getStorageSemantic: MachineIntegerStorageSemantic
+	 localTypeName: YEAR
+	 localType.getStorageSemantic: GregorianTimeStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: true
+	 foreignTypeName: integer
+	 foreignType.getStorageSemantic: MachineIntegerStorageSemantic
+	 localTypeName: YEAR
+	 localType.getStorageSemantic: GregorianTimeStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: decimal
+	 foreignType.getStorageSemantic: IntegerStorageSemantic
+	 localTypeName: YEAR
+	 localType.getStorageSemantic: GregorianTimeStorageSemantic
+18] Data type Name:DECIMAL
+	 Type: ScientificDecimalStorageSemantic
+	 isEditablePrecision: true
+	 isEditableScale: true
+	 getDefaultPrecision: 10
+	 getMaxPrecision: 38
+	 getDefaultScale: 0
+	 getMaxScale: 28
+	 getMinScale: 0
+	 isEditablePrecision: true
+	 isBestMapFromForeign: true
+	 isBestMapFromNative: true
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: decimal
+	 foreignType.getStorageSemantic: IntegerStorageSemantic
+	 localTypeName: DECIMAL
+	 localType.getStorageSemantic: ScientificDecimalStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: true
+	 isLossyToNative: false
+	 foreignTypeName: bigint
+	 foreignType.getStorageSemantic: MachineIntegerStorageSemantic
+	 localTypeName: DECIMAL
+	 localType.getStorageSemantic: ScientificDecimalStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: string
+	 foreignType.getStorageSemantic: LengthStorageSemantic
+	 localTypeName: DECIMAL
+	 localType.getStorageSemantic: ScientificDecimalStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: true
+	 foreignTypeName: double
+	 foreignType.getStorageSemantic: FloatStorageSemantic
+	 localTypeName: DECIMAL
+	 localType.getStorageSemantic: ScientificDecimalStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: true
+	 foreignTypeName: integer
+	 foreignType.getStorageSemantic: MachineIntegerStorageSemantic
+	 localTypeName: DECIMAL
+	 localType.getStorageSemantic: ScientificDecimalStorageSemantic
+19] Data type Name:DEC
+	 Type: ScientificDecimalStorageSemantic
+	 isEditablePrecision: true
+	 isEditableScale: true
+	 getDefaultPrecision: 10
+	 getMaxPrecision: 38
+	 getDefaultScale: 0
+	 getMaxScale: 28
+	 getMinScale: 0
+	 isEditablePrecision: true
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: string
+	 foreignType.getStorageSemantic: LengthStorageSemantic
+	 localTypeName: DEC
+	 localType.getStorageSemantic: ScientificDecimalStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: true
+	 foreignTypeName: double
+	 foreignType.getStorageSemantic: FloatStorageSemantic
+	 localTypeName: DEC
+	 localType.getStorageSemantic: ScientificDecimalStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: true
+	 isLossyToNative: false
+	 foreignTypeName: bigint
+	 foreignType.getStorageSemantic: MachineIntegerStorageSemantic
+	 localTypeName: DEC
+	 localType.getStorageSemantic: ScientificDecimalStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: true
+	 foreignTypeName: integer
+	 foreignType.getStorageSemantic: MachineIntegerStorageSemantic
+	 localTypeName: DEC
+	 localType.getStorageSemantic: ScientificDecimalStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: true
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: decimal
+	 foreignType.getStorageSemantic: IntegerStorageSemantic
+	 localTypeName: DEC
+	 localType.getStorageSemantic: ScientificDecimalStorageSemantic
+20] Data type Name:FIXED
+	 Type: ScientificDecimalStorageSemantic
+	 isEditablePrecision: true
+	 isEditableScale: true
+	 getDefaultPrecision: 10
+	 getMaxPrecision: 38
+	 getDefaultScale: 0
+	 getMaxScale: 28
+	 getMinScale: 0
+	 isEditablePrecision: true
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: true
+	 foreignTypeName: double
+	 foreignType.getStorageSemantic: FloatStorageSemantic
+	 localTypeName: FIXED
+	 localType.getStorageSemantic: ScientificDecimalStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: string
+	 foreignType.getStorageSemantic: LengthStorageSemantic
+	 localTypeName: FIXED
+	 localType.getStorageSemantic: ScientificDecimalStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: true
+	 isLossyToNative: false
+	 foreignTypeName: bigint
+	 foreignType.getStorageSemantic: MachineIntegerStorageSemantic
+	 localTypeName: FIXED
+	 localType.getStorageSemantic: ScientificDecimalStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: true
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: decimal
+	 foreignType.getStorageSemantic: IntegerStorageSemantic
+	 localTypeName: FIXED
+	 localType.getStorageSemantic: ScientificDecimalStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: true
+	 foreignTypeName: integer
+	 foreignType.getStorageSemantic: MachineIntegerStorageSemantic
+	 localTypeName: FIXED
+	 localType.getStorageSemantic: ScientificDecimalStorageSemantic
+21] Data type Name:NUMERIC
+	 Type: ScientificDecimalStorageSemantic
+	 isEditablePrecision: true
+	 isEditableScale: true
+	 getDefaultPrecision: 10
+	 getMaxPrecision: 38
+	 getDefaultScale: 0
+	 getMaxScale: 28
+	 getMinScale: 0
+	 isEditablePrecision: true
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: true
+	 foreignTypeName: integer
+	 foreignType.getStorageSemantic: MachineIntegerStorageSemantic
+	 localTypeName: NUMERIC
+	 localType.getStorageSemantic: ScientificDecimalStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: true
+	 isLossyToNative: false
+	 foreignTypeName: bigint
+	 foreignType.getStorageSemantic: MachineIntegerStorageSemantic
+	 localTypeName: NUMERIC
+	 localType.getStorageSemantic: ScientificDecimalStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: string
+	 foreignType.getStorageSemantic: LengthStorageSemantic
+	 localTypeName: NUMERIC
+	 localType.getStorageSemantic: ScientificDecimalStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: true
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: decimal
+	 foreignType.getStorageSemantic: IntegerStorageSemantic
+	 localTypeName: NUMERIC
+	 localType.getStorageSemantic: ScientificDecimalStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: true
+	 foreignTypeName: double
+	 foreignType.getStorageSemantic: FloatStorageSemantic
+	 localTypeName: NUMERIC
+	 localType.getStorageSemantic: ScientificDecimalStorageSemantic
+22] Data type Name:CHAR
+	 Type: LengthStorageSemantic
+	 isEditableLength: true
+	 isVariableAllocation: true
+	 getDefaultLength: 1
+	 getMaxLength:255
+	 getLengthUnit:characters
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: binary
+	 foreignType.getStorageSemantic: LengthStorageSemantic
+	 localTypeName: CHAR
+	 localType.getStorageSemantic: LengthStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: true
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: string
+	 foreignType.getStorageSemantic: LengthStorageSemantic
+	 localTypeName: CHAR
+	 localType.getStorageSemantic: LengthStorageSemantic
+23] Data type Name:MEDIUMTEXT
+	 Type: LengthStorageSemantic
+	 isEditableLength: false
+	 isVariableAllocation: true
+	 getDefaultLength: 16777216
+	 getMaxLength:16777216
+	 getLengthUnit:bytes
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: true
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: string
+	 foreignType.getStorageSemantic: LengthStorageSemantic
+	 localTypeName: MEDIUMTEXT
+	 localType.getStorageSemantic: LengthStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: binary
+	 foreignType.getStorageSemantic: LengthStorageSemantic
+	 localTypeName: MEDIUMTEXT
+	 localType.getStorageSemantic: LengthStorageSemantic
+24] Data type Name:BINARY
+	 Type: LengthStorageSemantic
+	 isEditableLength: true
+	 isVariableAllocation: true
+	 getDefaultLength: 1
+	 getMaxLength:255
+	 getLengthUnit:bytes
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: string
+	 foreignType.getStorageSemantic: LengthStorageSemantic
+	 localTypeName: BINARY
+	 localType.getStorageSemantic: LengthStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: true
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: binary
+	 foreignType.getStorageSemantic: LengthStorageSemantic
+	 localTypeName: BINARY
+	 localType.getStorageSemantic: LengthStorageSemantic
+25] Data type Name:VARCHAR
+	 Type: LengthStorageSemantic
+	 isEditableLength: true
+	 isVariableAllocation: true
+	 getDefaultLength: 255
+	 getMaxLength:21845
+	 getLengthUnit:characters
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: true
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: string
+	 foreignType.getStorageSemantic: LengthStorageSemantic
+	 localTypeName: VARCHAR
+	 localType.getStorageSemantic: LengthStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: binary
+	 foreignType.getStorageSemantic: LengthStorageSemantic
+	 localTypeName: VARCHAR
+	 localType.getStorageSemantic: LengthStorageSemantic
+26] Data type Name:VARBINARY
+	 Type: LengthStorageSemantic
+	 isEditableLength: true
+	 isVariableAllocation: true
+	 getDefaultLength: 255
+	 getMaxLength:104857600
+	 getLengthUnit:characters
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: string
+	 foreignType.getStorageSemantic: LengthStorageSemantic
+	 localTypeName: VARBINARY
+	 localType.getStorageSemantic: LengthStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: true
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: binary
+	 foreignType.getStorageSemantic: LengthStorageSemantic
+	 localTypeName: VARBINARY
+	 localType.getStorageSemantic: LengthStorageSemantic
+27] Data type Name:LONGTEXT
+	 Type: LengthStorageSemantic
+	 isEditableLength: false
+	 isVariableAllocation: true
+	 getDefaultLength: 104857600
+	 getMaxLength:104857600
+	 getLengthUnit:bytes
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: true
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: string
+	 foreignType.getStorageSemantic: LengthStorageSemantic
+	 localTypeName: LONGTEXT
+	 localType.getStorageSemantic: LengthStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: binary
+	 foreignType.getStorageSemantic: LengthStorageSemantic
+	 localTypeName: LONGTEXT
+	 localType.getStorageSemantic: LengthStorageSemantic
+28] Data type Name:TEXT
+	 Type: LengthStorageSemantic
+	 isEditableLength: false
+	 isVariableAllocation: true
+	 getDefaultLength: 65535
+	 getMaxLength:65535
+	 getLengthUnit:bytes
+	 isBestMapFromForeign: true
+	 isBestMapFromNative: true
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: string
+	 foreignType.getStorageSemantic: LengthStorageSemantic
+	 localTypeName: TEXT
+	 localType.getStorageSemantic: LengthStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: binary
+	 foreignType.getStorageSemantic: LengthStorageSemantic
+	 localTypeName: TEXT
+	 localType.getStorageSemantic: LengthStorageSemantic
+29] Data type Name:TINYTEXT
+	 Type: LengthStorageSemantic
+	 isEditableLength: false
+	 isVariableAllocation: true
+	 getDefaultLength: 255
+	 getMaxLength:255
+	 getLengthUnit:characters
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: binary
+	 foreignType.getStorageSemantic: LengthStorageSemantic
+	 localTypeName: TINYTEXT
+	 localType.getStorageSemantic: LengthStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: true
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: string
+	 foreignType.getStorageSemantic: LengthStorageSemantic
+	 localTypeName: TINYTEXT
+	 localType.getStorageSemantic: LengthStorageSemantic
+30] Data type Name:LONGBLOB
+	 Type: LengthStorageSemantic
+	 isEditableLength: false
+	 isVariableAllocation: true
+	 getDefaultLength: 104857600
+	 getMaxLength:104857600
+	 getLengthUnit:bytes
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: string
+	 foreignType.getStorageSemantic: LengthStorageSemantic
+	 localTypeName: LONGBLOB
+	 localType.getStorageSemantic: LengthStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: true
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: binary
+	 foreignType.getStorageSemantic: LengthStorageSemantic
+	 localTypeName: LONGBLOB
+	 localType.getStorageSemantic: LengthStorageSemantic
+31] Data type Name:MEDIUMBLOB
+	 Type: LengthStorageSemantic
+	 isEditableLength: false
+	 isVariableAllocation: true
+	 getDefaultLength: 16777216
+	 getMaxLength:16777216
+	 getLengthUnit:bytes
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: true
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: binary
+	 foreignType.getStorageSemantic: LengthStorageSemantic
+	 localTypeName: MEDIUMBLOB
+	 localType.getStorageSemantic: LengthStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: string
+	 foreignType.getStorageSemantic: LengthStorageSemantic
+	 localTypeName: MEDIUMBLOB
+	 localType.getStorageSemantic: LengthStorageSemantic
+32] Data type Name:BLOB
+	 Type: LengthStorageSemantic
+	 isEditableLength: false
+	 isVariableAllocation: true
+	 getDefaultLength: 65535
+	 getMaxLength:65535
+	 getLengthUnit:bytes
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: string
+	 foreignType.getStorageSemantic: LengthStorageSemantic
+	 localTypeName: BLOB
+	 localType.getStorageSemantic: LengthStorageSemantic
+	 isBestMapFromForeign: true
+	 isBestMapFromNative: true
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: binary
+	 foreignType.getStorageSemantic: LengthStorageSemantic
+	 localTypeName: BLOB
+	 localType.getStorageSemantic: LengthStorageSemantic
+33] Data type Name:TINYBLOB
+	 Type: LengthStorageSemantic
+	 isEditableLength: false
+	 isVariableAllocation: true
+	 getDefaultLength: 255
+	 getMaxLength:255
+	 getLengthUnit:bytes
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: false
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: string
+	 foreignType.getStorageSemantic: LengthStorageSemantic
+	 localTypeName: TINYBLOB
+	 localType.getStorageSemantic: LengthStorageSemantic
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: true
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: binary
+	 foreignType.getStorageSemantic: LengthStorageSemantic
+	 localTypeName: TINYBLOB
+	 localType.getStorageSemantic: LengthStorageSemantic
+34] Data type Name:JSON
+	 Type: LengthStorageSemantic
+	 isEditableLength: false
+	 isVariableAllocation: true
+	 getDefaultLength: 104857600
+	 getMaxLength:104857600
+	 getLengthUnit:characters
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: true
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: string
+	 foreignType.getStorageSemantic: LengthStorageSemantic
+	 localTypeName: JSON
+	 localType.getStorageSemantic: LengthStorageSemantic
+35] Data type Name:GEOGRAPHY
+	 Type: LengthStorageSemantic
+	 isEditableLength: false
+	 isVariableAllocation: true
+	 getDefaultLength: 104857600
+	 getMaxLength:104857600
+	 getLengthUnit:characters
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: true
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: string
+	 foreignType.getStorageSemantic: LengthStorageSemantic
+	 localTypeName: GEOGRAPHY
+	 localType.getStorageSemantic: LengthStorageSemantic
+36] Data type Name:GEOGRAPHYPOINT
+	 Type: LengthStorageSemantic
+	 isEditableLength: false
+	 isVariableAllocation: true
+	 getDefaultLength: 104857600
+	 getMaxLength:104857600
+	 getLengthUnit:characters
+	 isBestMapFromForeign: false
+	 isBestMapFromNative: true
+	 isLossyToForeign: false
+	 isLossyToNative: false
+	 foreignTypeName: string
+	 foreignType.getStorageSemantic: LengthStorageSemantic
+	 localTypeName: GEOGRAPHYPOINT
+	 localType.getStorageSemantic: LengthStorageSemantic
+
+++++++++ Import Dialog Options ++++++++
+1] ID: 1001
+	 Name: 
+	 Type: 
+	 Default Value: 
+	 Is Presentation Only: false
+	 Is UI Control Needed: true
+	 Description: 
+	 Class Type: null
+2] ID: 1002
+	 Name: 
+	 Type: 
+	 Default Value: 
+	 Is Presentation Only: false
+	 Is UI Control Needed: false
+	 Description: 
+	 Class Type: null
+3] ID: 1004
+	 Name: 
+	 Type: 
+	 Default Value: 
+	 Is Presentation Only: false
+	 Is UI Control Needed: false
+	 Description: 
+	 Class Type: null
+4] ID: 7004
+	 Name: 
+	 Type: 
+	 Default Value: true
+	 Is Presentation Only: true
+	 Is UI Control Needed: false
+	 Description: 
+	 Class Type: null
+5] ID: 7005
+	 Name: Show Hierarchy
+	 Type: Boolean
+	 Default Value: true
+	 Is Presentation Only: true
+	 Is UI Control Needed: false
+	 Description: Show Hierarchy
+	 Class Type: class java.lang.Boolean
+6] ID: 7006
+	 Name: Show Entity Information
+	 Type: Boolean
+	 Default Value: true
+	 Is Presentation Only: true
+	 Is UI Control Needed: true
+	 Description: Show Entity Information
+	 Class Type: class java.lang.Boolean
+7] ID: 7007
+	 Name: Show Related Records
+	 Type: boolean
+	 Default Value: false
+	 Is Presentation Only: true
+	 Is UI Control Needed: false
+	 Description: Show Related Records
+	 Class Type: class java.lang.Boolean
+8] ID: 1011
+	 Name: 
+	 Type: 
+	 Default Value: 
+	 Is Presentation Only: false
+	 Is UI Control Needed: false
+	 Description: 
+	 Class Type: null
+
+++++++++ Metadata Write Options ++++++++
+WriteBack options
+ Is Drop and Create supported?: true
+ Is Update else Create supported?: true
+ Is Create if not exisis supported?: false
+ Is Continue on error supported?: false
+ Is Create supported?: true
+ Is Delete supported?: true
+ Is Update supported?: true
+
+++++++++ Operation Information Of NMO TABLE +++++++++
+Operation Name: TableRead
+Is Implicitly Created: false
+Interaction Pattern: Connections
+Multi Capability Support: single
+Engine Type: []
+Is Engine Specific Operation Enabled?: false
+
+++++++++ Operation Capability Details ++++++++
+Total Operation Capabilities: 1
+
+==> Capability Type 1: read
+Input Projection Support Name: null
+Partition Support Name: TableReadPartitioning
+Multi Selection Supported: false
+Is Recovery Supported?: false
+Is Source Repeatable?: false
+Is Transactional?: false
+Is Update Strategy Supported?: false
+Is Read Bulk API Supported?: true
+Is Write Bulk API Supported?: false
+
+++++++++ Input Projections Support Details ++++++++
+IsInputProjection: true
+Input Projection Support name: null
+
+*********** Aggregate Operation **********
+ isPushdownSupported: false
+ isSupportsGroupByPorts: false
+
+*********** Expression Operation **********
+ isPushdownSupported: false
+
+*********** Filter Operation **********
+ isPushdownSupported: true
+ isNativeFilterExpressionSupported: true
+ isSimpleExpressionSupported: true
+ Supported Binary Operators:[EQUALS, GREATER, GREATER_OR_EQUALS, LESS, LESS_OR_EQUALS, NOT_EQUALS, CONTAINS, STARTS_WITH, ENDS_WITH, IS_NULL, IS_NOT_NULL]
+ Supported Logical Operators: AND
+ Supported Unary Operators: null
+
+*********** Join Operation **********
+ isPushdownSupported: false
+ isImplicitJoinSupported: false
+ isNativeJoinExpressionSupported: true
+ isSimpleExpressionSupported: true
+ Supported Binary Operators: [EQUALS, GREATER, GREATER_OR_EQUALS, LESS, LESS_OR_EQUALS, NOT_EQUALS, CONTAINS, STARTS_WITH, ENDS_WITH, IS_NULL, IS_NOT_NULL]
+ Supported Logical Operators: AND
+ Supported Unary Operators: null
+
+*********** Lookup Operation **********
+ isPushdownSupported: false
+
+*********** Router Operation **********
+ isPushdownSupported: false
+
+*********** Sequence Operation **********
+ isPushdownSupported: false
+
+*********** Sort Operation **********
+ isPushdownSupported: false
+ isSortAtPlatformSupported: true
+
+*********** Union Operation **********
+ isPushdownSupported: false
+
+*********** Update Operation **********
+ isPushdownSupported: false
+
+*********** Projection Operation **********
+IsDropFields: true
+Projection Operations supported: [ALL, DISTINCT, ANY, FIRST_ROW, LAST_ROW]
+
+==> Partition Details For Capability READ
+
+Partitioning Support Name: TableReadPartitioning
+Default Partitioning Scheme: none
+Partitioning Adapter: null
+Auto Partition Supported?: false
+User Partition Supported?: true
+Partitioning Strategy Enum: range
+ Relationship Supported: NA
+
+++++++++ Operation Information Of NMO TABLE +++++++++
+Operation Name: TableWrite
+Is Implicitly Created: false
+Interaction Pattern: Connections
+Multi Capability Support: single
+Engine Type: []
+Is Engine Specific Operation Enabled?: false
+
+++++++++ Operation Capability Details ++++++++
+Total Operation Capabilities: 1
+
+==> Capability Type 1: write
+Output Projection Support Name: null
+Partition Support Name: TableWritePartitioning
+Multi Selection Supported: false
+Is Recovery Supported?: false
+Is Source Repeatable?: false
+Is Transactional?: false
+Is Update Strategy Supported?: false
+Is Read Bulk API Supported?: false
+Is Write Bulk API Supported?: true
+
+*********** Output Projections **********
+Projection Name: null
+isInputProjection: false
+
+*********** Projection Operation **********
+IsDropFields: true
+Projection Operations supported: []
+
+==> Partition Details For Capability WRITE
+
+Partitioning Support Name: TableWritePartitioning
+Default Partitioning Scheme: autoPartitioning
+Partitioning Adapter: com.singlestore.adapter.singlestore.metadata.adapter.TableAutoPartitioningMetadataAdapter@625487a6
+Auto Partition Supported?: true
+User Partition Supported?: false
+
+++++++++ Write Capability Attributes ++++++++
+1] Name: UpdateMode
+	 Default value: Update As Update
+	 Display name: UpdateMode
+	 Description: 
+	 Max occurs: 1
+	 Min Occurs: 0
+	 Is edited: true
+	 Is hidden: false
+	 Is partition overrideable: false
+	 Is mandatory: false
+	 Is class: false
+	 Is enum: true
+	 Is primitive: true
+	 Constraint: com.informatica.cci.reginfo.constraints.impl.LengthImpl@437281c5
+	 Constraint: com.informatica.cci.reginfo.constraints.impl.PersistenceImpl@787178b1
+	 Datatype: STRING
+
+
+ Relationship Supported: NA

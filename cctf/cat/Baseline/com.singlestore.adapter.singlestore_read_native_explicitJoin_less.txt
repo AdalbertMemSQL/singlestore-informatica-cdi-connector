@@ -1,0 +1,6 @@
+1|rty|2|null
+1|rty|3|
+2|uio|3|
+0|qwe|2|null
+0|qwe|1|o
+0|qwe|3|

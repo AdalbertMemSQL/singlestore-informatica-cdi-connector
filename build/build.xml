@@ -1,0 +1,371 @@
+<project default="all">
+    <property name="sdk.dir" location="/home/amakarovych-ua/Informatica/IDP10.4.0_new/ict/Application"/>
+    <property name="ADAPTER_CONTRIBUTION" location="/home/amakarovych-ua/eclipse-workspace4/SingleStore//sdk/adapter.contribution/src"/>
+    <property name="ADAPTER_CONTRIBUTION.build.dir" location="/home/amakarovych-ua/eclipse-workspace4/SingleStore/build/adapter.contribution"/>
+    <property name="CONNECT_INFO_ANNOTATED" location="/home/amakarovych-ua/eclipse-workspace4/SingleStore//sdk/models.connection.annotatedjava/src"/>
+    <property name="CONNECT_INFO_ANNOTATED.build.dir" location="/home/amakarovych-ua/eclipse-workspace4/SingleStore/build/models.connection.annotatedjava"/>
+    <property name="CONNECTION_MODEL" location="/home/amakarovych-ua/eclipse-workspace4/SingleStore//sdk/connection.model/src"/>
+    <property name="CONNECTION_MODEL.build.dir" location="/home/amakarovych-ua/eclipse-workspace4/SingleStore/build/connection.model"/>
+    <property name="CONNECTION_ADAPTER" location="/home/amakarovych-ua/eclipse-workspace4/SingleStore//usr/connection.adapter/src"/>
+    <property name="CONNECTION_ADAPTER.build.dir" location="/home/amakarovych-ua/eclipse-workspace4/SingleStore/build/connection.adapter"/>
+    <property name="SEEDPROVIDER" location="/home/amakarovych-ua/eclipse-workspace4/SingleStore//sdk/seedprovider/src"/>
+    <property name="SEEDPROVIDER.build.dir" location="/home/amakarovych-ua/eclipse-workspace4/SingleStore/build/seedprovider"/>
+    <property name="TYPESYSTEM" location="/home/amakarovych-ua/eclipse-workspace4/SingleStore//sdk/typesystem/src"/>
+    <property name="TYPESYSTEM.build.dir" location="/home/amakarovych-ua/eclipse-workspace4/SingleStore/build/typesystem"/>
+    <property name="METADATA_ANNOTATED" location="/home/amakarovych-ua/eclipse-workspace4/SingleStore//sdk/models.metadata.annotatedjava/src"/>
+    <property name="METADATA_ANNOTATED.build.dir" location="/home/amakarovych-ua/eclipse-workspace4/SingleStore/build/models.metadata.annotatedjava"/>
+    <property name="METADATA_MODEL" location="/home/amakarovych-ua/eclipse-workspace4/SingleStore//sdk/metadata.model/src"/>
+    <property name="METADATA_MODEL.build.dir" location="/home/amakarovych-ua/eclipse-workspace4/SingleStore/build/metadata.model"/>
+    <property name="METADATA_SEMANTIC" location="/home/amakarovych-ua/eclipse-workspace4/SingleStore//usr/metadata.semantic/src"/>
+    <property name="METADATA_SEMANTIC.build.dir" location="/home/amakarovych-ua/eclipse-workspace4/SingleStore/build/metadata.semantic"/>
+    <property name="RUNTIME_ANNOTATED" location="/home/amakarovych-ua/eclipse-workspace4/SingleStore//sdk/models.runtime.annotatedjava/src"/>
+    <property name="RUNTIME_ANNOTATED.build.dir" location="/home/amakarovych-ua/eclipse-workspace4/SingleStore/build/models.runtime.annotatedjava"/>
+    <property name="RUNTIME_MODEL" location="/home/amakarovych-ua/eclipse-workspace4/SingleStore//sdk/runtime.model/src"/>
+    <property name="RUNTIME_MODEL.build.dir" location="/home/amakarovych-ua/eclipse-workspace4/SingleStore/build/runtime.model"/>
+    <property name="RUNTIME_SEMANTIC" location="/home/amakarovych-ua/eclipse-workspace4/SingleStore//usr/runtime.semantic/src"/>
+    <property name="RUNTIME_SEMANTIC.build.dir" location="/home/amakarovych-ua/eclipse-workspace4/SingleStore/build/runtime.semantic"/>
+    <property name="METAMODEL" location="/home/amakarovych-ua/eclipse-workspace4/SingleStore//sdk/metamodel/src"/>
+    <property name="METAMODEL.build.dir" location="/home/amakarovych-ua/eclipse-workspace4/SingleStore/build/metamodel"/>
+    <property name="METADATA_ADAPTER" location="/home/amakarovych-ua/eclipse-workspace4/SingleStore//usr/metadata.adapter/src"/>
+    <property name="METADATA_ADAPTER.build.dir" location="/home/amakarovych-ua/eclipse-workspace4/SingleStore/build/metadata.adapter"/>
+    <property name="MODEL_ATTRIBUTES" location="/home/amakarovych-ua/eclipse-workspace4/SingleStore//sdk/modelattributes/src"/>
+    <property name="MODEL_ATTRIBUTES.build.dir" location="/home/amakarovych-ua/eclipse-workspace4/SingleStore/build/modelattributes"/>
+    <property name="LICENSE_CHECKER" location="/home/amakarovych-ua/eclipse-workspace4/SingleStore//usr/licensechecker/src"/>
+    <property name="LICENSE_CHECKER.build.dir" location="/home/amakarovych-ua/eclipse-workspace4/SingleStore/build/licensechecker"/>
+    <property name="UI_WIZARD" location="/home/amakarovych-ua/eclipse-workspace4/SingleStore//usr/ui.wizard/src"/>
+    <property name="UI_WIZARD.build.dir" location="/home/amakarovych-ua/eclipse-workspace4/SingleStore/build/ui.wizard"/>
+    <property name="RUNTIME_ADAPTER" location="/home/amakarovych-ua/eclipse-workspace4/SingleStore//usr/runtime.adapter/src"/>
+    <property name="RUNTIME_ADAPTER.build.dir" location="/home/amakarovych-ua/eclipse-workspace4/SingleStore/build/runtime.adapter"/>
+    <property name="LIBRARY_INFO" location="/home/amakarovych-ua/eclipse-workspace4/SingleStore//sdk/libraryinfo/src"/>
+    <property name="LIBRARY_INFO.build.dir" location="/home/amakarovych-ua/eclipse-workspace4/SingleStore/build/libraryinfo"/>
+    <property name="ADAPTER_FEATURE" location="/home/amakarovych-ua/eclipse-workspace4/SingleStore//sdk/adapter.feature/src"/>
+    <property name="ADAPTER_FEATURE.build.dir" location="/home/amakarovych-ua/eclipse-workspace4/SingleStore/build/adapter.feature"/>
+    <property name="DESIGN_MESSAGES" location="/home/amakarovych-ua/eclipse-workspace4/SingleStore//sdk/messages.design/src"/>
+    <property name="DESIGN_MESSAGES.build.dir" location="/home/amakarovych-ua/eclipse-workspace4/SingleStore/build/messages.design"/>
+    <property name="RUNTIME_MESSAGES" location="/home/amakarovych-ua/eclipse-workspace4/SingleStore//sdk/messages.runtime/src"/>
+    <property name="RUNTIME_MESSAGES.build.dir" location="/home/amakarovych-ua/eclipse-workspace4/SingleStore/build/messages.runtime"/>
+    <property environment="env"/>
+    <path id="SDKJars">
+        <fileset dir="${sdk.dir}">
+            <include name="**/*.jar"/>
+        </fileset>
+        <fileset dir="/home/amakarovych-ua/Tools/new_eclipse/eclipse/plugins">
+            <include name="**/*.jar"/>
+        </fileset>
+        <fileset dir="/home/amakarovych-ua/eclipse-workspace4/SingleStore/build">
+            <include name="**/*.jar"/>
+        </fileset>
+    </path>
+    <target name="SEM_CODEGEN">
+        <java classname="com.informatica.metadata.adaptersdk.internal.codegen.Main" classpathref="SDKJars">
+            <arg value="-gen ${executor}"/>
+            <arg value="-ini ${iniFile}"/>
+            <arg value="-m2repo file://]"/>
+            <arg value="-version 0"/>
+            <arg value="-basemodel.version 0"/>
+            <arg value="-adapter.version 0"/>
+        </java>
+    </target>
+    <target name="METADATA_SEMANTIC_CODEGEN_TABLE">
+        <antcall target="SEM_CODEGEN_EXECUTOR">
+            <param name="iniFile" value="/home/amakarovych-ua/eclipse-workspace4/SingleStore//usr/metadata.semantic/codegen_table.ini"/>
+        </antcall>
+    </target>
+    <target name="RUNTIME_SEMANTIC_CODEGEN_TABLE">
+        <antcall target="SEM_CODEGEN_EXECUTOR">
+            <param name="iniFile" value="/home/amakarovych-ua/eclipse-workspace4/SingleStore//usr/runtime.semantic/codegen_table.ini"/>
+        </antcall>
+    </target>
+    <target name="SEM_CODEGEN_EXECUTOR">
+        <antcall target="SEM_CODEGEN">
+            <param name="executor" value="com.informatica.metadata.adaptersdk.internal.codegen.CodegenClean"/>
+        </antcall>
+        <parallel threadCount="4">
+            <antcall target="SEM_CODEGEN">
+                <param name="executor" value="com.informatica.metadata.adaptersdk.internal.codegen.sem.GeneratorMainSemanticClasses"/>
+            </antcall>
+            <antcall target="SEM_CODEGEN">
+                <param name="executor" value="com.informatica.metadata.adaptersdk.internal.codegen.val.GeneratorMainValidationClasses"/>
+            </antcall>
+            <antcall target="SEM_CODEGEN">
+                <param name="executor" value="com.informatica.metadata.adaptersdk.internal.codegen.factory.GeneratorMainFactory"/>
+            </antcall>
+            <antcall target="SEM_CODEGEN">
+                <param name="executor" value="com.informatica.metadata.adaptersdk.internal.codegen.iface.GeneratorMainIface"/>
+            </antcall>
+        </parallel>
+    </target>
+    <target name="BUILD_ADAPTER_CONTRIBUTION">
+        <mkdir dir="${ADAPTER_CONTRIBUTION.build.dir}/classes"/>
+        <copy todir="${ADAPTER_CONTRIBUTION.build.dir}/classes">
+            <fileset dir="/home/amakarovych-ua/eclipse-workspace4/SingleStore//sdk/adapter.contribution">
+                <include name="**/plugin.xml"/>
+            </fileset>
+        </copy>
+        <jar destfile="/home/amakarovych-ua/eclipse-workspace4/SingleStore/build/adapter.contribution/com.singlestore.adapter.singlestore.adapter.contribution_1.0.0.jar" basedir="${ADAPTER_CONTRIBUTION.build.dir}/classes" manifest="/home/amakarovych-ua/eclipse-workspace4/SingleStore//sdk/adapter.contribution/META-INF/MANIFEST.MF"/>
+    </target>
+    <target name="BUILD_CONNECT_INFO_ANNOTATED" if="compileModels">
+        <mkdir dir="${CONNECT_INFO_ANNOTATED.build.dir}/classes"/>
+        <javac srcdir="${CONNECT_INFO_ANNOTATED}" destdir="${CONNECT_INFO_ANNOTATED.build.dir}/classes" debug="on" encoding="UTF-8" includeantruntime="false" classpathref="SDKJars"/>
+        <parallel threadCount="2">
+            <jar destfile="/home/amakarovych-ua/eclipse-workspace4/SingleStore/build/models.connection.annotatedjava/com.singlestore.adapter.singlestore.models.connection.annotatedjava_1.0.0.jar" basedir="${CONNECT_INFO_ANNOTATED.build.dir}/classes" manifest="/home/amakarovych-ua/eclipse-workspace4/SingleStore//sdk/models.connection.annotatedjava/META-INF/MANIFEST.MF"/>
+            <java classname="com.informatica.imf.codegen.AnnotJava2Java" classpathref="SDKJars">
+                <arg value="-sourceLocation"/>
+                <arg value="/home/amakarovych-ua/eclipse-workspace4/SingleStore//sdk/models.connection.annotatedjava/src"/>
+                <arg value="-targetLocation"/>
+                <arg value="/home/amakarovych-ua/eclipse-workspace4/SingleStore//sdk/connection.model/src"/>
+                <arg value="-dependencies"/>
+                <arg value="/home/amakarovych-ua/Informatica/IDP10.4.0_new/ict/Application/jars"/>
+            </java>
+        </parallel>
+    </target>
+    <target name="BUILD_CONNECTION_MODEL" depends="BUILD_CONNECT_INFO_ANNOTATED">
+        <mkdir dir="${CONNECTION_MODEL.build.dir}/classes"/>
+        <copy todir="/home/amakarovych-ua/eclipse-workspace4/SingleStore/build/connection.model/classes">
+            <fileset dir="/home/amakarovych-ua/eclipse-workspace4/SingleStore//sdk/connection.model/src">
+                <include name="*.xml"/>
+                <include name="*.xsd"/>
+            </fileset>
+        </copy>
+        <javac srcdir="${CONNECTION_MODEL}" destdir="${CONNECTION_MODEL.build.dir}/classes" debug="on" encoding="UTF-8" includeantruntime="false" classpathref="SDKJars"/>
+        <jar destfile="/home/amakarovych-ua/eclipse-workspace4/SingleStore/build/connection.model/com.singlestore.adapter.singlestore.connection.model_1.0.0.jar" basedir="${CONNECTION_MODEL.build.dir}/classes" manifest="/home/amakarovych-ua/eclipse-workspace4/SingleStore//sdk/connection.model/META-INF/MANIFEST.MF"/>
+    </target>
+    <target name="BUILD_CONNECTION_ADAPTER" depends="BUILD_CONNECTION_MODEL,BUILD_DESIGN_MESSAGES">
+        <mkdir dir="${CONNECTION_ADAPTER.build.dir}/classes"/>
+        <copy todir="${CONNECTION_ADAPTER.build.dir}/classes/lib">
+            <fileset dir="/home/amakarovych-ua/eclipse-workspace4/SingleStore//usr/connection.adapter/lib">
+                <include name="**/*.*"/>
+            </fileset>
+        </copy>
+        <copy todir="${CONNECTION_ADAPTER.build.dir}/classes/i18n">
+            <fileset dir="/home/amakarovych-ua/eclipse-workspace4/SingleStore//usr/connection.adapter/i18n">
+                <include name="**/*.*"/>
+            </fileset>
+        </copy>
+        <copy todir="${CONNECTION_ADAPTER.build.dir}/classes">
+            <fileset dir="/home/amakarovych-ua/eclipse-workspace4/SingleStore//usr/connection.adapter">
+                <include name="**/plugin.xml"/>
+            </fileset>
+        </copy>
+        <javac srcdir="${CONNECTION_ADAPTER}" destdir="${CONNECTION_ADAPTER.build.dir}/classes" debug="on" encoding="UTF-8" includeantruntime="false" classpathref="SDKJars"/>
+        <jar destfile="/home/amakarovych-ua/eclipse-workspace4/SingleStore/build/connection.adapter/com.singlestore.adapter.singlestore.connection.adapter_1.0.0.jar" basedir="${CONNECTION_ADAPTER.build.dir}/classes" manifest="/home/amakarovych-ua/eclipse-workspace4/SingleStore//usr/connection.adapter/META-INF/MANIFEST.MF"/>
+    </target>
+    <target name="BUILD_SEEDPROVIDER">
+        <mkdir dir="${SEEDPROVIDER.build.dir}/classes"/>
+        <copy todir="${SEEDPROVIDER.build.dir}/classes">
+            <fileset dir="/home/amakarovych-ua/eclipse-workspace4/SingleStore//sdk/seedprovider">
+                <include name="**/plugin.xml"/>
+            </fileset>
+        </copy>
+        <javac srcdir="${SEEDPROVIDER}" destdir="${SEEDPROVIDER.build.dir}/classes" debug="on" encoding="UTF-8" includeantruntime="false" classpathref="SDKJars"/>
+        <jar destfile="/home/amakarovych-ua/eclipse-workspace4/SingleStore/build/seedprovider/com.singlestore.adapter.singlestore.seedprovider_1.0.0.jar" basedir="${SEEDPROVIDER.build.dir}/classes" manifest="/home/amakarovych-ua/eclipse-workspace4/SingleStore//sdk/seedprovider/META-INF/MANIFEST.MF"/>
+    </target>
+    <target name="BUILD_TYPESYSTEM" depends="BUILD_ADAPTER_CONTRIBUTION,BUILD_SEEDPROVIDER">
+        <mkdir dir="${TYPESYSTEM.build.dir}/classes"/>
+        <copy todir="${TYPESYSTEM.build.dir}/classes">
+            <fileset dir="/home/amakarovych-ua/eclipse-workspace4/SingleStore//sdk/typesystem">
+                <include name="**/plugin.xml"/>
+            </fileset>
+        </copy>
+        <jar destfile="/home/amakarovych-ua/eclipse-workspace4/SingleStore/build/typesystem/com.singlestore.adapter.singlestore.typesystem_1.0.0.jar" basedir="${TYPESYSTEM.build.dir}/classes" manifest="/home/amakarovych-ua/eclipse-workspace4/SingleStore//sdk/typesystem/META-INF/MANIFEST.MF"/>
+        <java classname="com.informatica.imf.icore.SeedXMLGen" classpathref="SDKJars">
+            <arg value="com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem"/>
+            <arg value="${TYPESYSTEM.build.dir}"/>
+        </java>
+    </target>
+    <target name="BUILD_METADATA_ANNOTATED" if="compileModels">
+        <mkdir dir="${METADATA_ANNOTATED.build.dir}/classes"/>
+        <javac srcdir="${METADATA_ANNOTATED}" destdir="${METADATA_ANNOTATED.build.dir}/classes" debug="on" encoding="UTF-8" includeantruntime="false" classpathref="SDKJars"/>
+        <parallel threadCount="2">
+            <jar destfile="/home/amakarovych-ua/eclipse-workspace4/SingleStore/build/models.metadata.annotatedjava/com.singlestore.adapter.singlestore.models.metadata.annotatedjava_1.0.0.jar" basedir="${METADATA_ANNOTATED.build.dir}/classes" manifest="/home/amakarovych-ua/eclipse-workspace4/SingleStore//sdk/models.metadata.annotatedjava/META-INF/MANIFEST.MF"/>
+            <java classname="com.informatica.imf.codegen.AnnotJava2Java" classpathref="SDKJars">
+                <arg value="-sourceLocation"/>
+                <arg value="/home/amakarovych-ua/eclipse-workspace4/SingleStore//sdk/models.metadata.annotatedjava/src"/>
+                <arg value="-targetLocation"/>
+                <arg value="/home/amakarovych-ua/eclipse-workspace4/SingleStore//sdk/metadata.model/src"/>
+                <arg value="-dependencies"/>
+                <arg value="/home/amakarovych-ua/Informatica/IDP10.4.0_new/ict/Application/jars"/>
+            </java>
+        </parallel>
+    </target>
+    <target name="BUILD_METADATA_MODEL" depends="BUILD_ADAPTER_CONTRIBUTION,BUILD_METADATA_ANNOTATED">
+        <mkdir dir="${METADATA_MODEL.build.dir}/classes"/>
+        <copy todir="/home/amakarovych-ua/eclipse-workspace4/SingleStore/build/metadata.model/classes">
+            <fileset dir="/home/amakarovych-ua/eclipse-workspace4/SingleStore//sdk/metadata.model/src">
+                <include name="*.xml"/>
+                <include name="*.xsd"/>
+            </fileset>
+        </copy>
+        <javac srcdir="${METADATA_MODEL}" destdir="${METADATA_MODEL.build.dir}/classes" debug="on" encoding="UTF-8" includeantruntime="false" classpathref="SDKJars"/>
+        <jar destfile="/home/amakarovych-ua/eclipse-workspace4/SingleStore/build/metadata.model/com.singlestore.adapter.singlestore.metadata.model_1.0.0.jar" basedir="${METADATA_MODEL.build.dir}/classes" manifest="/home/amakarovych-ua/eclipse-workspace4/SingleStore//sdk/metadata.model/META-INF/MANIFEST.MF"/>
+    </target>
+    <target name="BUILD_METADATA_SEMANTIC" depends="BUILD_METADATA_MODEL">
+        <mkdir dir="${METADATA_SEMANTIC.build.dir}/classes"/>
+        <javac srcdir="${METADATA_SEMANTIC}" destdir="${METADATA_SEMANTIC.build.dir}/classes" debug="on" encoding="UTF-8" includeantruntime="false" classpathref="SDKJars"/>
+        <jar destfile="/home/amakarovych-ua/eclipse-workspace4/SingleStore/build/metadata.semantic/com.singlestore.adapter.singlestore.metadata.semantic_1.0.0.jar" basedir="${METADATA_SEMANTIC.build.dir}/classes" manifest="/home/amakarovych-ua/eclipse-workspace4/SingleStore//usr/metadata.semantic/META-INF/MANIFEST.MF"/>
+    </target>
+    <target name="BUILD_RUNTIME_ANNOTATED" if="compileModels">
+        <mkdir dir="${RUNTIME_ANNOTATED.build.dir}/classes"/>
+        <javac srcdir="${RUNTIME_ANNOTATED}" destdir="${RUNTIME_ANNOTATED.build.dir}/classes" debug="on" encoding="UTF-8" includeantruntime="false" classpathref="SDKJars"/>
+        <parallel threadCount="2">
+            <jar destfile="/home/amakarovych-ua/eclipse-workspace4/SingleStore/build/models.runtime.annotatedjava/com.singlestore.adapter.singlestore.models.runtime.annotatedjava_1.0.0.jar" basedir="${RUNTIME_ANNOTATED.build.dir}/classes" manifest="/home/amakarovych-ua/eclipse-workspace4/SingleStore//sdk/models.runtime.annotatedjava/META-INF/MANIFEST.MF"/>
+            <java classname="com.informatica.imf.codegen.AnnotJava2Java" classpathref="SDKJars">
+                <arg value="-sourceLocation"/>
+                <arg value="/home/amakarovych-ua/eclipse-workspace4/SingleStore//sdk/models.runtime.annotatedjava/src"/>
+                <arg value="-targetLocation"/>
+                <arg value="/home/amakarovych-ua/eclipse-workspace4/SingleStore//sdk/runtime.model/src"/>
+                <arg value="-dependencies"/>
+                <arg value="/home/amakarovych-ua/Informatica/IDP10.4.0_new/ict/Application/jars"/>
+            </java>
+        </parallel>
+    </target>
+    <target name="BUILD_RUNTIME_MODEL" depends="BUILD_RUNTIME_ANNOTATED">
+        <mkdir dir="${RUNTIME_MODEL.build.dir}/classes"/>
+        <copy todir="/home/amakarovych-ua/eclipse-workspace4/SingleStore/build/runtime.model/classes">
+            <fileset dir="/home/amakarovych-ua/eclipse-workspace4/SingleStore//sdk/runtime.model/src">
+                <include name="*.xml"/>
+                <include name="*.xsd"/>
+            </fileset>
+        </copy>
+        <javac srcdir="${RUNTIME_MODEL}" destdir="${RUNTIME_MODEL.build.dir}/classes" debug="on" encoding="UTF-8" includeantruntime="false" classpathref="SDKJars"/>
+        <jar destfile="/home/amakarovych-ua/eclipse-workspace4/SingleStore/build/runtime.model/com.singlestore.adapter.singlestore.runtime.model_1.0.0.jar" basedir="${RUNTIME_MODEL.build.dir}/classes" manifest="/home/amakarovych-ua/eclipse-workspace4/SingleStore//sdk/runtime.model/META-INF/MANIFEST.MF"/>
+    </target>
+    <target name="BUILD_RUNTIME_SEMANTIC" depends="BUILD_RUNTIME_MODEL">
+        <mkdir dir="${RUNTIME_SEMANTIC.build.dir}/classes"/>
+        <javac srcdir="${RUNTIME_SEMANTIC}" destdir="${RUNTIME_SEMANTIC.build.dir}/classes" debug="on" encoding="UTF-8" includeantruntime="false" classpathref="SDKJars"/>
+        <jar destfile="/home/amakarovych-ua/eclipse-workspace4/SingleStore/build/runtime.semantic/com.singlestore.adapter.singlestore.runtime.semantic_1.0.0.jar" basedir="${RUNTIME_SEMANTIC.build.dir}/classes" manifest="/home/amakarovych-ua/eclipse-workspace4/SingleStore//usr/runtime.semantic/META-INF/MANIFEST.MF"/>
+    </target>
+    <target name="BUILD_METAMODEL" depends="BUILD_METADATA_MODEL,BUILD_RUNTIME_MODEL,BUILD_CONNECTION_MODEL">
+        <mkdir dir="${METAMODEL.build.dir}/classes"/>
+        <copy todir="${METAMODEL.build.dir}/classes">
+            <fileset dir="/home/amakarovych-ua/eclipse-workspace4/SingleStore//sdk/metamodel">
+                <include name="**/plugin.xml"/>
+            </fileset>
+        </copy>
+        <jar destfile="/home/amakarovych-ua/eclipse-workspace4/SingleStore/build/metamodel/com.singlestore.adapter.singlestore.metamodel_1.0.0.jar" basedir="${METAMODEL.build.dir}/classes" manifest="/home/amakarovych-ua/eclipse-workspace4/SingleStore//sdk/metamodel/META-INF/MANIFEST.MF"/>
+    </target>
+    <target name="BUILD_METADATA_ADAPTER" depends="BUILD_RUNTIME_SEMANTIC,BUILD_METADATA_SEMANTIC,BUILD_CONNECTION_ADAPTER,BUILD_DESIGN_MESSAGES">
+        <mkdir dir="${METADATA_ADAPTER.build.dir}/classes"/>
+        <copy todir="/home/amakarovych-ua/eclipse-workspace4/SingleStore/build/metadata.adapter/classes">
+            <fileset dir="/home/amakarovych-ua/eclipse-workspace4/SingleStore//usr/metadata.adapter/src">
+                <include name="*.*"/>
+            </fileset>
+        </copy>
+        <copy todir="${METADATA_ADAPTER.build.dir}/classes/lib">
+            <fileset dir="/home/amakarovych-ua/eclipse-workspace4/SingleStore//usr/metadata.adapter/lib">
+                <include name="**/*.*"/>
+            </fileset>
+        </copy>
+        <javac srcdir="${METADATA_ADAPTER}" destdir="${METADATA_ADAPTER.build.dir}/classes" debug="on" encoding="UTF-8" includeantruntime="false" classpathref="SDKJars"/>
+        <jar destfile="/home/amakarovych-ua/eclipse-workspace4/SingleStore/build/metadata.adapter/com.singlestore.adapter.singlestore.metadata.adapter_1.0.0.jar" basedir="${METADATA_ADAPTER.build.dir}/classes" manifest="/home/amakarovych-ua/eclipse-workspace4/SingleStore//usr/metadata.adapter/META-INF/MANIFEST.MF"/>
+    </target>
+    <target name="BUILD_MODEL_ATTRIBUTES">
+        <mkdir dir="${MODEL_ATTRIBUTES.build.dir}/classes"/>
+        <copy todir="${MODEL_ATTRIBUTES.build.dir}/classes/icons">
+            <fileset dir="/home/amakarovych-ua/eclipse-workspace4/SingleStore//sdk/modelattributes/icons">
+                <include name="**/*.*"/>
+            </fileset>
+        </copy>
+        <copy todir="${MODEL_ATTRIBUTES.build.dir}/classes">
+            <fileset dir="/home/amakarovych-ua/eclipse-workspace4/SingleStore//sdk/modelattributes">
+                <include name="**/plugin.xml"/>
+            </fileset>
+        </copy>
+        <jar destfile="/home/amakarovych-ua/eclipse-workspace4/SingleStore/build/modelattributes/com.singlestore.adapter.singlestore.modelattributes_1.0.0.jar" basedir="${MODEL_ATTRIBUTES.build.dir}/classes" manifest="/home/amakarovych-ua/eclipse-workspace4/SingleStore//sdk/modelattributes/META-INF/MANIFEST.MF"/>
+    </target>
+    <target name="BUILD_LICENSE_CHECKER">
+        <mkdir dir="${LICENSE_CHECKER.build.dir}/classes"/>
+        <javac srcdir="${LICENSE_CHECKER}" destdir="${LICENSE_CHECKER.build.dir}/classes" debug="on" encoding="UTF-8" includeantruntime="false" classpathref="SDKJars"/>
+        <jar destfile="/home/amakarovych-ua/eclipse-workspace4/SingleStore/build/licensechecker/com.singlestore.adapter.singlestore.licensechecker_1.0.0.jar" basedir="${LICENSE_CHECKER.build.dir}/classes" manifest="/home/amakarovych-ua/eclipse-workspace4/SingleStore//usr/licensechecker/META-INF/MANIFEST.MF"/>
+    </target>
+    <target name="BUILD_UI_WIZARD">
+        <mkdir dir="${UI_WIZARD.build.dir}/classes"/>
+        <copy todir="${UI_WIZARD.build.dir}/classes/icons">
+            <fileset dir="/home/amakarovych-ua/eclipse-workspace4/SingleStore//usr/ui.wizard/icons">
+                <include name="**/*.*"/>
+            </fileset>
+        </copy>
+        <copy todir="${UI_WIZARD.build.dir}/classes/i18n">
+            <fileset dir="/home/amakarovych-ua/eclipse-workspace4/SingleStore//usr/ui.wizard/i18n">
+                <include name="**/*.*"/>
+            </fileset>
+        </copy>
+        <copy todir="${UI_WIZARD.build.dir}/classes">
+            <fileset dir="/home/amakarovych-ua/eclipse-workspace4/SingleStore//usr/ui.wizard">
+                <include name="**/plugin.xml"/>
+            </fileset>
+        </copy>
+        <javac srcdir="${UI_WIZARD}" destdir="${UI_WIZARD.build.dir}/classes" debug="on" encoding="UTF-8" includeantruntime="false" classpathref="SDKJars"/>
+        <jar destfile="/home/amakarovych-ua/eclipse-workspace4/SingleStore/build/ui.wizard/com.singlestore.adapter.singlestore.ui.wizard_1.0.0.jar" basedir="${UI_WIZARD.build.dir}/classes" manifest="/home/amakarovych-ua/eclipse-workspace4/SingleStore//usr/ui.wizard/META-INF/MANIFEST.MF"/>
+    </target>
+    <target name="BUILD_RUNTIME_ADAPTER" depends="BUILD_METADATA_ADAPTER,BUILD_RUNTIME_SEMANTIC,BUILD_DESIGN_MESSAGES,BUILD_RUNTIME_MESSAGES">
+        <mkdir dir="${RUNTIME_ADAPTER.build.dir}/classes"/>
+        <copy todir="/home/amakarovych-ua/eclipse-workspace4/SingleStore/build/runtime.adapter/classes">
+            <fileset dir="/home/amakarovych-ua/eclipse-workspace4/SingleStore//usr/runtime.adapter/src">
+                <include name="*.config"/>
+            </fileset>
+        </copy>
+        <copy todir="${RUNTIME_ADAPTER.build.dir}/lib">
+            <fileset dir="/home/amakarovych-ua/eclipse-workspace4/SingleStore//usr/runtime.adapter/lib">
+                <include name="**/*.*"/>
+            </fileset>
+        </copy>
+        <javac srcdir="${RUNTIME_ADAPTER}" destdir="${RUNTIME_ADAPTER.build.dir}/classes" debug="on" encoding="UTF-8" includeantruntime="false" classpathref="SDKJars"/>
+        <jar destfile="/home/amakarovych-ua/eclipse-workspace4/SingleStore/build/runtime.adapter/com.singlestore.adapter.singlestore.runtime.adapter_1.0.0.jar" basedir="${RUNTIME_ADAPTER.build.dir}/classes" manifest="/home/amakarovych-ua/eclipse-workspace4/SingleStore//usr/runtime.adapter/META-INF/MANIFEST.MF"/>
+    </target>
+    <target name="BUILD_LIBRARY_INFO">
+        <mkdir dir="${LIBRARY_INFO.build.dir}/classes"/>
+        <copy todir="${LIBRARY_INFO.build.dir}/classes">
+            <fileset dir="/home/amakarovych-ua/eclipse-workspace4/SingleStore//sdk/libraryinfo">
+                <include name="**/plugin.xml"/>
+            </fileset>
+        </copy>
+        <jar destfile="/home/amakarovych-ua/eclipse-workspace4/SingleStore/build/libraryinfo/com.singlestore.adapter.singlestore.libraryInfo_1.0.0.jar" basedir="${LIBRARY_INFO.build.dir}/classes" manifest="/home/amakarovych-ua/eclipse-workspace4/SingleStore//sdk/libraryinfo/META-INF/MANIFEST.MF"/>
+    </target>
+    <target name="BUILD_ADAPTER_FEATURE">
+        <mkdir dir="${ADAPTER_FEATURE.build.dir}/classes"/>
+        <jar destfile="/home/amakarovych-ua/eclipse-workspace4/SingleStore/build/adapter.feature/null" basedir="${ADAPTER_FEATURE.build.dir}/classes"/>
+    </target>
+    <target name="BUILD_DESIGN_MESSAGES">
+        <mkdir dir="${DESIGN_MESSAGES.build.dir}/classes"/>
+        <copy todir="${DESIGN_MESSAGES.build.dir}/classes/i18n">
+            <fileset dir="/home/amakarovych-ua/eclipse-workspace4/SingleStore//sdk/messages.design/i18n">
+                <include name="**/*.*"/>
+            </fileset>
+        </copy>
+        <copy todir="${DESIGN_MESSAGES.build.dir}/classes">
+            <fileset dir="/home/amakarovych-ua/eclipse-workspace4/SingleStore//sdk/messages.design">
+                <include name="**/plugin.xml"/>
+            </fileset>
+        </copy>
+        <javac srcdir="${DESIGN_MESSAGES}" destdir="${DESIGN_MESSAGES.build.dir}/classes" debug="on" encoding="UTF-8" includeantruntime="false" classpathref="SDKJars"/>
+        <jar destfile="/home/amakarovych-ua/eclipse-workspace4/SingleStore/build/messages.design/com.singlestore.adapter.singlestore.messages.design_1.0.0.jar" basedir="${DESIGN_MESSAGES.build.dir}/classes" manifest="/home/amakarovych-ua/eclipse-workspace4/SingleStore//sdk/messages.design/META-INF/MANIFEST.MF"/>
+    </target>
+    <target name="BUILD_RUNTIME_MESSAGES">
+        <mkdir dir="${RUNTIME_MESSAGES.build.dir}/classes"/>
+        <copy todir="${RUNTIME_MESSAGES.build.dir}/classes/i18n">
+            <fileset dir="/home/amakarovych-ua/eclipse-workspace4/SingleStore//sdk/messages.runtime/i18n">
+                <include name="**/*.*"/>
+            </fileset>
+        </copy>
+        <copy todir="${RUNTIME_MESSAGES.build.dir}/classes">
+            <fileset dir="/home/amakarovych-ua/eclipse-workspace4/SingleStore//sdk/messages.runtime">
+                <include name="**/plugin.xml"/>
+            </fileset>
+        </copy>
+        <javac srcdir="${RUNTIME_MESSAGES}" destdir="${RUNTIME_MESSAGES.build.dir}/classes" debug="on" encoding="UTF-8" includeantruntime="false" classpathref="SDKJars"/>
+        <jar destfile="/home/amakarovych-ua/eclipse-workspace4/SingleStore/build/messages.runtime/com.singlestore.adapter.singlestore.messages.runtime_1.0.0.jar" basedir="${RUNTIME_MESSAGES.build.dir}/classes" manifest="/home/amakarovych-ua/eclipse-workspace4/SingleStore//sdk/messages.runtime/META-INF/MANIFEST.MF"/>
+    </target>
+    <target name="all">
+        <parallel threadCount="8">
+            <antcall target="BUILD_TYPESYSTEM"/>
+            <antcall target="BUILD_METAMODEL"/>
+            <antcall target="BUILD_MODEL_ATTRIBUTES"/>
+            <antcall target="BUILD_LICENSE_CHECKER"/>
+            <antcall target="BUILD_UI_WIZARD"/>
+            <antcall target="BUILD_RUNTIME_ADAPTER"/>
+            <antcall target="BUILD_LIBRARY_INFO"/>
+            <antcall target="BUILD_ADAPTER_FEATURE"/>
+        </parallel>
+    </target>
+</project>

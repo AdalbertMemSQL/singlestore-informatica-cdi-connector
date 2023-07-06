@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension point="com.informatica.sdk.modelattributes.ModelAttributes" id="TABLESINGLESTOREMODELATTRIBUTES">
+      <ModelClass description="SingleStore_Description" displayName="SingleStore_DisplayName" name="com.informatica.sdk.adapter.metadata.patternblocks.container.semantic.iface.Container">
+         <Icon icon="icons/Thick_DST_9_application_component_16x16.gif" iconType="Banner"/>
+         <Icon icon="icons/Thick_DST_9_application_component_16x16.gif" iconType="Iconic"/>
+         <Icon icon="icons/Thick_DST_9_application_component_16x16.gif" iconType="Default"/>
+      </ModelClass>
+      <ModelClass description="SingleStore_Description" displayName="Database" name="com.informatica.sdk.adapter.metadata.patternblocks.container.semantic.iface.Package">
+         <Icon icon="icons/Thick_DST_9_enterprise_package_16x16.gif" iconType="Banner"/>
+         <Icon icon="icons/Thick_DST_9_enterprise_package_16x16.gif" iconType="Iconic"/>
+         <Icon icon="icons/Thick_DST_9_enterprise_package_16x16.gif" iconType="Default"/>
+      </ModelClass>
+      <ModelClass description="" displayName="Table" name="com.informatica.sdk.adapter.metadata.patternblocks.flatrecord.semantic.iface.FlatRecord">
+         <Icon icon="icons/Thick_DST_9_enterprise_table_75x66.png" iconType="Banner"/>
+         <Icon icon="icons/Thick_DST_9_enterprise_table_30x30.gif" iconType="Iconic"/>
+         <Icon icon="icons/Thick_DST_9_enterprise_table_16x16.gif" iconType="Default"/>
+      </ModelClass>
+      <ModelClass name="com.singlestore.adapter.singlestore.table.metadata.semantic.iface.SEMTableRecordExtensions"/>
+      <ModelClass description="SingleStore_Description" displayName="SingleStore_DisplayName" name="com.informatica.sdk.adapter.metadata.patternblocks.field.semantic.iface.Field"/>
+      <ModelClass name="com.singlestore.adapter.singlestore.table.metadata.semantic.iface.SEMTableFieldExtensions"/>
+      <ModelClass displayName="TableRead" name="com.singlestore.adapter.singlestore.table.runtime.capability.semantic.iface.SEMTableReadCapabilityAttributesExtension">
+         <Icon icon="icons/Thick_DST_9_enterprise_table_75x66.png" iconType="Banner"/>
+         <Icon icon="icons/Thick_DST_9_enterprise_table_30x30.gif" iconType="Iconic"/>
+         <Icon icon="icons/Thick_DST_9_enterprise_table_16x16.gif" iconType="Default"/>
+      </ModelClass>
+      <ModelClass displayName="TableWrite" name="com.singlestore.adapter.singlestore.table.runtime.capability.semantic.iface.SEMTableWriteCapabilityAttributesExtension">
+         <ModelProperty description="" displayName="UpdateMode" hidden="false" substitutable="false" name="UpdateMode" partitionOverrideable="false">
+            <ModelEnumeration displayValue="Update As Update" value="Update As Update"/>
+            <ModelEnumeration displayValue="Update Else Insert" value="Update Else Insert"/>
+         </ModelProperty>
+         <Icon icon="icons/Thick_DST_9_enterprise_table_75x66.png" iconType="Banner"/>
+         <Icon icon="icons/Thick_DST_9_enterprise_table_30x30.gif" iconType="Iconic"/>
+         <Icon icon="icons/Thick_DST_9_enterprise_table_16x16.gif" iconType="Default"/>
+      </ModelClass>
+      <ModelClass description="SingleStore" displayName="SingleStore" name="com.informatica.sdk.adapter.metadata.aso.semantic.iface.ComplexASO">
+         <Icon icon="icons/Thick_DST_9_enterprise_PDO_75x66.png" iconType="Banner"/>
+         <Icon icon="icons/Thick_DST_9_enterprise_PDO_30x30.gif" iconType="Iconic"/>
+         <Icon icon="icons/Thick_DST_9_enterprise_PDO_16x16.gif" iconType="Default"/>
+      </ModelClass>
+   </extension>
+</plugin>

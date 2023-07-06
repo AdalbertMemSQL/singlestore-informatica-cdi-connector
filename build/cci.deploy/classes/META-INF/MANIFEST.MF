@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: SingleStore Adapter CCI Bootloader Plugin Bundle
+Bundle-SymbolicName: com.singlestore.adapter.singlestore.cci.deploy;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Vendor: SingleStore
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Require-Bundle: com.informatica.cci.cloudplugin,
+ com.informatica.cloud.toolkit.adapter-interface,
+ com.informatica.cloud.toolkit.adapter-common

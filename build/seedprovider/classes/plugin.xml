@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension point="com.informatica.sdk.seedprovider.seedProvider" id="SINGLESTORESEEDPROVIDER">
+      <SeedProvider class="com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem" id="com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem">
+         <metaClass metaClass="com.informatica.metadata.common.typesystem.TypeSystem"/>
+      </SeedProvider>
+   </extension>
+</plugin>

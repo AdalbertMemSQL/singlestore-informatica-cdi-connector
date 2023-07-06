@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns="http://com.singlestore.adapter.singlestore.connection/1" xmlns:connection="http://com.singlestore.adapter.singlestore.connection/1" xmlns:imx="http://com.informatica.imx" xmlns:sdkadapter="http://com.informatica.metadata.infasdk.connectinfo.sdkadapter/2" xmlns:sdkmodelextension="http://com.informatica.metadata.infasdk.connectinfo.common.sdkmodelextension/1" xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://com.singlestore.adapter.singlestore.connection/1">
+<xsd:import namespace="http://com.informatica.metadata.infasdk.connectinfo.common.sdkmodelextension/1" schemaLocation="com.informatica.metadata.infasdk.connectinfo.common.sdkmodelextension.xsd"/>
+<xsd:import namespace="http://com.informatica.metadata.infasdk.connectinfo.sdkadapter/2" schemaLocation="com.informatica.metadata.infasdk.connectinfo.sdkadapter.xsd"/>
+<xsd:import namespace="http://com.informatica.imx" schemaLocation="IMX.xsd"/>
+<xsd:complexType name="SingleStoreConnectInfoExtension">
+<xsd:complexContent>
+<xsd:extension base="sdkmodelextension:SDKConnectInfoModelExtension">
+<xsd:attribute name="database">
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:whiteSpace value="preserve"/>
+</xsd:restriction>
+</xsd:simpleType>
+</xsd:attribute>
+<xsd:attribute name="disableSslHostnameVerification" type="xsd:boolean"/>
+<xsd:attribute name="hostname">
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:whiteSpace value="preserve"/>
+</xsd:restriction>
+</xsd:simpleType>
+</xsd:attribute>
+<xsd:attribute name="keyPassword">
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:whiteSpace value="preserve"/>
+</xsd:restriction>
+</xsd:simpleType>
+</xsd:attribute>
+<xsd:attribute name="keyStore">
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:whiteSpace value="preserve"/>
+</xsd:restriction>
+</xsd:simpleType>
+</xsd:attribute>
+<xsd:attribute name="keyStorePassword">
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:whiteSpace value="preserve"/>
+</xsd:restriction>
+</xsd:simpleType>
+</xsd:attribute>
+<xsd:attribute name="password">
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:whiteSpace value="preserve"/>
+</xsd:restriction>
+</xsd:simpleType>
+</xsd:attribute>
+<xsd:attribute name="port" type="xsd:int"/>
+<xsd:attribute name="serverSslCert">
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:whiteSpace value="preserve"/>
+</xsd:restriction>
+</xsd:simpleType>
+</xsd:attribute>
+<xsd:attribute name="trustServerCertificate" type="xsd:boolean"/>
+<xsd:attribute name="trustStore">
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:whiteSpace value="preserve"/>
+</xsd:restriction>
+</xsd:simpleType>
+</xsd:attribute>
+<xsd:attribute name="trustStorePassword">
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:whiteSpace value="preserve"/>
+</xsd:restriction>
+</xsd:simpleType>
+</xsd:attribute>
+<xsd:attribute name="useSsl" type="xsd:boolean"/>
+<xsd:attribute name="user">
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:whiteSpace value="preserve"/>
+</xsd:restriction>
+</xsd:simpleType>
+</xsd:attribute>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="SingleStoreConnectInfoExtension" type="connection:SingleStoreConnectInfoExtension"/>
+<xsd:complexType name="SingleStoreConnectInfo">
+<xsd:complexContent>
+<xsd:extension base="sdkadapter:SDKConnectInfo"/>
+</xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="SingleStoreConnectInfo" type="connection:SingleStoreConnectInfo"/>
+</xsd:schema>

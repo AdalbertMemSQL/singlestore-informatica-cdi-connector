@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension point="com.informatica.sdk.adaptersdk.AdapterSDK" id="SINGLESTOREADAPTERCONTRIBUTION">
+      <adapter helpPluginIdPrefix="com.informatica.doc.adapters" id="com.singlestore.adapter.singlestore" name="SingleStore" shortName="SingleStore" packagePrefix="com.singlestore.adapter.singlestore" vendorId="SingleStore" vendorName="SingleStore" version="1.0.0">
+         <metaDataPattern metaModelExtensionID="com.singlestore.adapter.singlestore.metamodel.TABLESINGLESTOREMETAMODEL" modelAttributesExtensionID="com.singlestore.adapter.singlestore.modelattributes.TABLESINGLESTOREMODELATTRIBUTES" metaDataAdapterClass="com.singlestore.adapter.singlestore.metadata.adapter.SingleStoreMetadataAdapter" name="SingleStoreSingleStore_Table_Pattern" template="TypeA" typeSystemExtensionID="com.singlestore.adapter.singlestore.typesystem.SINGLESTORETYPESYSTEM">
+            <patternAttributes name="Containers" value="true"/>
+            <patternAttributes name="Packages" value="true"/>
+            <patternAttributes name="SharedDataRelationships" value="false"/>
+            <patternAttributes name="FlatRecords" value="true"/>
+            <patternAttributes name="Fields" value="true"/>
+            <patternAttributes name="RecordRelationships" value="false"/>
+            <classLoaderPattern loaderType="Custom" classLoadOrder="ParentFirst"/>
+         </metaDataPattern>
+         <nativeMetaDataObjectType InfaLicenseCheckerClass="com.singlestore.adapter.singlestore.licensechecker.SingleStoreLicenseChecker" metaDataPatternName="SingleStoreSingleStore_Table_Pattern" name="table" nullConnectionAllowed="false" supportsAnonDSO="false" supportsCDO="false" supportsComplexASO="false" supportsSimpleASO="false" supportsCustomQuery="false" supportsObjectPathOverride="false">
+            <importDialogOptions allowMultiSelect="true" displayFilterByDesc="false" displayFilterByName="true" displayFilterByPath="false" showEntity="true" showHierarchy="always" showRelatedRecords="never" displaySkipDescriptions="false"/>
+            <metadataWriteOptions supportCreate="true" supportUpdate="true" supportDelete="true">
+               <writeDialogOptions displayUpdateElseCreate="true" displayDropAndCreate="true"/>
+            </metadataWriteOptions>
+            <operationType implicitlyCreated="false" interactionPattern="Connections" libraryExtensionID="com.singlestore.adapter.singlestore.libraryInfo.TABLESINGLESTORELIBRARYINFO" multiCapabilitySupport="single" name="TableRead" enableEngineSpecificOperation="false">
+               <ReadCapability inputProjectionSupport="TableRead" partitioningSupport="TableReadPartitioning" readBulkAPISupport="true"/>
+            </operationType>
+            <operationType implicitlyCreated="false" interactionPattern="Connections" libraryExtensionID="com.singlestore.adapter.singlestore.libraryInfo.TABLESINGLESTORELIBRARYINFO" multiCapabilitySupport="single" name="TableWrite" enableEngineSpecificOperation="false">
+               <WriteCapability outputProjectionSupport="TableWrite" partitioningSupport="TableWritePartitioning" writeBulkAPISupport="true"/>
+            </operationType>
+            <connectionType connectionExtensionID="com.singlestore.adapter.singlestore.connection.adapter.SINGLESTORECONNECTIONADAPTER"/>
+         </nativeMetaDataObjectType>
+         <InputProjectionSupport name="TableRead">
+            <FilterOperation nativeFilterExpression="true" expressionSupport="SingleStoreTableExpressionSupport" supportPushdown="true"/>
+            <JoinOperation nativeJoinExpression="true" expressionSupport="SingleStoreTableExpressionSupport" implicitJoin="false" supportsPushdown="false"/>
+            <ExpressionOperation supportPushdown="false"/>
+            <AggregatorOperation supportPushdown="false"/>
+            <LookupOperation supportPushdown="false"/>
+            <UnionOperation supportPushdown="false"/>
+            <RouterOperation supportPushdown="false"/>
+            <UpdateOperation supportPushdown="false"/>
+            <SequenceOperation supportPushdown="false"/>
+            <SqlOperation supportPushdown="false"/>
+            <ProjectionOperation dropFields="true" projectionAtNativeSource="false" projectionAtPlatform="true">
+               <ProjectionOperationEnums enums="ALL"/>
+               <ProjectionOperationEnums enums="DISTINCT"/>
+               <ProjectionOperationEnums enums="ANY"/>
+               <ProjectionOperationEnums enums="FIRST ROW"/>
+               <ProjectionOperationEnums enums="LAST ROW"/>
+            </ProjectionOperation>
+            <SortOperation sortAtNativeSource="false" sortAtPlatform="true" supportsPushdown="false"/>
+         </InputProjectionSupport>
+         <OutputProjectionSupport name="TableWrite">
+            <ProjectionOperation dropFields="true"/>
+         </OutputProjectionSupport>
+         <PartitioningSupport userPartitioning="true" autoPartitioning="false" name="TableReadPartitioning" partitioningHelperClass="com.singlestore.adapter.singlestore.metadata.adapter.TableAutoPartitioningMetadataAdapter">
+            <PartitioningStrategy strategy="RangePartitioning"/>
+         </PartitioningSupport>
+         <PartitioningSupport userPartitioning="false" autoPartitioning="true" name="TableWritePartitioning" partitioningHelperClass="com.singlestore.adapter.singlestore.metadata.adapter.TableAutoPartitioningMetadataAdapter"/>
+         <SimpleExpressionSupport name="SingleStoreTableExpressionSupport" LogicalOperator="And">
+            <SimpleExpressionOperator operator="Equals"/>
+            <SimpleExpressionOperator operator="Greater"/>
+            <SimpleExpressionOperator operator="Greater_or_equals"/>
+            <SimpleExpressionOperator operator="Less"/>
+            <SimpleExpressionOperator operator="Less_or_equals"/>
+            <SimpleExpressionOperator operator="Not_Equals"/>
+            <SimpleExpressionOperator operator="Contains"/>
+            <SimpleExpressionOperator operator="Starts_With"/>
+            <SimpleExpressionOperator operator="Ends_With"/>
+            <SimpleExpressionOperator operator="Is_Null"/>
+            <SimpleExpressionOperator operator="Is_Not_Null"/>
+         </SimpleExpressionSupport>
+         <connectionPoolingOptions supportPoolingViaAPI="false" supportPooling="true" supportCustomCompare="false" testOnCreate="false" testOnBorrow="true" testOnReturn="false" maxIdlePerKey="20" maxTotal="-1" maxTotalPerKey="-1" minEvictableIdleTimeMillis="12000" maxWaitMillis="30000" abnTimeMillis="300000" timeBetweenEvictionRunsMillis="6000" numRetriesForInvalidConnectionHandle="3"/>
+      </adapter>
+   </extension>
+</plugin>

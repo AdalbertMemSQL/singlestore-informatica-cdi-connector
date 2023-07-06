@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<CTF>
+    <Products>
+        <CloudSecureAgent podURL="$_EP{podurl}" adminUser="$_EP{adminuser}" adminPassword="$_EP{adminpassword}">
+            <agent name="$_EP{agentname}" user="$_EP{agentusername}" password="$_EP{agentpassword}" groupName="$_EP{agentgroupname}" sshHost="$_EP{sshhost}" sshUser="$_EP{sshuser}" sshPassword="$_EP{sshpassword}" dockerName="$_EP{sshdockername}"/>
+        </CloudSecureAgent>
+        <CCTF/>
+    </Products>
+    <TestNGSuites resultLocation="result">
+        <Suite name="" file="com.singlestore.adapter.singlestore.xml"/>
+    </TestNGSuites>
+</CTF>

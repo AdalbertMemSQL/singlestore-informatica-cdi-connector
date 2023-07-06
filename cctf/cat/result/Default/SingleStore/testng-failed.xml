@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SingleStore]">
+  <parameter name="MapGenXmlFile" value="$_EP{MapGenXmlFile}"/>
+  <parameter name="sourceFlatFormatConfig" value="$_EP{sourceFlatFormatConfig}"/>
+  <parameter name="OrderByColumn" value="$_EP{WRITE.UpdateKeyColumn}"/>
+  <parameter name="targetFlatFormatConfig" value="$_EP{targetFlatFormatConfig}"/>
+  <parameter name="AutoMatchFields" value="$_EP{WRITE.AutoMatchFields}"/>
+  <parameter name="relationshipName" value="$_EP{NATIVE_IMPLICITJOIN.relationshipName}"/>
+  <parameter name="SchemaChangeHandling" value="$_EP{DYNAMICSCHEMA.SchemaChangeHandling}"/>
+  <parameter name="sequenceGeneratorTx" value="sequenceGeneratorTx1"/>
+  <parameter name="tgtObject1" value="$_EP{ROUTERTX.tgtObject1}"/>
+  <parameter name="OverwriteIICSTargetConnectorDisplayName" value="$_EP{OverwriteIICSTargetConnectorDisplayName}"/>
+  <parameter name="adapID" value="com.singlestore.adapter.singlestore"/>
+  <parameter name="tgtConnection1" value="$_EP{ROUTERTX.tgtConnection1}"/>
+  <parameter name="ImportZip" value="$_EP{IMPORTZIP.ImportZip}"/>
+  <parameter name="srcObject1" value="$_EP{JOINERTX.srcObject1}"/>
+  <parameter name="DMTParam" value="$_EP{DMT.DMTParam}"/>
+  <parameter name="postRunScript" value="$_EP{postRunScript}"/>
+  <parameter name="recordFilterName" value="$_EP{READ.recordFilterName}"/>
+  <parameter name="createTarget" value="true"/>
+  <parameter name="OverwriteIICSSourceConnectorDisplayName" value="$_EP{OverwriteIICSSourceConnectorDisplayName}"/>
+  <parameter name="filterTx" value="filterTx1"/>
+  <parameter name="LookupReaderProperty" value="$_EP{DTT.LookupReaderProperty}"/>
+  <parameter name="ReaderProperty" value="read1"/>
+  <parameter name="TargetConnection" value="connection1"/>
+  <parameter name="TargetReaderProperty" value="$_EP{IMPORTZIP.TargetReaderProperty}"/>
+  <parameter name="mctListToExclude" value="$_EP{IMPORTZIP.mctListToExclude}"/>
+  <parameter name="joinExp" value="$_EP{NATIVE_EXPLICITJOIN.joinExp}"/>
+  <parameter name="writeOp" value="TableWrite"/>
+  <parameter name="LookupConnection" value="$_EP{DTT.LookupConnection}"/>
+  <parameter name="tags" value="UNIT,INTEGRATION,RUN8"/>
+  <parameter name="FieldExpression" value="$_EP{WRITE.FieldExpression}"/>
+  <parameter name="importOptions" value="$_EP{importOptions}"/>
+  <parameter name="SessionProperties" value="$_EP{WRITE.SessionProperties}"/>
+  <parameter name="sortOrder" value="$_EP{SOURCESORT.sortOrder}"/>
+  <parameter name="sorterTx" value="sorterTx1"/>
+  <parameter name="isNativeFilter" value="true"/>
+  <parameter name="createTargetPath" value="$_EP{WRITE.createTargetPath}"/>
+  <parameter name="DMTJob" value="$_EP{DMT.DMTJob}"/>
+  <parameter name="joinerTx" value="joinerTx1"/>
+  <parameter name="targetObject" value="$_EP{WRITE.targetObject}"/>
+  <parameter name="rankTx" value="rankTx1"/>
+  <parameter name="aggregatorTx" value="aggregatorTx1"/>
+  <parameter name="preRunScript" value="$_EP{preRunScript}"/>
+  <parameter name="TgtWriteOperation2" value="$_EP{ROUTERTX.TgtWriteOperation2}"/>
+  <parameter name="FieldMapping" value="$_EP{WRITE.FieldMapping}"/>
+  <parameter name="IICSCleanUp" value="false"/>
+  <parameter name="lookupTx" value="lookupTx1"/>
+  <parameter name="adapterShortName" value="SingleStore"/>
+  <parameter name="recordFilterType" value="$_EP{READ.recordFilterType}"/>
+  <parameter name="IICSMeteringIds" value="$_EP{WRITE.IICSMeteringIds}"/>
+  <parameter name="lookupObject" value="$_EP{DTT.lookupObject}"/>
+  <parameter name="ConnectionName" value="connection1"/>
+  <parameter name="DMTGroup" value="$_EP{DMT.DMTGroup}"/>
+  <parameter name="readOp" value="TableRead"/>
+  <parameter name="WriteOperation" value="Insert"/>
+  <parameter name="SkipReadback" value="$_EP{WRITE.SkipReadback}"/>
+  <parameter name="LKP_filterExp" value="$_EP{DTT.LKP_filterExp}"/>
+  <parameter name="SourceDataFormat" value="$_EP{SourceDataFormat}"/>
+  <parameter name="IICSOverrideConnection" value="true"/>
+  <parameter name="LogFileVerification" value="$_EP{LogFileVerification}"/>
+  <parameter name="recordFilterDescription" value="$_EP{READ.recordFilterDescription}"/>
+  <parameter name="WriterProperty" value="write1"/>
+  <parameter name="sortFields" value="$_EP{SOURCESORT.sortFieldsJoin}"/>
+  <parameter name="unionTx" value="unionTx1"/>
+  <parameter name="nmoType" value="table"/>
+  <parameter name="CustomLicenseFile" value="$_EP{CustomLicenseFile_path}"/>
+  <parameter name="expressionTx" value="expressionTx1"/>
+  <parameter name="objectName1" value="$_EP{READ.objectName1}"/>
+  <parameter name="DynamicSchemaHandling" value="$_EP{DYNAMICSCHEMA.DynamicSchemaHandling}"/>
+  <parameter name="relationshipType" value="NA"/>
+  <parameter name="mctListToInclude" value="$_EP{IMPORTZIP.mctListToInclude}"/>
+  <parameter name="TgtWriterProperty2" value="$_EP{ROUTERTX.TgtWriterProperty2}"/>
+  <parameter name="sourceObject" value="$_EP{WRITE.sourceObject}"/>
+  <parameter name="IICSConnectorDisplayName" value="$_EP{IICSConnectorDisplayName}"/>
+  <parameter name="srcConnection1" value="$_EP{JOINERTX.srcConnection1}"/>
+  <parameter name="objectName2" value="$_EP{READ.objectName2}"/>
+  <parameter name="filterExp" value="$_EP{PLATFORM_FILTER.filterExp}"/>
+  <parameter name="SkipImportZip" value="$_EP{IMPORTZIP.SkipImportZip}"/>
+  <parameter name="recordFilterLabel" value="$_EP{READ.recordFilterLabel}"/>
+  <parameter name="UpdateKeyColumn" value="$_EP{WRITE.UpdateKeyColumn}"/>
+  <parameter name="ReaderProperty1" value="$_EP{JOINERTX.ReaderProperty1}"/>
+  <parameter name="implicitJoin" value="true"/>
+  <parameter name="MultipleTargets" value="$_EP{WRITE.MultipleTargets}"/>
+  <parameter name="TargetDataFormat" value="$_EP{TargetDataFormat}"/>
+  <parameter name="IICSPARAM" value="$_EP{WRITE.IICSPARAM}"/>
+  <parameter name="agentHomeDir" value="$_EP{agentHomeDir}"/>
+  <parameter name="routerTx" value="routerTx1"/>
+  <test name="read_native_explicitJoin_greater(failed)">
+    <parameter name="ConnectionName" value="connection1"/>
+    <parameter name="objectName1" value="$_EP{READ.objectName1}"/>
+    <parameter name="ReaderProperty" value="read1"/>
+    <parameter name="joinExp" value="$_EP{NATIVE_EXPLICITJOIN.joinExp_greater}"/>
+    <parameter name="tags" value="UNIT,INTEGRATION,RUN5"/>
+    <parameter name="objectName2" value="$_EP{READ.objectName2}"/>
+    <groups>
+      <run>
+        <include name="UNIT"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.informatica.cci.direct.CCIRuntimeReaderAllExpr">
+        <methods>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="read" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIRuntimeReaderAllExpr -->
+      <class name="com.informatica.cci.direct.CCIMetadataSearch">
+        <methods>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataSearch -->
+      <class name="com.informatica.cci.direct.CCITestConnection">
+        <methods>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCITestConnection -->
+      <class name="com.informatica.cci.direct.CCIMetadataRecordDetail">
+        <methods>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataRecordDetail -->
+      <class name="com.informatica.cci.direct.CCIMetadataRecordInformation">
+        <methods>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataRecordInformation -->
+      <class name="com.informatica.cci.direct.CCIRuntimeWriter">
+        <methods>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIRuntimeWriter -->
+    </classes>
+  </test> <!-- read_native_explicitJoin_greater(failed) -->
+</suite> <!-- Failed suite [SingleStore] -->

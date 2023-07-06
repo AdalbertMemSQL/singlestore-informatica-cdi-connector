@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite>
+  <!--AttrFileName is Optional parameter. By default, attribute file inside configFiles folder will be used. Uncomment the below parameter to use custom attribute file.
+  <parameter name="AttrFileName" value="adapID_Attributes.xml"/>-->
+  <!--Target connector parameters(required for cross connector usecases. ex., s3 source to snowflake target)
+Enable parameters TargetAdapID through TargetWriteOp if different connectors are involved in the testcase.
+   <parameter name="TargetAdapID" value="$_EP{TargetAdapID}"/> 
+   <parameter name="TargetAttributeFileName" value="$_EP{TargetAttributeFileName}"/> 
+   <parameter name="TargetNMOType" value="$_EP{TargetNMOType}"/> 
+   <parameter name="TargetReadOp" value="$_EP{TargetReadOp}"/> 
+   <parameter name="TargetWriteOp" value="$_EP{TargetWriteOp}"/>-->
+
+<test name="read_customBaselineTgt_filePath">
+    <parameter name="tags" value="UNIT,INTEGRATION"/>
+    <parameter name="ConnectionName" value="connection1"/>
+    <parameter name="ReaderProperty" value="read1"/>
+    <parameter name="objectName1" value="$_EP{READ.objectName1}"/>
+    <parameter name="BaselineFilePath" value="$_EP{BaselineFilePath}"/>
+    <parameter name="TargetFilePath" value="$_EP{TargetFilePath}"/>
+    <classes>
+      <class name="com.informatica.cci.direct.CCIRuntimeReaderAllExpr"/>
+    </classes>
+  </test>
+
+<test name="read_portsTo_connect">
+    <parameter name="tags" value="UNIT,INTEGRATION"/>
+    <parameter name="ConnectionName" value="connection1"/>
+    <parameter name="ReaderProperty" value="read1"/>
+    <parameter name="objectName1" value="$_EP{READ.objectName1}"/>
+    <parameter name="PortsToConnect" value="$_EP{PortsToConnect}"/>
+    <classes>
+      <class name="com.informatica.cci.direct.CCIRuntimeReaderAllExpr"/>
+    </classes>
+  </test>
+
+<test name="read_nativeFilter_contains">
+    <parameter name="tags" value="UNIT,INTEGRATION"/>
+    <parameter name="ConnectionName" value="connection1"/>
+    <parameter name="ReaderProperty" value="read1"/>
+    <parameter name="objectName1" value="$_EP{READ.objectName1}"/>
+    <parameter name="isNativeFilter" value="true"/>
+    <parameter name="filterExp" value="$_EP{NATIVE_FILTER.filterExp_contains}"/>
+    <classes>
+      <class name="com.informatica.cci.direct.CCIRuntimeReaderAllExpr"/>
+    </classes>
+  </test>
+
+<test name="read_nativeFilter_starts_with">
+    <parameter name="tags" value="UNIT,INTEGRATION"/>
+    <parameter name="ConnectionName" value="connection1"/>
+    <parameter name="ReaderProperty" value="read1"/>
+    <parameter name="objectName1" value="$_EP{READ.objectName1}"/>
+    <parameter name="isNativeFilter" value="true"/>
+    <parameter name="filterExp" value="$_EP{NATIVE_FILTER.filterExp_starts_with}"/>
+    <classes>
+      <class name="com.informatica.cci.direct.CCIRuntimeReaderAllExpr"/>
+    </classes>
+  </test>
+
+<test name="read_nativeFilter_ends_with">
+    <parameter name="tags" value="UNIT,INTEGRATION"/>
+    <parameter name="ConnectionName" value="connection1"/>
+    <parameter name="ReaderProperty" value="read1"/>
+    <parameter name="objectName1" value="$_EP{READ.objectName1}"/>
+    <parameter name="isNativeFilter" value="true"/>
+    <parameter name="filterExp" value="$_EP{NATIVE_FILTER.filterExp_ends_with}"/>
+    <classes>
+      <class name="com.informatica.cci.direct.CCIRuntimeReaderAllExpr"/>
+    </classes>
+  </test>
+
+<test name="read_nativeFilter_is_null">
+    <parameter name="tags" value="UNIT,INTEGRATION"/>
+    <parameter name="ConnectionName" value="connection1"/>
+    <parameter name="ReaderProperty" value="read1"/>
+    <parameter name="objectName1" value="$_EP{READ.objectName1}"/>
+    <parameter name="isNativeFilter" value="true"/>
+    <parameter name="filterExp" value="$_EP{NATIVE_FILTER.filterExp_is_null}"/>
+    <classes>
+      <class name="com.informatica.cci.direct.CCIRuntimeReaderAllExpr"/>
+    </classes>
+  </test>
+
+<test name="read_nativeFilter_is_not_null">
+    <parameter name="tags" value="UNIT,INTEGRATION"/>
+    <parameter name="ConnectionName" value="connection1"/>
+    <parameter name="ReaderProperty" value="read1"/>
+    <parameter name="objectName1" value="$_EP{READ.objectName1}"/>
+    <parameter name="isNativeFilter" value="true"/>
+    <parameter name="filterExp" value="$_EP{NATIVE_FILTER.filterExp_is_not_null}"/>
+    <classes>
+      <class name="com.informatica.cci.direct.CCIRuntimeReaderAllExpr"/>
+    </classes>
+  </test>
+
+<test name="read_platformFilter_contains">
+    <parameter name="ConnectionName" value="connection1"/>
+    <parameter name="ReaderProperty" value="read1"/>
+    <parameter name="objectName1" value="$_EP{READ.objectName1}"/>
+    <parameter name="tags" value="UNIT,INTEGRATION"/>
+    <parameter name="filterExp" value="$_EP{PLATFORM_FILTER.filterExp_contains}"/>
+    <classes>
+      <class name="com.informatica.cci.direct.CCIRuntimeReaderAllExpr"/>
+    </classes>
+  </test>
+
+<test name="read_platformFilter_starts_with">
+    <parameter name="ConnectionName" value="connection1"/>
+    <parameter name="ReaderProperty" value="read1"/>
+    <parameter name="objectName1" value="$_EP{READ.objectName1}"/>
+    <parameter name="tags" value="UNIT,INTEGRATION"/>
+    <parameter name="filterExp" value="$_EP{PLATFORM_FILTER.filterExp_starts_with}"/>
+    <classes>
+      <class name="com.informatica.cci.direct.CCIRuntimeReaderAllExpr"/>
+    </classes>
+  </test>
+
+<test name="read_platformFilter_ends_with">
+    <parameter name="ConnectionName" value="connection1"/>
+    <parameter name="ReaderProperty" value="read1"/>
+    <parameter name="objectName1" value="$_EP{READ.objectName1}"/>
+    <parameter name="tags" value="UNIT,INTEGRATION"/>
+    <parameter name="filterExp" value="$_EP{PLATFORM_FILTER.filterExp_ends_with}"/>
+    <classes>
+      <class name="com.informatica.cci.direct.CCIRuntimeReaderAllExpr"/>
+    </classes>
+  </test>
+
+<test name="read_platformFilter_is_null">
+    <parameter name="ConnectionName" value="connection1"/>
+    <parameter name="ReaderProperty" value="read1"/>
+    <parameter name="objectName1" value="$_EP{READ.objectName1}"/>
+    <parameter name="tags" value="UNIT,INTEGRATION"/>
+    <parameter name="filterExp" value="$_EP{PLATFORM_FILTER.filterExp_is_null}"/>
+    <classes>
+      <class name="com.informatica.cci.direct.CCIRuntimeReaderAllExpr"/>
+    </classes>
+  </test>
+
+<test name="read_platformFilter_is_not_null">
+    <parameter name="ConnectionName" value="connection1"/>
+    <parameter name="ReaderProperty" value="read1"/>
+    <parameter name="objectName1" value="$_EP{READ.objectName1}"/>
+    <parameter name="tags" value="UNIT,INTEGRATION"/>
+    <parameter name="filterExp" value="$_EP{PLATFORM_FILTER.filterExp_is_not_null}"/>
+    <classes>
+      <class name="com.informatica.cci.direct.CCIRuntimeReaderAllExpr"/>
+    </classes>
+  </test>
+
+<test name="read_platformFilter_and">
+    <parameter name="ConnectionName" value="connection1"/>
+    <parameter name="ReaderProperty" value="read1"/>
+    <parameter name="objectName1" value="$_EP{READ.objectName1}"/>
+    <parameter name="tags" value="UNIT,INTEGRATION"/>
+    <parameter name="filterExp" value="$_EP{PLATFORM_FILTER.filterExp_and}"/>
+    <classes>
+      <class name="com.informatica.cci.direct.CCIRuntimeReaderAllExpr"/>
+    </classes>
+  </test>
+
+<test name="read_native_explicitJoin_contains">
+    <parameter name="tags" value="UNIT,INTEGRATION"/>
+    <parameter name="ConnectionName" value="connection1"/>
+    <parameter name="ReaderProperty" value="read1"/>
+    <parameter name="objectName1" value="$_EP{READ.objectName1}"/>
+    <parameter name="objectName2" value="$_EP{READ.objectName2}"/>
+    <parameter name="joinExp" value="$_EP{NATIVE_EXPLICITJOIN.joinExp_contains}"/>
+    <classes>
+      <class name="com.informatica.cci.direct.CCIRuntimeReaderAllExpr"/>
+    </classes>
+  </test>
+
+<test name="read_native_explicitJoin_starts_with">
+    <parameter name="tags" value="UNIT,INTEGRATION"/>
+    <parameter name="ConnectionName" value="connection1"/>
+    <parameter name="ReaderProperty" value="read1"/>
+    <parameter name="objectName1" value="$_EP{READ.objectName1}"/>
+    <parameter name="objectName2" value="$_EP{READ.objectName2}"/>
+    <parameter name="joinExp" value="$_EP{NATIVE_EXPLICITJOIN.joinExp_starts_with}"/>
+    <classes>
+      <class name="com.informatica.cci.direct.CCIRuntimeReaderAllExpr"/>
+    </classes>
+  </test>
+
+<test name="read_native_explicitJoin_ends_with">
+    <parameter name="tags" value="UNIT,INTEGRATION"/>
+    <parameter name="ConnectionName" value="connection1"/>
+    <parameter name="ReaderProperty" value="read1"/>
+    <parameter name="objectName1" value="$_EP{READ.objectName1}"/>
+    <parameter name="objectName2" value="$_EP{READ.objectName2}"/>
+    <parameter name="joinExp" value="$_EP{NATIVE_EXPLICITJOIN.joinExp_ends_with}"/>
+    <classes>
+      <class name="com.informatica.cci.direct.CCIRuntimeReaderAllExpr"/>
+    </classes>
+  </test>
+
+<test name="read_native_explicitJoin_is_null">
+    <parameter name="tags" value="UNIT,INTEGRATION"/>
+    <parameter name="ConnectionName" value="connection1"/>
+    <parameter name="ReaderProperty" value="read1"/>
+    <parameter name="objectName1" value="$_EP{READ.objectName1}"/>
+    <parameter name="objectName2" value="$_EP{READ.objectName2}"/>
+    <parameter name="joinExp" value="$_EP{NATIVE_EXPLICITJOIN.joinExp_is_null}"/>
+    <classes>
+      <class name="com.informatica.cci.direct.CCIRuntimeReaderAllExpr"/>
+    </classes>
+  </test>
+
+<test name="read_native_explicitJoin_is_not_null">
+    <parameter name="tags" value="UNIT,INTEGRATION"/>
+    <parameter name="ConnectionName" value="connection1"/>
+    <parameter name="ReaderProperty" value="read1"/>
+    <parameter name="objectName1" value="$_EP{READ.objectName1}"/>
+    <parameter name="objectName2" value="$_EP{READ.objectName2}"/>
+    <parameter name="joinExp" value="$_EP{NATIVE_EXPLICITJOIN.joinExp_is_not_null}"/>
+    <classes>
+      <class name="com.informatica.cci.direct.CCIRuntimeReaderAllExpr"/>
+    </classes>
+  </test>
+
+<test name="read_native_explicitJoin_and">
+    <parameter name="tags" value="UNIT,INTEGRATION"/>
+    <parameter name="ConnectionName" value="connection1"/>
+    <parameter name="ReaderProperty" value="read1"/>
+    <parameter name="objectName1" value="$_EP{READ.objectName1}"/>
+    <parameter name="objectName2" value="$_EP{READ.objectName2}"/>
+    <parameter name="joinExp" value="$_EP{READ.joinExp_and}"/>
+    <classes>
+      <class name="com.informatica.cci.direct.CCIRuntimeReaderAllExpr"/>
+    </classes>
+  </test>
+
+<test name="read_partitioning_range">
+    <parameter name="tags" value="UNIT"/>
+    <parameter name="ConnectionName" value="connection1"/>
+    <parameter name="ReaderProperty" value="read1"/>
+    <parameter name="objectName1" value="$_EP{READ.objectName1}"/>
+    <parameter name="partitioningColumn" value="$_EP{RANGE_PARTITION.partitioningColumn}"/>
+    <parameter name="partitioningStartRanges" value="$_EP{RANGE_PARTITION.partitioningStartRanges}"/>
+    <parameter name="partitioningEndRanges" value="$_EP{RANGE_PARTITION.partitioningEndRanges}"/>
+    <classes>
+      <class name="com.informatica.cci.direct.CCIRuntimeReader_rangePartitioning"/>
+    </classes>
+  </test>
+
+<test name="write_edit_metadata">
+    <parameter name="tags" value="INTEGRATION,UNIT"/>
+    <parameter name="ConnectionName" value="connection1"/>
+    <parameter name="ReaderProperty" value="read1"/>
+    <parameter name="sourceObject" value="$_EP{WRITE.sourceObject}"/>
+    <parameter name="TargetConnection" value="connection1"/>
+    <parameter name="WriterProperty" value="write1"/>
+    <parameter name="targetObject" value="$_EP{WRITE.targetObject}"/>
+    <parameter name="WriteOperation" value="Insert"/>
+    <parameter name="editSourceMetadata" value="$_EP{sourcefield1}"/>
+    <parameter name="editTargetMetadata" value="$_EP{targetfield1}"/>
+    <classes>
+      <class name="com.informatica.cci.direct.CCIRuntimeWriter"/>
+    </classes>
+  </test>
+
+<test name="verifyMessage_for_testComparison">
+    <parameter name="tags" value="UNIT"/>
+    <parameter name="ConnectionName" value="connection1"/>
+    <parameter name="ReaderProperty" value="read1"/>
+    <parameter name="objectName1" value="$_EP{READ.objectName1}"/>
+    <parameter name="verifyMessage" value="$_EP{verifyMessage}"/>
+    <classes>
+      <class name="com.informatica.cci.direct.CCIRuntimeReaderAllExpr"/>
+    </classes>
+  </test>
+
+<test name="negative_testcase">
+    <parameter name="tags" value="UNIT,INTEGRATION"/>
+    <parameter name="ConnectionName" value="connection1"/>
+    <parameter name="ReaderProperty" value="read1"/>
+    <parameter name="objectName1" value="$_EP{READ.objectName1}"/>
+    <parameter name="expectedStatus" value="$_EP{expectedStatus}"/>
+    <classes>
+      <class name="com.informatica.cci.direct.CCIRuntimeReaderAllExpr"/>
+    </classes>
+  </test>
+
+<test name="dataVerification_skipNull">
+    <parameter name="tags" value="UNIT,INTEGRATION"/>
+    <parameter name="ConnectionName" value="connection1"/>
+    <parameter name="ReaderProperty" value="read1"/>
+    <parameter name="objectName1" value="$_EP{READ.objectName1}"/>
+    <parameter name="skipNull" value="$_EP{skipNull}"/>
+    <classes>
+      <class name="com.informatica.cci.direct.CCIRuntimeReaderAllExpr"/>
+    </classes>
+  </test>
+
+<test name="platformFilter_implicitJoin">
+    <parameter name="ConnectionName" value="connection1"/>
+    <parameter name="tags" value="UNIT,INTEGRATION"/>
+    <parameter name="ReaderProperty" value="read1"/>
+    <parameter name="objectName1" value="$_EP{READ.objectName1}"/>
+    <parameter name="objectName2" value="$_EP{READ.objectName2}"/>
+    <parameter name="filterExp" value="$_EP{PLATFORM_FILTER.filterExp}"/>
+    <parameter name="implicitJoin" value="true"/>
+    <parameter name="relationshipType" value="Sibling"/>
+    <parameter name="relationshipName" value="$_EP{NATIVE_IMPLICITJOIN.relationshipName}"/>
+    <classes>
+      <class name="com.informatica.cci.direct.CCIRuntimeReaderAllExpr"/>
+    </classes>
+  </test>
+
+<test name="platformJoin_sort">
+    <parameter name="ConnectionName" value="connection1"/>
+    <parameter name="tags" value="UNIT,INTEGRATION"/>
+    <parameter name="ReaderProperty" value="read1"/>
+    <parameter name="objectName1" value="$_EP{READ.objectName1}"/>
+    <parameter name="objectName2" value="$_EP{READ.objectName2}"/>
+    <parameter name="sortFields" value="$_EP{SOURCESORT.sortFields}"/>
+    <parameter name="sortOrder" value="$_EP{SOURCESORT.sortOrder}"/>
+    <parameter name="implicitJoin" value="true"/>
+    <parameter name="relationshipType" value="Sibling"/>
+    <parameter name="relationshipName" value="$_EP{NATIVE_IMPLICITJOIN.relationshipName}"/>
+    <classes>
+      <class name="com.informatica.cci.direct.CCIRuntimeReaderAllExpr"/>
+    </classes>
+  </test>
+</suite>

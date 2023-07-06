@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension point="com.informatica.sdk.libraryInfo.libraryInfo" id="TABLESINGLESTORELIBRARYINFO">
+      <implUnit library="com.singlestore.adapter.singlestore.runtime.adapter.SingleStoreTablePlugin" osType="JAVA"/>
+   </extension>
+</plugin>

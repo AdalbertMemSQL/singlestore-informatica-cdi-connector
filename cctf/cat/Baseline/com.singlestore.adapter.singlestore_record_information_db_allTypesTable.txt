@@ -1,0 +1,8 @@
+Flat record Name                        | allTypesTable
+Flat record Native Name                 | `db`.`allTypesTable`
+Parent Package name                     | db      
+Parent Package native name              |         
+Field model name                        | ORDERED 
+Field model name                        | ORDERED 
+NMO type                                | Table   
+

@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: SingleStore Adapter Meta Model Bundle
+Bundle-SymbolicName: com.singlestore.adapter.singlestore.metamodel;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Vendor: SingleStore
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Require-Bundle: com.informatica.sdk.metamodel,
+ com.singlestore.adapter.singlestore.connection.model,
+ com.singlestore.adapter.singlestore.metadata.model,
+ com.singlestore.adapter.singlestore.runtime.model

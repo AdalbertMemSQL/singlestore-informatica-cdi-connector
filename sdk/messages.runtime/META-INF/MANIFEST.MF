@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: SingleStore Adapter Messages Bundle
+Bundle-SymbolicName: com.singlestore.adapter.singlestore.messages.runtime;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Vendor: SingleStore
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Require-Bundle: com.informatica.sdk.i18n.messages,
+ com.informatica.sdk.exceptionMgr
+Export-Package: com.singlestore.adapter.singlestore.runtimemessages
+Bundle-Localization: i18n/plugin

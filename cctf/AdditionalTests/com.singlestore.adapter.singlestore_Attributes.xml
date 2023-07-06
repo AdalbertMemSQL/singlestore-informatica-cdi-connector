@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<adapterAtrribute>
+  <connection name="connection1">
+    <keyStorePassword UIType="TEXTBOX" displayName="Key Store Password" isHidden="false" type="STRING" value="$_EP{CONNECTION.keyStorePassword}"/>
+    <trustServerCertificate UIType="BOOLEAN" displayName="Trust Server Certificate" isHidden="false" type="BOOLEAN" value="false"/>
+    <disableSslHostnameVerification UIType="BOOLEAN" displayName="Disable SSL Hostname Verification" isHidden="false" type="BOOLEAN" value="false"/>
+    <useSsl UIType="BOOLEAN" displayName="Use SSL" isHidden="false" type="BOOLEAN" value="false"/>
+    <trustStorePassword UIType="TEXTBOX" displayName="Trust Store Password" isHidden="false" type="STRING" value="$_EP{CONNECTION.trustStorePassword}"/>
+    <hostname UIType="TEXTBOX" displayName="Host Name" isHidden="false" type="STRING" value="$_EP{CONNECTION.hostname}"/>
+    <database UIType="TEXTBOX" displayName="Database" isHidden="false" type="STRING" value="$_EP{CONNECTION.database}"/>
+    <password UIType="TEXTBOX" displayName="Password" isHidden="false" type="STRING" value="$_EP{CONNECTION.password}"/>
+    <serverSslCert UIType="TEXTBOX" displayName="Server SSL Certificate" isHidden="false" type="STRING" value="$_EP{CONNECTION.serverSslCert}"/>
+    <port UIType="TEXTBOX" displayName="Port" isHidden="false" type="INTEGER" value="3306"/>
+    <keyPassword UIType="TEXTBOX" displayName="Key Password" isHidden="false" type="STRING" value="$_EP{CONNECTION.keyPassword}"/>
+    <keyStore UIType="TEXTBOX" displayName="Key Store" isHidden="false" type="STRING" value="$_EP{CONNECTION.keyStore}"/>
+    <trustStore UIType="TEXTBOX" displayName="Trust Store" isHidden="false" type="STRING" value="$_EP{CONNECTION.trustStore}"/>
+    <user UIType="TEXTBOX" displayName="User Name" isHidden="false" type="STRING" value="root"/>
+  </connection>
+  <read name="read1"/>
+  <write name="write1">
+    <UpdateMode UIType="LIST" displayName="UpdateMode" isHidden="false" type="STRING" value="Update As Update"/>
+  </write>
+  <flatFormatConfig name="$_EP{sourceFlatFormatConfig}">
+    <delimiter isHidden="false" type="STRING" value=","/>
+    <escapeChar isHidden="false" type="STRING" value="\"/>
+    <genHeader isHidden="false" type="BOOLEAN" value="TRUE"/>
+    <impColumnFromFirst isHidden="false" type="BOOLEAN" value="TRUE"/>
+    <maxRows isHidden="false" type="INTEGER" value="10"/>
+    <qualifier isHidden="false" type="STRING" value="&quot;"/>
+    <rowDelimiter isHidden="false" type="STRING" value="\n"/>
+    <headerLineNumber isHidden="false" type="INTEGER" value="1"/>
+    <firstDataRow isHidden="false" type="INTEGER" value="2"/>
+    <escapeCharacterDataRetained isHidden="false" type="BOOLEAN" value="FALSE"/>
+    <distribustionColumn isHidden="false" type="STRING" value=""/>
+    <codePager isHidden="false" type="STRING" value="UTF-8"/>
+    <targetHeader isHidden="false" type="STRING" value="With Header"/>
+    <qualifierMode isHidden="false" type="STRING" value="MINIMAL"/>
+  </flatFormatConfig>
+  <flatFormatConfig name="$_EP{targetFlatFormatConfig}">
+    <delimiter isHidden="false" type="STRING" value=","/>
+    <escapeChar isHidden="false" type="STRING" value="\"/>
+    <genHeader isHidden="false" type="BOOLEAN" value="TRUE"/>
+    <impColumnFromFirst isHidden="false" type="BOOLEAN" value="TRUE"/>
+    <maxRows isHidden="false" type="INTEGER" value="10"/>
+    <qualifier isHidden="false" type="STRING" value="&quot;"/>
+    <rowDelimiter isHidden="false" type="STRING" value="\n"/>
+    <headerLineNumber isHidden="false" type="INTEGER" value="1"/>
+    <firstDataRow isHidden="false" type="INTEGER" value="2"/>
+    <escapeCharacterDataRetained isHidden="false" type="BOOLEAN" value="FALSE"/>
+    <distribustionColumn isHidden="false" type="STRING" value=""/>
+    <codePager isHidden="false" type="STRING" value="UTF-8"/>
+    <targetHeader isHidden="false" type="STRING" value="With Header"/>
+    <qualifierMode isHidden="false" type="STRING" value="MINIMAL"/>
+  </flatFormatConfig>
+  <IICSPARAM name="$_EP{WRITE.IICSPARAM}">
+    <IICSParameterFileType UIType="TEXTBOX" displayName="IICSParameterFileType" isHidden="false" type="STRING" value="LOCAL"/>
+    <IICSParameterFileName UIType="TEXTBOX" displayName="IICSParameterFileName" isHidden="false" type="STRING" value="$_EP{IICSPARAM.IICSParameterFileName}"/>
+    <IICSParameterFileDir UIType="TEXTBOX" displayName="IICSParameterFileDir" isHidden="false" type="STRING" value="$_EP{IICSPARAM.IICSParameterFileDir}"/>
+    <IICSParamSourceConnectionType UIType="TEXTBOX" displayName="IICSParamSourceConnectionType" isHidden="false" type="STRING" value=""/>
+    <IICSParamSourceConnDefValue UIType="TEXTBOX" displayName="IICSParamSourceConnDefValue" isHidden="false" type="STRING" value=""/>
+    <IICSParamSourceObjDefValue UIType="TEXTBOX" displayName="IICSParamSourceObjDefValue" isHidden="false" type="STRING" value=""/>
+    <IICSParamSrcConnAllowOverride UIType="BOOLEAN" displayName="IICSParamSourceObjDefValue" isHidden="false" type="BOOLEAN" value="true"/>
+    <IICSParamSrcObjAllowOverride UIType="BOOLEAN" displayName="IICSParamSrcObjAllowOverride" isHidden="false" type="BOOLEAN" value="true"/>
+    <IICSParamTargetConnectionType UIType="TEXTBOX" displayName="IICSParamTargetConnectionType" isHidden="false" type="STRING" value=""/>
+    <IICSParamTargetConnDefValue UIType="TEXTBOX" displayName="IICSParamTargetConnDefValue" isHidden="false" type="STRING" value=""/>
+    <IICSParamTargetObjDefValue UIType="TEXTBOX" displayName="IICSParamTargetObjDefValue" isHidden="false" type="STRING" value=""/>
+    <IICSParamTgtConnAllowOverride UIType="BOOLEAN" displayName="IICSParamTgtConnAllowOverride" isHidden="false" type="BOOLEAN" value="true"/>
+    <IICSParamTgtObjAllowOverride UIType="BOOLEAN" displayName="IICSParamTgtObjAllowOverride" isHidden="false" type="BOOLEAN" value="true"/>
+  </IICSPARAM>
+  <sourcefield name="$_EP{sourcefield1}">
+    <type UIType="TEXTAREA" displayName="type" isHidden="false" type="STRING" value="$_EP{EDITMETADATA_SOURCE.type}"/>
+    <precision UIType="TEXTAREA" displayName="precision" isHidden="false" type="STRING" value="$_EP{EDITMETADATA_SOURCE.precision}"/>
+    <scale UIType="TEXTAREA" displayName="scale" isHidden="false" type="STRING" value="$_EP{EDITMETADATA_SOURCE.scale}"/>
+    <platformType UIType="TEXTAREA" displayName="platformType" isHidden="false" type="STRING" value="$_EP{EDITMETADATA_SOURCE.platformType}"/>
+  </sourcefield>
+  <targetfield name="$_EP{targetfield1}">
+    <type UIType="TEXTAREA" displayName="type" isHidden="false" type="STRING" value="$_EP{EDITMETADATA_TARGET.type}"/>
+    <precision UIType="TEXTAREA" displayName="precision" isHidden="false" type="STRING" value="$_EP{EDITMETADATA_TARGET.precision}"/>
+    <scale UIType="TEXTAREA" displayName="scale" isHidden="false" type="STRING" value="$_EP{EDITMETADATA_TARGET.scale}"/>
+    <platformType UIType="TEXTAREA" displayName="platformType" isHidden="false" type="STRING" value="$_EP{EDITMETADATA_TARGET.platformType}"/>
+  </targetfield>
+  <expressionTx name="expressionTx1">
+    <expression UIType="TEXTAREA" displayName="expression" isHidden="false" type="STRING" value="$_EP{EXPRESSION_TX.expression}"/>
+    <targetFieldToMap UIType="TEXTAREA" displayName="targetFieldToMap" isHidden="false" type="STRING" value="$_EP{EXPRESSION_TX.targetFieldToMap2}"/>
+  </expressionTx>
+  <sorterTx name="sorterTx1">
+    <sorterEx UIType="TEXTAREA" displayName="sorterEx" isHidden="false" type="STRING" value="$_EP{SORTER_TX.sorterEx}"/>
+  </sorterTx>
+  <filterTx name="filterTx1">
+    <filterEx UIType="TEXTAREA" displayName="filterEx" isHidden="false" type="STRING" value="$_EP{FILTER_TX.filterEx}"/>
+  </filterTx>
+  <unionTx name="unionTx1">
+    <unionFieldMappedToTargetField1 UIType="TEXTAREA" displayName="unionFieldMappedToTargetField1" isHidden="false" type="STRING" value="$_EP{UNION_TX.unionFieldMappedToTargetField1}"/>
+    <targetFieldToMap1 UIType="TEXTAREA" displayName="targetFieldToMap1" isHidden="false" type="STRING" value="$_EP{UNION_TX.targetFieldToMap1}"/>
+    <unionFieldMappedToTargetField2 UIType="TEXTAREA" displayName="unionFieldMappedToTargetField2" isHidden="false" type="STRING" value="$_EP{UNION_TX.unionFieldMappedToTargetField2}"/>
+    <targetFieldToMap2 UIType="TEXTAREA" displayName="targetFieldToMap2" isHidden="false" type="STRING" value="$_EP{UNION_TX.targetFieldToMap2}"/>
+    <UnionInput1Ex UIType="TEXTAREA" displayName="UnionInput1Ex" isHidden="false" type="STRING" value="$_EP{UNION_TX.UnionInput1Ex}"/>
+    <UnionInput2Ex UIType="TEXTAREA" displayName="UnionInput2Ex" isHidden="false" type="STRING" value="$_EP{UNION_TX.UnionInput2Ex}"/>
+  </unionTx>
+  <routerTx name="routerTx1">
+    <Group1 UIType="TEXTAREA" displayName="Group1" isHidden="false" type="STRING" value="$_EP{ROUTER_TX.Group1}"/>
+    <Group2 UIType="TEXTAREA" displayName="Group2" isHidden="false" type="STRING" value="$_EP{ROUTER_TX.Group2}"/>
+    <portsToConnectToTarget1 UIType="TEXTAREA" displayName="portsToConnectToTarget1" isHidden="false" type="STRING" value="$_EP{ROUTER_TX.portsToConnectToTarget1}"/>
+  </routerTx>
+  <sequenceGeneratorTx name="sequenceGeneratorTx1">
+    <sqGenFieldToMap UIType="TEXTAREA" displayName="sqGenFieldToMap" isHidden="false" type="STRING" value="$_EP{SEQUENCEGEN_TX.sqGenFieldToMap}"/>
+    <targetFieldToMap UIType="TEXTAREA" displayName="targetFieldToMap" isHidden="false" type="STRING" value="$_EP{SEQUENCEGEN_TX.targetFieldToMap}"/>
+  </sequenceGeneratorTx>
+  <aggregatorTx name="aggregatorTx1">
+    <aggregatorEx UIType="TEXTAREA" displayName="aggregatorEx" isHidden="false" type="STRING" value="$_EP{AGGREGATOR_TX.aggregatorEx}"/>
+    <targetFieldToMap UIType="TEXTAREA" displayName="targetFieldToMap" isHidden="false" type="STRING" value="$_EP{AGGREGATOR_TX.targetFieldToMap}"/>
+    <groupByEx UIType="TEXTAREA" displayName="groupByEx" isHidden="false" type="STRING" value="$_EP{AGGREGATOR_TX.groupByEx}"/>
+  </aggregatorTx>
+  <joinerTx name="joinerTx1">
+    <joinerEx UIType="TEXTAREA" displayName="joinerEx" isHidden="false" type="STRING" value="$_EP{JOINER_TX.joinerEx}"/>
+    <joinerFieldToMap UIType="TEXTAREA" displayName="joinerFieldToMap" isHidden="false" type="STRING" value="$_EP{JOINER_TX.joinerFieldToMap}"/>
+    <targetFieldToMap UIType="TEXTAREA" displayName="targetFieldToMap" isHidden="false" type="STRING" value="$_EP{JOINER_TX.targetFieldToMap}"/>
+  </joinerTx>
+  <lookupTx name="lookupTx1">
+    <lookupEx UIType="TEXTAREA" displayName="lookupEx" isHidden="false" type="STRING" value="$_EP{LOOKUP_TX.lookupEx}"/>
+    <lookupFieldToMap UIType="TEXTAREA" displayName="lookupFieldToMap" isHidden="false" type="STRING" value="$_EP{LOOKUP_TX.lookupFieldToMap}"/>
+    <targetFieldToMap UIType="TEXTAREA" displayName="targetFieldToMap" isHidden="false" type="STRING" value="$_EP{LOOKUP_TX.targetFieldToMap}"/>
+  </lookupTx>
+  <unconnectedLookupTx name="unconnectedLookupTx1">
+    <lookupEx UIType="TEXTAREA" displayName="lookupEx" isHidden="false" type="STRING" value="$_EP{UNCONNECTEDLOOKUP_TX.lookupEx}"/>
+    <returnPort UIType="TEXTAREA" displayName="returnPort" isHidden="false" type="STRING" value="$_EP{UNCONNECTEDLOOKUP_TX.returnPort}"/>
+    <expression UIType="TEXTAREA" displayName="expression" isHidden="false" type="STRING" value="$_EP{UNCONNECTEDLOOKUP_TX.expression}"/>
+    <targetFieldToMap UIType="TEXTAREA" displayName="targetFieldToMap" isHidden="false" type="STRING" value="$_EP{UNCONNECTEDLOOKUP_TX.targetFieldToMap}"/>
+  </unconnectedLookupTx>
+  <DMTParam name="DMTDefaultJob1">
+    <ConnectionName UIType="TEXTAREA" displayName="ConnectionName" isHidden="false" type="STRING" value="$_EP{DMTJOB.ConnectionName}"/>
+    <importOptions UIType="TEXTAREA" displayName="importOptions" isHidden="false" type="STRING" value="$_EP{DMTJOB.importOptions}"/>
+    <targetObject UIType="TEXTAREA" displayName="targetObject" isHidden="false" type="STRING" value="$_EP{DMTJOB.targetObject}"/>
+    <ReaderProperty UIType="TEXTAREA" displayName="ReaderProperty" isHidden="false" type="STRING" value="$_EP{DMTJOB.ReaderProperty}"/>
+    <WriteOperation UIType="TEXTAREA" displayName="WriteOperation" isHidden="false" type="STRING" value="Insert"/>
+    <TargetConnection UIType="TEXTAREA" displayName="TargetConnection" isHidden="false" type="STRING" value="$_EP{DMTJOB.TargetConnection}"/>
+    <WriterProperty UIType="TEXTAREA" displayName="WriterProperty" isHidden="false" type="STRING" value="$_EP{DMTJOB.WriterProperty}"/>
+    <sourceObject UIType="TEXTAREA" displayName="sourceObject" isHidden="false" type="STRING" value="$_EP{DMTJOB.sourceObject}"/>
+  </DMTParam>
+  <DMTJob name="DMTJob1">
+    <ConnectionName UIType="TEXTAREA" displayName="ConnectionName" isHidden="false" type="STRING" value="$_EP{DMTJOB1.ConnectionName}"/>
+    <Group UIType="TEXTAREA" displayName="Group" isHidden="false" type="STRING" value="Group1"/>
+    <importOptions UIType="TEXTAREA" displayName="importOptions" isHidden="false" type="STRING" value="$_EP{DMTJOB1.importOptions}"/>
+    <targetObject UIType="TEXTAREA" displayName="targetObject" isHidden="false" type="STRING" value="$_EP{DMTJOB1.targetObject}"/>
+    <ReaderProperty UIType="TEXTAREA" displayName="ReaderProperty" isHidden="false" type="STRING" value="$_EP{DMTJOB1.ReaderProperty}"/>
+    <WriteOperation UIType="TEXTAREA" displayName="WriteOperation" isHidden="false" type="STRING" value="Insert"/>
+    <TargetConnection UIType="TEXTAREA" displayName="TargetConnection" isHidden="false" type="STRING" value="$_EP{DMTJOB1.TargetConnection}"/>
+    <StopOnError UIType="TEXTAREA" displayName="StopOnError" isHidden="false" type="STRING" value=" false"/>
+    <Enabled UIType="TEXTAREA" displayName="Enabled" isHidden="false" type="STRING" value="true"/>
+    <StopOnWarning UIType="TEXTAREA" displayName="StopOnWarning" isHidden="false" type="STRING" value="false"/>
+    <WriterProperty UIType="TEXTAREA" displayName="WriterProperty" isHidden="false" type="STRING" value="$_EP{DMTJOB1.WriterProperty}"/>
+    <sourceObject UIType="TEXTAREA" displayName="sourceObject" isHidden="false" type="STRING" value="$_EP{DMTJOB1.sourceObject}"/>
+  </DMTJob>
+  <DMTJob name="DMTJob2">
+    <ConnectionName UIType="TEXTAREA" displayName="ConnectionName" isHidden="false" type="STRING" value="$_EP{DMTJOB2.ConnectionName}"/>
+    <Group UIType="TEXTAREA" displayName="Group" isHidden="false" type="STRING" value="Group1"/>
+    <importOptions UIType="TEXTAREA" displayName="importOptions" isHidden="false" type="STRING" value="$_EP{DMTJOB2.importOptions}"/>
+    <targetObject UIType="TEXTAREA" displayName="targetObject" isHidden="false" type="STRING" value="$_EP{DMTJOB2.targetObject}"/>
+    <ReaderProperty UIType="TEXTAREA" displayName="ReaderProperty" isHidden="false" type="STRING" value="$_EP{DMTJOB2.ReaderProperty}"/>
+    <WriteOperation UIType="TEXTAREA" displayName="WriteOperation" isHidden="false" type="STRING" value="Insert"/>
+    <TargetConnection UIType="TEXTAREA" displayName="TargetConnection" isHidden="false" type="STRING" value="$_EP{DMTJOB2.TargetConnection}"/>
+    <StopOnError UIType="TEXTAREA" displayName="StopOnError" isHidden="false" type="STRING" value="false"/>
+    <Enabled UIType="TEXTAREA" displayName="Enabled" isHidden="false" type="STRING" value="true"/>
+    <StopOnWarning UIType="TEXTAREA" displayName="StopOnWarning" isHidden="false" type="STRING" value="false"/>
+    <WriterProperty UIType="TEXTAREA" displayName="WriterProperty" isHidden="false" type="STRING" value="$_EP{DMTJOB2.WriterProperty}"/>
+    <sourceObject UIType="TEXTAREA" displayName="sourceObject" isHidden="false" type="STRING" value="$_EP{DMTJOB2.sourceObject}"/>
+  </DMTJob>
+  <DMTGroup name="DMTGroup1">
+    <GroupName UIType="TEXTAREA" displayName="GroupName" isHidden="false" type="STRING" value="$_EP{DMTGROUP1.ConnectionName}"/>
+    <Sequential UIType="TEXTAREA" displayName="Sequential" isHidden="false" type="STRING" value="true"/>
+    <Enabled UIType="TEXTAREA" displayName="Enabled" isHidden="false" type="STRING" value="true"/>
+  </DMTGroup>
+  <DMTGroup name="DMTGroup2">
+    <GroupName UIType="TEXTAREA" displayName="GroupName" isHidden="false" type="STRING" value="$_EP{DMTGROUP2.ConnectionName}"/>
+    <Sequential UIType="TEXTAREA" displayName="Sequential" isHidden="false" type="STRING" value="true"/>
+    <Enabled UIType="TEXTAREA" displayName="Enabled" isHidden="false" type="STRING" value="true"/>
+  </DMTGroup>
+  <attributeConfigDetails name="attributeConfigDetails">
+    <!--database:: database-->
+    <!--disableSslHostnameVerification:: disableSslHostnameVerification-->
+    <!--hostname:: hostname-->
+    <!--keyPassword:: keyPassword-->
+    <!--keyStore:: keyStore-->
+    <!--keyStorePassword:: keyStorePassword-->
+    <!--password:: password-->
+    <!--port:: port-->
+    <!--serverSslCert:: serverSslCert-->
+    <!--trustServerCertificate:: trustServerCertificate-->
+    <!--trustStore:: trustStore-->
+    <!--trustStorePassword:: trustStorePassword-->
+    <!--useSsl:: useSsl-->
+    <!--user:: user-->
+    <!--UpdateMode:: -->
+    <!--delimiter:: Delimiter used to seperate the columns. Default value is comma(,).-->
+    <!--escapeChar:: Escape character used in the data. Default value is \.-->
+    <!--genHeader:: Whether to generate the columns automatically or not. Default value is TRUE.-->
+    <!--impColumnFromFirst:: Whether to import the columns from 1st row in the file. Default value is TRUE.-->
+    <!--maxRows:: Maximum rows to fetch from the file. Default value is 10.-->
+    <!--qualifier:: Text qualifier used in the data. Default value is "(double quote).-->
+    <!--rowDelimiter:: Delimiter used to separate the rows. Default value is \n(new line character).-->
+    <!--headerLineNumber:: Which line in the file to consider as header. Default value is 1.-->
+    <!--firstDataRow:: Which line in the file to consider as the start of the data row. Default value is 2.-->
+    <!--escapeCharacterDataRetained:: Whether to retain the escape character in the data. Default value is FALSE.-->
+    <!--distribustionColumn:: Distribustion column. Default value is ""(empty).-->
+    <!--codePager:: Code page used to read the file contents. Default value is UTF-8.-->
+    <!--targetHeader:: Target Header. Default value is With Header.-->
+    <!--qualifierMode:: Qualifier Mode. Default value is MINIMAL.-->
+    <!--delimiter:: Delimiter used to seperate the columns. Default value is comma(,).-->
+    <!--escapeChar:: Escape character used in the data. Default value is \.-->
+    <!--genHeader:: Whether to generate the columns automatically or not. Default value is TRUE.-->
+    <!--impColumnFromFirst:: Whether to import the columns from 1st row in the file. Default value is TRUE.-->
+    <!--maxRows:: Maximum rows to fetch from the file. Default value is 10.-->
+    <!--qualifier:: Text qualifier used in the data. Default value is "(double quote).-->
+    <!--rowDelimiter:: Delimiter used to separate the rows. Default value is \n(new line character).-->
+    <!--headerLineNumber:: Which line in the file to consider as header. Default value is 1.-->
+    <!--firstDataRow:: Which line in the file to consider as the start of the data row. Default value is 2.-->
+    <!--escapeCharacterDataRetained:: Whether to retain the escape character in the data. Default value is FALSE.-->
+    <!--distribustionColumn:: Distribustion column. Default value is ""(empty).-->
+    <!--codePager:: Code page used to read the file contents. Default value is UTF-8.-->
+    <!--targetHeader:: Target Header. Default value is With Header.-->
+    <!--qualifierMode:: Qualifier Mode. Default value is MINIMAL.-->
+    <!--IICSParameterFileType:: Applicable for parameterization usecase in integration testing. This attribute is mandatory and should be either LOCAL or CLOUD AGENT.-->
+    <!--IICSParameterFileName:: Applicable for parameterization usecase in integration testing. This attribute is mandatory and provide the name of the parameter file.-->
+    <!--IICSParameterFileDir:: Applicable for parameterization usecase in integration testing. This attribute is optional and the value must be the parameter file directory accessible from agent machine. -->
+    <!--IICSParamSourceConnectionType:: Applicable for parameterization usecase in integration testing. This attribute is optional, but, mandatory for cross-connector scenarios. Value should be IICS connector display name.-->
+    <!--IICSParamSourceConnDefValue:: Applicable for parameterization usecase in integration testing. This attribute is optional. Provide the connection name if the default value should be configured while creating the source connection parameter.-->
+    <!--IICSParamSourceObjDefValue:: Applicable for parameterization usecase in integration testing. This attribute is optional. Provide the object name if the default value should be configured while creating the source object parameter.-->
+    <!--IICSParamSrcConnAllowOverride:: Applicable for parameterization usecase in integration testing. This attribute is optional. Set the value to either true or false, if the default source connection should be overridden.-->
+    <!--IICSParamSrcObjAllowOverride:: Applicable for parameterization usecase in integration testing. This attribute is optional. Set the value to either true or false, if the default source object should be overridden-->
+    <!--IICSParamTargetConnectionType:: Applicable for parameterization usecase in integration testing. This attribute is optional, but, mandatory for cross-connector scenarios. Value should be IICS connector display name.-->
+    <!--IICSParamTargetConnDefValue:: Applicable for parameterization usecase in integration testing. This attribute is optional. Provide the connection name if the default value should be configured while creating the target connection parameter.-->
+    <!--IICSParamTargetObjDefValue:: Applicable for parameterization usecase in integration testing. This attribute is optional. Provide the object name if the default value should be configured while creating the target object parameter.-->
+    <!--IICSParamTgtConnAllowOverride:: Applicable for parameterization usecase in integration testing. This attribute is optional. Set the value to either true or false, if the default target connection should be overridden.-->
+    <!--IICSParamTgtObjAllowOverride:: Applicable for parameterization usecase in integration testing. This attribute is optional. Set the value to either true or false, if the default target object should be overridden.-->
+    <!--expression:: Expression such as Length(col_name)-->
+    <!--targetFieldToMap:: Name of the column that is to be used in the Target table to hold the transformation data.-->
+    <!--unionFieldMappedToTargetField1:: Column name mapped from union Tx to target.-->
+    <!--targetFieldToMap1:: Column name in target-->
+    <!--unionFieldMappedToTargetField2:: Column name mapped from union Tx to target.-->
+    <!--targetFieldToMap2:: Column name in target.-->
+    <!--UnionInput1Ex:: Column name mapping from source1 to union Tx, Ex: 'string (10, 0) NewField=name;integer (10, 0) NewField1=id;'-->
+    <!--UnionInput2Ex:: Column name mapping from source2 to union Tx, Ex: 'string (10, 0) NewField=name;integer (10, 0) NewField1=id;'-->
+    <!--filterEx:: The filter expression. Ex: id=2-->
+    <!--sorterEx:: The column to be sorted and the type of sort. Ex: id=ASC.-->
+    <!--joinerEx:: The column names of both sources based on which join is to be performed. Ex: id_src1=id_src2 (Join condition).-->
+    <!--joinerFieldToMap:: This is optional parameter. Provide the joiner tx column name to be mapped to the output only if the target tx and joiner tx object's column names are different.-->
+    <!--targetFieldToMap:: This is optional parameter. Provide the name of the target tx column to be mapped to the joiner tx column.-->
+    <!--lookupEx:: Columns linked between source and lookup table. Ex: column of source = column of lookup-->
+    <!--lookupFieldToMap:: Name of the column that is to be used in the Target table to hold the data from lookup.-->
+    <!--targetFieldToMap:: The column name in the target that holds the lookup data.-->
+    <!--lookupEx:: Column in lookup tx object that will be used to perform lookup. Ex: lookup_column-->
+    <!--returnPort:: Name of the target tx object column that is to be mapped with the unconnected lookup tx object.-->
+    <!--expression::The expression that is used to pull the data from lookup. Ex: :LKP.lkp1(id). lkp1 is the name of the lookup and id is from the source table.-->
+    <!--targetFieldToMap:: The column name in the target that holds the lookup data.-->
+    <!--sqGenFieldToMap:: The type of sequence needed. Ex: NEXTVAL|CURRENTVAL.-->
+    <!--targetFieldToMap:: The column name in the target that holds the sequence generated.-->
+    <!--Group1:: The filter value from group1, such as col_name=value,Ex: id=2-->
+    <!--Group2:: The filter value from group2, such as col_name=value,Ex: id=1-->
+    <!--portsToConnectToTarget1:: The mapping to be used in the target. Ex: string (10, 0) id=id;string (256, 0) name=name;string (256, 0) id1=id1;-->
+    <!--aggregatorEx:: Expression such as Sum(id*5).-->
+    <!--targetFieldToMap:: This is optional parameter. Provide the name of the target tx column to map to the aggregator tx column.-->
+    <!--groupByEx:: This is optional parameter, defines how to group data for aggregate expressions, can include multiple fields ex:- <groupByEx UIType="TEXTAREA" displayName="groupByEx" isHidden="false"" type="STRING" value="id, name"/>-->
+    <!--ConnectionName:: Source connection name for job1.-->
+    <!--sourceObject:: Source object name for job.-->
+    <!--ReaderProperty:: Source object runtime properties of job.-->
+    <!--importOptions:: Import options to be used for job.-->
+    <!--TargetConnection:: Target connection name for job.-->
+    <!--targetObject:: Target object name for job.-->
+    <!--WriterProperty:: target object runtime properties of job.-->
+    <!--WriteOperation:: The write operation such as Insert/Update/Delete/DataDriven to be performed on Target object in job. Default value is Insert-->
+    <!--Enabled:: Whether the Job1 is to be enabled or not. Value should be either true/false.-->
+    <!--StopOnError:: Whether to stop the Job1 execution on error or not. Value should be either true/false. Default value is false.-->
+    <!--StopOnWarning:: Whether to stop the Job1 execution on warning or not. Value should be either true/false. Default value is false.-->
+    <!--Group:: Name of the Group to which the Job2 belongs to. A Group name value from the DMTGroup, Ex:Group1-->
+    <!--GroupName:: Name of the Group1.-->
+    <!--Enabled:: Whether the Group1 is to be enabled or not. Ex: true/ false. Default value is true.-->
+    <!--Sequential:: Whether the execute jobs in the Group1 sequentially or not. Ex: true/ false. Default value is true.-->
+  </attributeConfigDetails>
+</adapterAtrribute>

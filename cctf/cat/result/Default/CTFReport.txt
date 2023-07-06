@@ -1,0 +1,75 @@
+
+
+##################################################################################################
+Suite Name: SingleStore
+Detail Results at: /home/amakarovych-ua/eclipse-workspace4/SingleStore/cctf/cat/result/Default/SingleStore
+Run Summary:- Success: 65, Failures: 0, Skips: 0
+#################################################################################################
+                             Test Case Name|                                  Method & Product|Status
+-------------------------------------------+--------------------------------------------------+------
+                            test_connection|                testConnection (CCTFCTFConnection)|  PASS
+                         record_information|Record Information : getMetadata (CCTFCTFMetadata)|  PASS
+                        record_field_detail|     Record Detail : getMetadata (CCTFCTFMetadata)|  PASS
+                             record_search_|   Metadata Search : getMetadata (CCTFCTFMetadata)|  PASS
+             record_search_recordFilterType|   Metadata Search : getMetadata (CCTFCTFMetadata)|  PASS
+             record_search_recordFilterName|   Metadata Search : getMetadata (CCTFCTFMetadata)|  PASS
+      record_search_recordFilterDescription|   Metadata Search : getMetadata (CCTFCTFMetadata)|  PASS
+            record_search_recordFilterLabel|   Metadata Search : getMetadata (CCTFCTFMetadata)|  PASS
+                    record_search_allFilter|   Metadata Search : getMetadata (CCTFCTFMetadata)|  PASS
+                                 basic_read|                                read (CCTFCTFRead)|  PASS
+                   read_nativeFilter_equals|                                read (CCTFCTFRead)|  PASS
+                  read_nativeFilter_greater|                                read (CCTFCTFRead)|  PASS
+        read_nativeFilter_greater_or_equals|                                read (CCTFCTFRead)|  PASS
+                     read_nativeFilter_less|                                read (CCTFCTFRead)|  PASS
+           read_nativeFilter_less_or_equals|                                read (CCTFCTFRead)|  PASS
+               read_nativeFilter_not_equals|                                read (CCTFCTFRead)|  PASS
+                 read_nativeFilter_contains|                                read (CCTFCTFRead)|  PASS
+              read_nativeFilter_starts_with|                                read (CCTFCTFRead)|  PASS
+                read_nativeFilter_ends_with|                                read (CCTFCTFRead)|  PASS
+                  read_nativeFilter_is_null|                                read (CCTFCTFRead)|  PASS
+              read_nativeFilter_is_not_null|                                read (CCTFCTFRead)|  PASS
+                      read_nativeFilter_and|                                read (CCTFCTFRead)|  PASS
+                 read_platformFilter_equals|                                read (CCTFCTFRead)|  PASS
+                read_platformFilter_greater|                                read (CCTFCTFRead)|  PASS
+      read_platformFilter_greater_or_equals|                                read (CCTFCTFRead)|  PASS
+                   read_platformFilter_less|                                read (CCTFCTFRead)|  PASS
+         read_platformFilter_less_or_equals|                                read (CCTFCTFRead)|  PASS
+             read_platformFilter_not_equals|                                read (CCTFCTFRead)|  PASS
+                       read_source_sort_asc|                                read (CCTFCTFRead)|  PASS
+                      read_source_sort_desc|                                read (CCTFCTFRead)|  PASS
+            read_native_explicitJoin_equals|                                read (CCTFCTFRead)|  PASS
+           read_native_explicitJoin_greater|                                read (CCTFCTFRead)|  PASS
+ read_native_explicitJoin_greater_or_equals|                                read (CCTFCTFRead)|  PASS
+              read_native_explicitJoin_less|                                read (CCTFCTFRead)|  PASS
+    read_native_explicitJoin_less_or_equals|                                read (CCTFCTFRead)|  PASS
+        read_native_explicitJoin_not_equals|                                read (CCTFCTFRead)|  PASS
+                         basic_write_insert|              RuntimeWriter : write (CCTFCTFWrite)|  PASS
+                        write_create_target|              RuntimeWriter : write (CCTFCTFWrite)|  PASS
+                 basic_write_delete_integer|              RuntimeWriter : write (CCTFCTFWrite)|  PASS
+                  basic_write_delete_string|              RuntimeWriter : write (CCTFCTFWrite)|  PASS
+              basic_write_delete_fractional|              RuntimeWriter : write (CCTFCTFWrite)|  PASS
+                    basic_write_delete_time|              RuntimeWriter : write (CCTFCTFWrite)|  PASS
+                  basic_write_delete_binary|              RuntimeWriter : write (CCTFCTFWrite)|  PASS
+                   basic_write_delete_multi|              RuntimeWriter : write (CCTFCTFWrite)|  PASS
+               basic_write_update_all_types|              RuntimeWriter : write (CCTFCTFWrite)|  PASS
+                 basic_write_update_integer|              RuntimeWriter : write (CCTFCTFWrite)|  PASS
+                  basic_write_update_string|              RuntimeWriter : write (CCTFCTFWrite)|  PASS
+              basic_write_update_fractional|              RuntimeWriter : write (CCTFCTFWrite)|  PASS
+                    basic_write_update_time|              RuntimeWriter : write (CCTFCTFWrite)|  PASS
+                  basic_write_update_binary|              RuntimeWriter : write (CCTFCTFWrite)|  PASS
+                   basic_write_update_multi|              RuntimeWriter : write (CCTFCTFWrite)|  PASS
+                         basic_write_upsert|              RuntimeWriter : write (CCTFCTFWrite)|  PASS
+    write_dynamicSchemaRefresh_DontApplyDDL|              RuntimeWriter : write (CCTFCTFWrite)|  PASS
+write_dynamicSchemaRefresh_UpdateElseCreate|              RuntimeWriter : write (CCTFCTFWrite)|  PASS
+   write_dynamicSchemaRefresh_DropAndCreate|              RuntimeWriter : write (CCTFCTFWrite)|  PASS
+                   basic_write_skipReadBack|              RuntimeWriter : write (CCTFCTFWrite)|  PASS
+                      write_post_pre_script|              RuntimeWriter : write (CCTFCTFWrite)|  PASS
+                      write_autoMatchFields|              RuntimeWriter : write (CCTFCTFWrite)|  PASS
+                  nativeFilter_explicitJoin|                                read (CCTFCTFRead)|  PASS
+                platformFilter_explicitJoin|                                read (CCTFCTFRead)|  PASS
+                platformFilter_implicitJoin|                                read (CCTFCTFRead)|  PASS
+                          nativeFilter_sort|                                read (CCTFCTFRead)|  PASS
+                        platformFilter_sort|                                read (CCTFCTFRead)|  PASS
+                            nativeJoin_sort|                                read (CCTFCTFRead)|  PASS
+                          platformJoin_sort|                                read (CCTFCTFRead)|  PASS
+

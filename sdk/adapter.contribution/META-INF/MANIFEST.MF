@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: SingleStore Adapter Main Extension Contribution Bundle
+Bundle-SymbolicName: com.singlestore.adapter.singlestore.adapter.contribution;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Vendor: SingleStore
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Require-Bundle: com.informatica.sdk.adaptersdk,
+ com.informatica.platform.adaptersdk.semantic.sdkbasemodel,
+ com.informatica.platform.adaptersdk.semantic.sdkcanonical,
+ com.informatica.platform.adaptersdk.semantic.sdkpattern,
+ com.singlestore.adapter.singlestore.metadata.model,
+ com.singlestore.adapter.singlestore.metadata.semantic,
+ com.singlestore.adapter.singlestore.metadata.adapter,
+ com.singlestore.adapter.singlestore.runtime.model,
+ com.singlestore.adapter.singlestore.runtime.semantic,
+ com.singlestore.adapter.singlestore.licensechecker

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature id="com.singlestore.adapter.singlestore" label="SingleStore Adapter Feature" version="1.0.0" provider-name="SingleStore" type="adapter">
+   <description url="http://www.example.com/description">SingleStore connector allows Informatica to connect to SingleStoreDB and SingleStore Managed Service, to allow transfer and integration of data between SingleStore databases and other sources and targets supported by Informatica.</description>
+   <copyright url="http://www.example.com/copyright">copyright</copyright>
+   <license url="http://www.example.com/license">license</license>
+   <plugin id="com.singlestore.adapter.singlestore.adapter.contribution" download-size="0" install-size="0" version="1.0.0" unpack="false"/>
+   <plugin id="com.singlestore.adapter.singlestore.connection.model" download-size="0" install-size="0" version="1.0.0" unpack="false"/>
+   <plugin id="com.singlestore.adapter.singlestore.connection.adapter" download-size="0" install-size="0" version="1.0.0" unpack="false"/>
+   <plugin id="com.singlestore.adapter.singlestore.seedprovider" download-size="0" install-size="0" version="1.0.0" unpack="false"/>
+   <plugin id="com.singlestore.adapter.singlestore.typesystem" download-size="0" install-size="0" version="1.0.0" unpack="false"/>
+   <plugin id="com.singlestore.adapter.singlestore.metadata.model" download-size="0" install-size="0" version="1.0.0" unpack="false"/>
+   <plugin id="com.singlestore.adapter.singlestore.metadata.semantic" download-size="0" install-size="0" version="1.0.0" unpack="false"/>
+   <plugin id="com.singlestore.adapter.singlestore.runtime.model" download-size="0" install-size="0" version="1.0.0" unpack="false"/>
+   <plugin id="com.singlestore.adapter.singlestore.runtime.semantic" download-size="0" install-size="0" version="1.0.0" unpack="false"/>
+   <plugin id="com.singlestore.adapter.singlestore.metamodel" download-size="0" install-size="0" version="1.0.0" unpack="false"/>
+   <plugin id="com.singlestore.adapter.singlestore.metadata.adapter" download-size="0" install-size="0" version="1.0.0" unpack="false"/>
+   <plugin id="com.singlestore.adapter.singlestore.modelattributes" download-size="0" install-size="0" version="1.0.0" unpack="false"/>
+   <plugin id="com.singlestore.adapter.singlestore.licensechecker" download-size="0" install-size="0" version="1.0.0" unpack="false"/>
+   <plugin id="com.singlestore.adapter.singlestore.libraryInfo" download-size="0" install-size="0" version="1.0.0" unpack="false"/>
+   <plugin id="com.singlestore.adapter.singlestore.messages.design" download-size="0" install-size="0" version="1.0.0" unpack="false"/>
+   <plugin id="com.singlestore.adapter.singlestore.messages.runtime" download-size="0" install-size="0" version="1.0.0" unpack="false"/>
+   <plugin id="com.singlestore.adapter.singlestore.runtime.pdo" download-size="0" install-size="0" version="1.0.0" unpack="false"/>
+   <plugin id="com.singlestore.adapter.singlestore.runtime.spark" download-size="0" install-size="0" version="1.0.0" unpack="false"/>
+   <plugin id="com.singlestore.adapter.singlestore.runtime.adapter" download-size="0" install-size="0" version="1.0.0" unpack="false"/>
+</feature>

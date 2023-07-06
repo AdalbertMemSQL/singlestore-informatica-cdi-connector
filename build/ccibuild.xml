@@ -1,0 +1,30 @@
+<project default="all">
+    <property name="sdk.dir" location="/home/amakarovych-ua/Informatica/IDP10.4.0_new/ict/Application"/>
+    <property name="CCI_DEPLOY" location="/home/amakarovych-ua/eclipse-workspace4/SingleStore//sdk/cci.deploy/src"/>
+    <property name="CCI_DEPLOY.build.dir" location="/home/amakarovych-ua/eclipse-workspace4/SingleStore/build/cci.deploy"/>
+    <property environment="env"/>
+    <path id="SDKJars">
+        <fileset dir="${sdk.dir}">
+            <include name="**/*.jar"/>
+        </fileset>
+        <fileset dir="/home/amakarovych-ua/Tools/new_eclipse/eclipse/plugins">
+            <include name="**/*.jar"/>
+        </fileset>
+        <fileset dir="/home/amakarovych-ua/eclipse-workspace4/SingleStore/build">
+            <include name="**/*.jar"/>
+        </fileset>
+    </path>
+    <target name="BUILD_CCI_DEPLOY">
+        <mkdir dir="${CCI_DEPLOY.build.dir}/classes"/>
+        <copy todir="${CCI_DEPLOY.build.dir}/classes/META-INF">
+            <fileset dir="/home/amakarovych-ua/eclipse-workspace4/SingleStore//sdk/cci.deploy/META-INF">
+                <include name="**/*.*"/>
+            </fileset>
+        </copy>
+        <javac srcdir="${CCI_DEPLOY}" destdir="${CCI_DEPLOY.build.dir}/classes" debug="on" encoding="UTF-8" includeantruntime="false" classpathref="SDKJars"/>
+        <jar destfile="/home/amakarovych-ua/eclipse-workspace4/SingleStore/build/cci.deploy/com.singlestore.adapter.singlestore.cci.deploy_1.0.0.jar" basedir="${CCI_DEPLOY.build.dir}/classes"/>
+    </target>
+    <target name="all">
+        <antcall target="BUILD_CCI_DEPLOY"/>
+    </target>
+</project>

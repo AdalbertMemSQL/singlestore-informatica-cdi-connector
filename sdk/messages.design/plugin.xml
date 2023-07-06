@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension point="com.informatica.sdk.i18n.messages" id="SingleStoredesigntime">
+      <group id="SingleStore" prefix="SingleStore">
+         <message id="CONN_SUCC" code="200" severity="Info" text="%SingleStore_CONN_SUCC_200.text" cause="%SingleStore_CONN_SUCC_200.cause" action="%SingleStore_CONN_SUCC_200.action"/>
+      </group>
+   </extension>
+</plugin>

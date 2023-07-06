@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: SingleStore Adapter UI Wizard Bundle
+Bundle-SymbolicName: com.singlestore.adapter.singlestore.ui.wizard;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Vendor: SingleStore
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Require-Bundle: org.eclipse.ui,
+ com.informatica.tools.adapters.ui.appsdk,
+ com.informatica.tools.adapters.ui.datasources,
+ com.informatica.tools.adapters.ui.sdk.connection,
+ com.informatica.tools.ui.connection,
+ com.informatica.sdk.connection,
+ com.singlestore.adapter.singlestore.connection.model
+Export-Package: com.singlestore.adapter.singlestore.wizard
+Bundle-Localization: i18n/plugin

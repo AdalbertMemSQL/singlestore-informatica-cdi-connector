@@ -1,0 +1,2327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Failed suite [SingleStore]]">
+  <parameter name="MapGenXmlFile" value="$_EP{DYNAMICSCHEMA.MapGenXmlFile}"/>
+  <parameter name="verifyMessage" value="$_EP{verifyMessage}"/>
+  <parameter name="sourceFlatFormatConfig" value="$_EP{sourceFlatFormatConfig}"/>
+  <parameter name="expectedStatus" value="$_EP{expectedStatus}"/>
+  <parameter name="OrderByColumn" value="$_EP{WRITE.UpdateKeyColumn}"/>
+  <parameter name="targetFlatFormatConfig" value="$_EP{targetFlatFormatConfig}"/>
+  <parameter name="AutoMatchFields" value="$_EP{WRITE.AutoMatchFields}"/>
+  <parameter name="relationshipName" value="$_EP{NATIVE_IMPLICITJOIN.relationshipName}"/>
+  <parameter name="SchemaChangeHandling" value="$_EP{DYNAMICSCHEMA.SchemaChangeHandling}"/>
+  <parameter name="sequenceGeneratorTx" value="sequenceGeneratorTx1"/>
+  <parameter name="tgtObject1" value="$_EP{ROUTERTX.tgtObject1}"/>
+  <parameter name="OverwriteIICSTargetConnectorDisplayName" value="$_EP{OverwriteIICSTargetConnectorDisplayName}"/>
+  <parameter name="adapID" value="com.singlestore.adapter.singlestore"/>
+  <parameter name="tgtConnection1" value="$_EP{ROUTERTX.tgtConnection1}"/>
+  <parameter name="ImportZip" value="$_EP{IMPORTZIP.ImportZip}"/>
+  <parameter name="srcObject1" value="$_EP{JOINERTX.srcObject1}"/>
+  <parameter name="DMTParam" value="$_EP{DMT.DMTParam}"/>
+  <parameter name="TargetFilePath" value="$_EP{TargetFilePath}"/>
+  <parameter name="postRunScript" value="$_EP{postRunScript}"/>
+  <parameter name="recordFilterName" value="$_EP{READ.recordFilterName}"/>
+  <parameter name="createTarget" value="true"/>
+  <parameter name="OverwriteIICSSourceConnectorDisplayName" value="$_EP{OverwriteIICSSourceConnectorDisplayName}"/>
+  <parameter name="filterTx" value="filterTx1"/>
+  <parameter name="LookupReaderProperty" value="$_EP{DTT.LookupReaderProperty}"/>
+  <parameter name="ReaderProperty" value="read1"/>
+  <parameter name="BaselineFilePath" value="$_EP{BaselineFilePath}"/>
+  <parameter name="TargetConnection" value="connection1"/>
+  <parameter name="TargetReaderProperty" value="$_EP{IMPORTZIP.TargetReaderProperty}"/>
+  <parameter name="mctListToExclude" value="$_EP{IMPORTZIP.mctListToExclude}"/>
+  <parameter name="joinExp" value="$_EP{NATIVE_EXPLICITJOIN.joinExp}"/>
+  <parameter name="writeOp" value="TableWrite"/>
+  <parameter name="LookupConnection" value="$_EP{DTT.LookupConnection}"/>
+  <parameter name="tags" value="UNIT,INTEGRATION"/>
+  <parameter name="FieldExpression" value="$_EP{WRITE.FieldExpression}"/>
+  <parameter name="importOptions" value="$_EP{importOptions}"/>
+  <parameter name="editTargetMetadata" value="$_EP{targetfield1}"/>
+  <parameter name="SessionProperties" value="$_EP{WRITE.SessionProperties}"/>
+  <parameter name="sortOrder" value="$_EP{SOURCESORT.sortOrder}"/>
+  <parameter name="sorterTx" value="sorterTx1"/>
+  <parameter name="isNativeFilter" value="true"/>
+  <parameter name="createTargetPath" value="$_EP{WRITE.createTargetPath}"/>
+  <parameter name="DMTJob" value="$_EP{DMT.DMTJob}"/>
+  <parameter name="PortsToConnect" value="$_EP{PortsToConnect}"/>
+  <parameter name="joinerTx" value="joinerTx1"/>
+  <parameter name="targetObject" value="$_EP{WRITE.targetObject}"/>
+  <parameter name="rankTx" value="rankTx1"/>
+  <parameter name="editSourceMetadata" value="$_EP{sourcefield1}"/>
+  <parameter name="aggregatorTx" value="aggregatorTx1"/>
+  <parameter name="preRunScript" value="$_EP{preRunScript}"/>
+  <parameter name="TgtWriteOperation2" value="$_EP{ROUTERTX.TgtWriteOperation2}"/>
+  <parameter name="FieldMapping" value="$_EP{WRITE.FieldMapping}"/>
+  <parameter name="IICSCleanUp" value="false"/>
+  <parameter name="lookupTx" value="lookupTx1"/>
+  <parameter name="adapterShortName" value="SingleStore"/>
+  <parameter name="recordFilterType" value="$_EP{READ.recordFilterType}"/>
+  <parameter name="IICSMeteringIds" value="$_EP{WRITE.IICSMeteringIds}"/>
+  <parameter name="lookupObject" value="$_EP{DTT.lookupObject}"/>
+  <parameter name="ConnectionName" value="connection1"/>
+  <parameter name="DMTGroup" value="$_EP{DMT.DMTGroup}"/>
+  <parameter name="readOp" value="TableRead"/>
+  <parameter name="WriteOperation" value="Insert"/>
+  <parameter name="SkipReadback" value="$_EP{WRITE.SkipReadback}"/>
+  <parameter name="LKP_filterExp" value="$_EP{DTT.LKP_filterExp}"/>
+  <parameter name="SourceDataFormat" value="$_EP{SourceDataFormat}"/>
+  <parameter name="IICSOverrideConnection" value="true"/>
+  <parameter name="LogFileVerification" value="$_EP{LogFileVerification}"/>
+  <parameter name="recordFilterDescription" value="$_EP{READ.recordFilterDescription}"/>
+  <parameter name="WriterProperty" value="write1"/>
+  <parameter name="sortFields" value="$_EP{SOURCESORT.sortFields}"/>
+  <parameter name="unionTx" value="unionTx1"/>
+  <parameter name="nmoType" value="table"/>
+  <parameter name="CustomLicenseFile" value="$_EP{CustomLicenseFile_path}"/>
+  <parameter name="expressionTx" value="expressionTx1"/>
+  <parameter name="objectName1" value="$_EP{READ.objectName1}"/>
+  <parameter name="DynamicSchemaHandling" value="$_EP{DYNAMICSCHEMA.DynamicSchemaHandling}"/>
+  <parameter name="relationshipType" value="Sibling"/>
+  <parameter name="mctListToInclude" value="$_EP{IMPORTZIP.mctListToInclude}"/>
+  <parameter name="TgtWriterProperty2" value="$_EP{ROUTERTX.TgtWriterProperty2}"/>
+  <parameter name="sourceObject" value="$_EP{WRITE.sourceObject}"/>
+  <parameter name="IICSConnectorDisplayName" value="$_EP{IICSConnectorDisplayName}"/>
+  <parameter name="srcConnection1" value="$_EP{JOINERTX.srcConnection1}"/>
+  <parameter name="objectName2" value="$_EP{READ.objectName2}"/>
+  <parameter name="filterExp" value="$_EP{PLATFORM_FILTER.filterExp}"/>
+  <parameter name="SkipImportZip" value="$_EP{IMPORTZIP.SkipImportZip}"/>
+  <parameter name="recordFilterLabel" value="$_EP{READ.recordFilterLabel}"/>
+  <parameter name="UpdateKeyColumn" value="$_EP{WRITE.UpdateKeyColumn}"/>
+  <parameter name="ReaderProperty1" value="$_EP{JOINERTX.ReaderProperty1}"/>
+  <parameter name="skipNull" value="$_EP{skipNull}"/>
+  <parameter name="implicitJoin" value="true"/>
+  <parameter name="MultipleTargets" value="$_EP{WRITE.MultipleTargets}"/>
+  <parameter name="TargetDataFormat" value="$_EP{TargetDataFormat}"/>
+  <parameter name="IICSPARAM" value="$_EP{WRITE.IICSPARAM}"/>
+  <parameter name="agentHomeDir" value="$_EP{DYNAMICSCHEMA.agentHomeDir}"/>
+  <parameter name="routerTx" value="routerTx1"/>
+  <test name="test_connection(failed)(failed)">
+    <parameter name="ConnectionName" value="connection1"/>
+    <parameter name="tags" value="UNIT,INTEGRATION,SANITY"/>
+    <groups>
+      <run>
+        <include name="UNIT"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.informatica.cci.direct.CCIMetadataSearch">
+        <methods>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataSearch -->
+      <class name="com.informatica.cci.direct.CCIMetadataRecordInformation">
+        <methods>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataRecordInformation -->
+      <class name="com.informatica.cci.direct.CCIMetadataRecordDetail">
+        <methods>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataRecordDetail -->
+      <class name="com.informatica.cci.direct.CCITestConnection">
+        <methods>
+          <include name="testData"/>
+          <include name="testConnection" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCITestConnection -->
+      <class name="com.informatica.cci.direct.CCIRuntimeWriter">
+        <methods>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIRuntimeWriter -->
+      <class name="com.informatica.cci.direct.CCIRuntimeReaderAllExpr">
+        <methods>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIRuntimeReaderAllExpr -->
+    </classes>
+  </test> <!-- test_connection(failed)(failed) -->
+  <test name="record_information(failed)(failed)">
+    <parameter name="ConnectionName" value="connection1"/>
+    <parameter name="objectName1" value="$_EP{READ.objectName1}"/>
+    <parameter name="tags" value="UNIT,INTEGRATION,SANITY"/>
+    <groups>
+      <run>
+        <include name="UNIT"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.informatica.cci.direct.CCIMetadataSearch">
+        <methods>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataSearch -->
+      <class name="com.informatica.cci.direct.CCIMetadataRecordInformation">
+        <methods>
+          <include name="testData"/>
+          <include name="getMetadata" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataRecordInformation -->
+      <class name="com.informatica.cci.direct.CCIMetadataRecordDetail">
+        <methods>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataRecordDetail -->
+      <class name="com.informatica.cci.direct.CCITestConnection">
+        <methods>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCITestConnection -->
+      <class name="com.informatica.cci.direct.CCIRuntimeWriter">
+        <methods>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIRuntimeWriter -->
+      <class name="com.informatica.cci.direct.CCIRuntimeReaderAllExpr">
+        <methods>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIRuntimeReaderAllExpr -->
+    </classes>
+  </test> <!-- record_information(failed)(failed) -->
+  <test name="record_field_detail(failed)(failed)">
+    <parameter name="ConnectionName" value="connection1"/>
+    <parameter name="objectName1" value="$_EP{READ.objectName1}"/>
+    <parameter name="tags" value="UNIT,INTEGRATION"/>
+    <groups>
+      <run>
+        <include name="UNIT"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.informatica.cci.direct.CCIMetadataSearch">
+        <methods>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataSearch -->
+      <class name="com.informatica.cci.direct.CCIMetadataRecordDetail">
+        <methods>
+          <include name="testData"/>
+          <include name="getMetadata" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataRecordDetail -->
+      <class name="com.informatica.cci.direct.CCIMetadataRecordInformation">
+        <methods>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataRecordInformation -->
+      <class name="com.informatica.cci.direct.CCITestConnection">
+        <methods>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCITestConnection -->
+      <class name="com.informatica.cci.direct.CCIRuntimeWriter">
+        <methods>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIRuntimeWriter -->
+      <class name="com.informatica.cci.direct.CCIRuntimeReaderAllExpr">
+        <methods>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIRuntimeReaderAllExpr -->
+    </classes>
+  </test> <!-- record_field_detail(failed)(failed) -->
+  <test name="record_search_(failed)(failed)">
+    <parameter name="ConnectionName" value="connection1"/>
+    <parameter name="objectName1" value="$_EP{READ.objectName1}"/>
+    <parameter name="tags" value="UNIT,INTEGRATION"/>
+    <groups>
+      <run>
+        <include name="UNIT"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.informatica.cci.direct.CCIMetadataSearch">
+        <methods>
+          <include name="getMetadata" invocation-numbers="0"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataSearch -->
+      <class name="com.informatica.cci.direct.CCIMetadataRecordInformation">
+        <methods>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataRecordInformation -->
+      <class name="com.informatica.cci.direct.CCIMetadataRecordDetail">
+        <methods>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataRecordDetail -->
+      <class name="com.informatica.cci.direct.CCITestConnection">
+        <methods>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCITestConnection -->
+      <class name="com.informatica.cci.direct.CCIRuntimeWriter">
+        <methods>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIRuntimeWriter -->
+      <class name="com.informatica.cci.direct.CCIRuntimeReaderAllExpr">
+        <methods>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIRuntimeReaderAllExpr -->
+    </classes>
+  </test> <!-- record_search_(failed)(failed) -->
+  <test name="record_search_recordFilterType(failed)(failed)">
+    <parameter name="ConnectionName" value="connection1"/>
+    <parameter name="objectName1" value="$_EP{READ.objectName1}"/>
+    <parameter name="tags" value="UNIT,INTEGRATION"/>
+    <parameter name="recordFilterType" value="$_EP{READ.recordFilterType}"/>
+    <groups>
+      <run>
+        <include name="UNIT"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.informatica.cci.direct.CCIMetadataSearch">
+        <methods>
+          <include name="getMetadata" invocation-numbers="0"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataSearch -->
+      <class name="com.informatica.cci.direct.CCIMetadataRecordInformation">
+        <methods>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataRecordInformation -->
+      <class name="com.informatica.cci.direct.CCIMetadataRecordDetail">
+        <methods>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataRecordDetail -->
+      <class name="com.informatica.cci.direct.CCITestConnection">
+        <methods>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCITestConnection -->
+      <class name="com.informatica.cci.direct.CCIRuntimeWriter">
+        <methods>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIRuntimeWriter -->
+      <class name="com.informatica.cci.direct.CCIRuntimeReaderAllExpr">
+        <methods>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIRuntimeReaderAllExpr -->
+    </classes>
+  </test> <!-- record_search_recordFilterType(failed)(failed) -->
+  <test name="record_search_recordFilterName(failed)(failed)">
+    <parameter name="ConnectionName" value="connection1"/>
+    <parameter name="objectName1" value="$_EP{READ.objectName1}"/>
+    <parameter name="recordFilterName" value="$_EP{READ.recordFilterName}"/>
+    <parameter name="tags" value="UNIT,INTEGRATION"/>
+    <groups>
+      <run>
+        <include name="UNIT"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.informatica.cci.direct.CCIMetadataSearch">
+        <methods>
+          <include name="getMetadata" invocation-numbers="0"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataSearch -->
+      <class name="com.informatica.cci.direct.CCIMetadataRecordInformation">
+        <methods>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataRecordInformation -->
+      <class name="com.informatica.cci.direct.CCIMetadataRecordDetail">
+        <methods>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataRecordDetail -->
+      <class name="com.informatica.cci.direct.CCITestConnection">
+        <methods>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCITestConnection -->
+      <class name="com.informatica.cci.direct.CCIRuntimeWriter">
+        <methods>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIRuntimeWriter -->
+      <class name="com.informatica.cci.direct.CCIRuntimeReaderAllExpr">
+        <methods>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIRuntimeReaderAllExpr -->
+    </classes>
+  </test> <!-- record_search_recordFilterName(failed)(failed) -->
+  <test name="record_search_recordFilterDescription(failed)(failed)">
+    <parameter name="ConnectionName" value="connection1"/>
+    <parameter name="objectName1" value="$_EP{READ.objectName1}"/>
+    <parameter name="recordFilterDescription" value="$_EP{READ.recordFilterDescription}"/>
+    <parameter name="tags" value="UNIT,INTEGRATION"/>
+    <groups>
+      <run>
+        <include name="UNIT"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.informatica.cci.direct.CCIMetadataSearch">
+        <methods>
+          <include name="getMetadata" invocation-numbers="0"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataSearch -->
+      <class name="com.informatica.cci.direct.CCIMetadataRecordInformation">
+        <methods>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataRecordInformation -->
+      <class name="com.informatica.cci.direct.CCIMetadataRecordDetail">
+        <methods>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataRecordDetail -->
+      <class name="com.informatica.cci.direct.CCITestConnection">
+        <methods>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCITestConnection -->
+      <class name="com.informatica.cci.direct.CCIRuntimeWriter">
+        <methods>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIRuntimeWriter -->
+      <class name="com.informatica.cci.direct.CCIRuntimeReaderAllExpr">
+        <methods>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIRuntimeReaderAllExpr -->
+    </classes>
+  </test> <!-- record_search_recordFilterDescription(failed)(failed) -->
+  <test name="record_search_recordFilterLabel(failed)(failed)">
+    <parameter name="ConnectionName" value="connection1"/>
+    <parameter name="objectName1" value="$_EP{READ.objectName1}"/>
+    <parameter name="recordFilterLabel" value="$_EP{READ.recordFilterLabel}"/>
+    <parameter name="tags" value="UNIT,INTEGRATION"/>
+    <groups>
+      <run>
+        <include name="UNIT"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.informatica.cci.direct.CCIMetadataSearch">
+        <methods>
+          <include name="getMetadata" invocation-numbers="0"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataSearch -->
+      <class name="com.informatica.cci.direct.CCIMetadataRecordInformation">
+        <methods>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataRecordInformation -->
+      <class name="com.informatica.cci.direct.CCIMetadataRecordDetail">
+        <methods>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataRecordDetail -->
+      <class name="com.informatica.cci.direct.CCITestConnection">
+        <methods>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCITestConnection -->
+      <class name="com.informatica.cci.direct.CCIRuntimeWriter">
+        <methods>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIRuntimeWriter -->
+      <class name="com.informatica.cci.direct.CCIRuntimeReaderAllExpr">
+        <methods>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIRuntimeReaderAllExpr -->
+    </classes>
+  </test> <!-- record_search_recordFilterLabel(failed)(failed) -->
+  <test name="record_search_allFilter(failed)(failed)">
+    <parameter name="ConnectionName" value="connection1"/>
+    <parameter name="objectName1" value="$_EP{READ.objectName1}"/>
+    <parameter name="recordFilterLabel" value="$_EP{READ.recordFilterLabel}"/>
+    <parameter name="recordFilterDescription" value="$_EP{READ.recordFilterDescription}"/>
+    <parameter name="recordFilterName" value="$_EP{READ.recordFilterName}"/>
+    <parameter name="tags" value="UNIT,INTEGRATION"/>
+    <parameter name="recordFilterType" value="$_EP{READ.recordFilterType}"/>
+    <groups>
+      <run>
+        <include name="UNIT"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.informatica.cci.direct.CCIMetadataSearch">
+        <methods>
+          <include name="getMetadata" invocation-numbers="0"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataSearch -->
+      <class name="com.informatica.cci.direct.CCIMetadataRecordInformation">
+        <methods>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataRecordInformation -->
+      <class name="com.informatica.cci.direct.CCIMetadataRecordDetail">
+        <methods>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataRecordDetail -->
+      <class name="com.informatica.cci.direct.CCITestConnection">
+        <methods>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCITestConnection -->
+      <class name="com.informatica.cci.direct.CCIRuntimeWriter">
+        <methods>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIRuntimeWriter -->
+      <class name="com.informatica.cci.direct.CCIRuntimeReaderAllExpr">
+        <methods>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIRuntimeReaderAllExpr -->
+    </classes>
+  </test> <!-- record_search_allFilter(failed)(failed) -->
+  <test name="basic_write_insert(failed)(failed)">
+    <parameter name="ConnectionName" value="connection1"/>
+    <parameter name="targetObject" value="$_EP{WRITE.targetObject}"/>
+    <parameter name="ReaderProperty" value="read1"/>
+    <parameter name="WriteOperation" value="Insert"/>
+    <parameter name="TargetConnection" value="connection1"/>
+    <parameter name="WriterProperty" value="write1"/>
+    <parameter name="sourceObject" value="$_EP{WRITE.sourceObject}"/>
+    <parameter name="tags" value="UNIT,INTEGRATION"/>
+    <groups>
+      <run>
+        <include name="UNIT"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.informatica.cci.direct.CCIMetadataSearch">
+        <methods>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataSearch -->
+      <class name="com.informatica.cci.direct.CCIMetadataRecordInformation">
+        <methods>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataRecordInformation -->
+      <class name="com.informatica.cci.direct.CCIMetadataRecordDetail">
+        <methods>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataRecordDetail -->
+      <class name="com.informatica.cci.direct.CCITestConnection">
+        <methods>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCITestConnection -->
+      <class name="com.informatica.cci.direct.CCIRuntimeWriter">
+        <methods>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="write" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIRuntimeWriter -->
+      <class name="com.informatica.cci.direct.CCIRuntimeReaderAllExpr">
+        <methods>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIRuntimeReaderAllExpr -->
+    </classes>
+  </test> <!-- basic_write_insert(failed)(failed) -->
+  <test name="write_create_target(failed)(failed)">
+    <parameter name="ConnectionName" value="connection1"/>
+    <parameter name="targetObject" value="$_EP{WRITE.targetObject}"/>
+    <parameter name="ReaderProperty" value="read1"/>
+    <parameter name="WriteOperation" value="Insert"/>
+    <parameter name="TargetConnection" value="connection1"/>
+    <parameter name="WriterProperty" value="write1"/>
+    <parameter name="sourceObject" value="$_EP{WRITE.sourceObject}"/>
+    <parameter name="createTarget" value="true"/>
+    <parameter name="tags" value="UNIT,INTEGRATION"/>
+    <groups>
+      <run>
+        <include name="UNIT"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.informatica.cci.direct.CCIMetadataSearch">
+        <methods>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataSearch -->
+      <class name="com.informatica.cci.direct.CCIMetadataRecordInformation">
+        <methods>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataRecordInformation -->
+      <class name="com.informatica.cci.direct.CCIMetadataRecordDetail">
+        <methods>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataRecordDetail -->
+      <class name="com.informatica.cci.direct.CCITestConnection">
+        <methods>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCITestConnection -->
+      <class name="com.informatica.cci.direct.CCIRuntimeWriter">
+        <methods>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="write" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIRuntimeWriter -->
+      <class name="com.informatica.cci.direct.CCIRuntimeReaderAllExpr">
+        <methods>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIRuntimeReaderAllExpr -->
+    </classes>
+  </test> <!-- write_create_target(failed)(failed) -->
+  <test name="basic_write_delete(failed)(failed)">
+    <parameter name="ConnectionName" value="connection1"/>
+    <parameter name="targetObject" value="$_EP{WRITE.targetObject}"/>
+    <parameter name="ReaderProperty" value="read1"/>
+    <parameter name="WriteOperation" value="Delete"/>
+    <parameter name="TargetConnection" value="connection1"/>
+    <parameter name="UpdateKeyColumn" value="$_EP{WRITE.UpdateKeyColumn}"/>
+    <parameter name="WriterProperty" value="write1"/>
+    <parameter name="sourceObject" value="$_EP{WRITE.sourceObject}"/>
+    <parameter name="tags" value="UNIT,INTEGRATION"/>
+    <groups>
+      <run>
+        <include name="UNIT"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.informatica.cci.direct.CCIMetadataSearch">
+        <methods>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataSearch -->
+      <class name="com.informatica.cci.direct.CCIMetadataRecordInformation">
+        <methods>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataRecordInformation -->
+      <class name="com.informatica.cci.direct.CCIMetadataRecordDetail">
+        <methods>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataRecordDetail -->
+      <class name="com.informatica.cci.direct.CCITestConnection">
+        <methods>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCITestConnection -->
+      <class name="com.informatica.cci.direct.CCIRuntimeWriter">
+        <methods>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="write" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIRuntimeWriter -->
+      <class name="com.informatica.cci.direct.CCIRuntimeReaderAllExpr">
+        <methods>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIRuntimeReaderAllExpr -->
+    </classes>
+  </test> <!-- basic_write_delete(failed)(failed) -->
+  <test name="basic_write_update(failed)(failed)">
+    <parameter name="ConnectionName" value="connection1"/>
+    <parameter name="targetObject" value="$_EP{WRITE.targetObject}"/>
+    <parameter name="ReaderProperty" value="read1"/>
+    <parameter name="WriteOperation" value="Update"/>
+    <parameter name="TargetConnection" value="connection1"/>
+    <parameter name="UpdateKeyColumn" value="$_EP{WRITE.UpdateKeyColumn}"/>
+    <parameter name="WriterProperty" value="write1"/>
+    <parameter name="sourceObject" value="$_EP{WRITE.sourceObject}"/>
+    <parameter name="tags" value="UNIT,INTEGRATION"/>
+    <groups>
+      <run>
+        <include name="UNIT"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.informatica.cci.direct.CCIMetadataSearch">
+        <methods>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataSearch -->
+      <class name="com.informatica.cci.direct.CCIMetadataRecordInformation">
+        <methods>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataRecordInformation -->
+      <class name="com.informatica.cci.direct.CCIMetadataRecordDetail">
+        <methods>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataRecordDetail -->
+      <class name="com.informatica.cci.direct.CCITestConnection">
+        <methods>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCITestConnection -->
+      <class name="com.informatica.cci.direct.CCIRuntimeWriter">
+        <methods>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="write" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIRuntimeWriter -->
+      <class name="com.informatica.cci.direct.CCIRuntimeReaderAllExpr">
+        <methods>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIRuntimeReaderAllExpr -->
+    </classes>
+  </test> <!-- basic_write_update(failed)(failed) -->
+  <test name="write_dynamicSchemaRefresh_DontApplyDDL(failed)(failed)">
+    <parameter name="DynamicSchemaHandling" value="$_EP{DYNAMICSCHEMA.DynamicSchemaHandling}"/>
+    <parameter name="MapGenXmlFile" value="$_EP{DYNAMICSCHEMA.MapGenXmlFile}"/>
+    <parameter name="targetObject" value="$_EP{WRITE.targetObject}"/>
+    <parameter name="ReaderProperty" value="read1"/>
+    <parameter name="TargetConnection" value="connection1"/>
+    <parameter name="sourceObject" value="$_EP{WRITE.sourceObject}"/>
+    <parameter name="OrderByColumn" value="$_EP{WRITE.UpdateKeyColumn}"/>
+    <parameter name="tags" value="UNIT,INTEGRATION"/>
+    <parameter name="ConnectionName" value="connection1"/>
+    <parameter name="SchemaChangeHandling" value="$_EP{DYNAMICSCHEMA.SchemaChangeHandling}"/>
+    <parameter name="SessionProperties" value="$_EP{WRITE.SessionProperties}"/>
+    <parameter name="WriteOperation" value="Delete"/>
+    <parameter name="WriterProperty" value="write1"/>
+    <parameter name="agentHomeDir" value="$_EP{DYNAMICSCHEMA.agentHomeDir}"/>
+    <groups>
+      <run>
+        <include name="UNIT"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.informatica.cci.direct.CCIMetadataSearch">
+        <methods>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataSearch -->
+      <class name="com.informatica.cci.direct.CCIMetadataRecordInformation">
+        <methods>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataRecordInformation -->
+      <class name="com.informatica.cci.direct.CCIMetadataRecordDetail">
+        <methods>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataRecordDetail -->
+      <class name="com.informatica.cci.direct.CCITestConnection">
+        <methods>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCITestConnection -->
+      <class name="com.informatica.cci.direct.CCIRuntimeWriter">
+        <methods>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="write" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIRuntimeWriter -->
+      <class name="com.informatica.cci.direct.CCIRuntimeReaderAllExpr">
+        <methods>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIRuntimeReaderAllExpr -->
+    </classes>
+  </test> <!-- write_dynamicSchemaRefresh_DontApplyDDL(failed)(failed) -->
+  <test name="write_dynamicSchemaRefresh_UpdateElseCreate(failed)(failed)">
+    <parameter name="DynamicSchemaHandling" value="$_EP{DYNAMICSCHEMA.DynamicSchemaHandling}"/>
+    <parameter name="MapGenXmlFile" value="$_EP{DYNAMICSCHEMA.MapGenXmlFile}"/>
+    <parameter name="targetObject" value="$_EP{WRITE.targetObject}"/>
+    <parameter name="ReaderProperty" value="read1"/>
+    <parameter name="TargetConnection" value="connection1"/>
+    <parameter name="sourceObject" value="$_EP{WRITE.sourceObject}"/>
+    <parameter name="OrderByColumn" value="$_EP{WRITE.UpdateKeyColumn}"/>
+    <parameter name="tags" value="UNIT,INTEGRATION"/>
+    <parameter name="ConnectionName" value="connection1"/>
+    <parameter name="SchemaChangeHandling" value="$_EP{DYNAMICSCHEMA.SchemaChangeHandling}"/>
+    <parameter name="SessionProperties" value="$_EP{WRITE.SessionProperties}"/>
+    <parameter name="WriteOperation" value="Delete"/>
+    <parameter name="WriterProperty" value="write1"/>
+    <parameter name="agentHomeDir" value="$_EP{DYNAMICSCHEMA.agentHomeDir}"/>
+    <groups>
+      <run>
+        <include name="UNIT"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.informatica.cci.direct.CCIMetadataSearch">
+        <methods>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataSearch -->
+      <class name="com.informatica.cci.direct.CCIMetadataRecordInformation">
+        <methods>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataRecordInformation -->
+      <class name="com.informatica.cci.direct.CCIMetadataRecordDetail">
+        <methods>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataRecordDetail -->
+      <class name="com.informatica.cci.direct.CCITestConnection">
+        <methods>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCITestConnection -->
+      <class name="com.informatica.cci.direct.CCIRuntimeWriter">
+        <methods>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="write" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIRuntimeWriter -->
+      <class name="com.informatica.cci.direct.CCIRuntimeReaderAllExpr">
+        <methods>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIRuntimeReaderAllExpr -->
+    </classes>
+  </test> <!-- write_dynamicSchemaRefresh_UpdateElseCreate(failed)(failed) -->
+  <test name="write_dynamicSchemaRefresh_DropAndCreate(failed)(failed)">
+    <parameter name="DynamicSchemaHandling" value="$_EP{DYNAMICSCHEMA.DynamicSchemaHandling}"/>
+    <parameter name="MapGenXmlFile" value="$_EP{DYNAMICSCHEMA.MapGenXmlFile}"/>
+    <parameter name="targetObject" value="$_EP{WRITE.targetObject}"/>
+    <parameter name="ReaderProperty" value="read1"/>
+    <parameter name="TargetConnection" value="connection1"/>
+    <parameter name="sourceObject" value="$_EP{WRITE.sourceObject}"/>
+    <parameter name="OrderByColumn" value="$_EP{WRITE.UpdateKeyColumn}"/>
+    <parameter name="tags" value="UNIT,INTEGRATION"/>
+    <parameter name="ConnectionName" value="connection1"/>
+    <parameter name="SchemaChangeHandling" value="$_EP{DYNAMICSCHEMA.SchemaChangeHandling}"/>
+    <parameter name="SessionProperties" value="$_EP{WRITE.SessionProperties}"/>
+    <parameter name="WriteOperation" value="Delete"/>
+    <parameter name="WriterProperty" value="write1"/>
+    <parameter name="agentHomeDir" value="$_EP{DYNAMICSCHEMA.agentHomeDir}"/>
+    <groups>
+      <run>
+        <include name="UNIT"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.informatica.cci.direct.CCIMetadataSearch">
+        <methods>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataSearch -->
+      <class name="com.informatica.cci.direct.CCIMetadataRecordInformation">
+        <methods>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataRecordInformation -->
+      <class name="com.informatica.cci.direct.CCIMetadataRecordDetail">
+        <methods>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataRecordDetail -->
+      <class name="com.informatica.cci.direct.CCITestConnection">
+        <methods>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCITestConnection -->
+      <class name="com.informatica.cci.direct.CCIRuntimeWriter">
+        <methods>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="write" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIRuntimeWriter -->
+      <class name="com.informatica.cci.direct.CCIRuntimeReaderAllExpr">
+        <methods>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIRuntimeReaderAllExpr -->
+    </classes>
+  </test> <!-- write_dynamicSchemaRefresh_DropAndCreate(failed)(failed) -->
+  <test name="basic_write_skipReadBack(failed)(failed)">
+    <parameter name="ConnectionName" value="connection1"/>
+    <parameter name="targetObject" value="$_EP{WRITE.targetObject}"/>
+    <parameter name="ReaderProperty" value="read1"/>
+    <parameter name="WriteOperation" value="Insert"/>
+    <parameter name="TargetConnection" value="connection1"/>
+    <parameter name="SkipReadback" value="$_EP{WRITE.SkipReadback}"/>
+    <parameter name="WriterProperty" value="write1"/>
+    <parameter name="sourceObject" value="$_EP{WRITE.sourceObject}"/>
+    <parameter name="tags" value="UNIT,INTEGRATION"/>
+    <groups>
+      <run>
+        <include name="UNIT"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.informatica.cci.direct.CCIMetadataSearch">
+        <methods>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataSearch -->
+      <class name="com.informatica.cci.direct.CCIMetadataRecordInformation">
+        <methods>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataRecordInformation -->
+      <class name="com.informatica.cci.direct.CCIMetadataRecordDetail">
+        <methods>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataRecordDetail -->
+      <class name="com.informatica.cci.direct.CCITestConnection">
+        <methods>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCITestConnection -->
+      <class name="com.informatica.cci.direct.CCIRuntimeWriter">
+        <methods>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="write" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIRuntimeWriter -->
+      <class name="com.informatica.cci.direct.CCIRuntimeReaderAllExpr">
+        <methods>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIRuntimeReaderAllExpr -->
+    </classes>
+  </test> <!-- basic_write_skipReadBack(failed)(failed) -->
+  <test name="write_post_pre_script(failed)(failed)">
+    <parameter name="ConnectionName" value="connection1"/>
+    <parameter name="targetObject" value="$_EP{WRITE.targetObject}"/>
+    <parameter name="ReaderProperty" value="read1"/>
+    <parameter name="WriteOperation" value="Insert"/>
+    <parameter name="preRunScript" value="$_EP{preRunScript}"/>
+    <parameter name="TargetConnection" value="connection1"/>
+    <parameter name="WriterProperty" value="write1"/>
+    <parameter name="sourceObject" value="$_EP{WRITE.sourceObject}"/>
+    <parameter name="postRunScript" value="$_EP{postRunScript}"/>
+    <parameter name="tags" value="INTEGRATION,UNIT"/>
+    <groups>
+      <run>
+        <include name="UNIT"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.informatica.cci.direct.CCIMetadataSearch">
+        <methods>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataSearch -->
+      <class name="com.informatica.cci.direct.CCIMetadataRecordInformation">
+        <methods>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataRecordInformation -->
+      <class name="com.informatica.cci.direct.CCIMetadataRecordDetail">
+        <methods>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataRecordDetail -->
+      <class name="com.informatica.cci.direct.CCITestConnection">
+        <methods>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCITestConnection -->
+      <class name="com.informatica.cci.direct.CCIRuntimeWriter">
+        <methods>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="write" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIRuntimeWriter -->
+      <class name="com.informatica.cci.direct.CCIRuntimeReaderAllExpr">
+        <methods>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIRuntimeReaderAllExpr -->
+    </classes>
+  </test> <!-- write_post_pre_script(failed)(failed) -->
+  <test name="write_autoMatchFields(failed)(failed)">
+    <parameter name="ConnectionName" value="connection1"/>
+    <parameter name="AutoMatchFields" value="$_EP{WRITE.AutoMatchFields}"/>
+    <parameter name="targetObject" value="$_EP{WRITE.targetObject}"/>
+    <parameter name="ReaderProperty" value="read1"/>
+    <parameter name="WriteOperation" value="Insert"/>
+    <parameter name="TargetConnection" value="connection1"/>
+    <parameter name="WriterProperty" value="write1"/>
+    <parameter name="sourceObject" value="$_EP{WRITE.sourceObject}"/>
+    <parameter name="tags" value="INTEGRATION,UNIT"/>
+    <groups>
+      <run>
+        <include name="UNIT"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.informatica.cci.direct.CCIMetadataSearch">
+        <methods>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataSearch -->
+      <class name="com.informatica.cci.direct.CCIMetadataRecordInformation">
+        <methods>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataRecordInformation -->
+      <class name="com.informatica.cci.direct.CCIMetadataRecordDetail">
+        <methods>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataRecordDetail -->
+      <class name="com.informatica.cci.direct.CCITestConnection">
+        <methods>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCITestConnection -->
+      <class name="com.informatica.cci.direct.CCIRuntimeWriter">
+        <methods>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="write" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIRuntimeWriter -->
+      <class name="com.informatica.cci.direct.CCIRuntimeReaderAllExpr">
+        <methods>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIRuntimeReaderAllExpr -->
+    </classes>
+  </test> <!-- write_autoMatchFields(failed)(failed) -->
+  <test name="write_edit_metadata(failed)(failed)">
+    <parameter name="ConnectionName" value="connection1"/>
+    <parameter name="targetObject" value="$_EP{WRITE.targetObject}"/>
+    <parameter name="editTargetMetadata" value="$_EP{targetfield1}"/>
+    <parameter name="editSourceMetadata" value="$_EP{sourcefield1}"/>
+    <parameter name="ReaderProperty" value="read1"/>
+    <parameter name="WriteOperation" value="Insert"/>
+    <parameter name="TargetConnection" value="connection1"/>
+    <parameter name="WriterProperty" value="write1"/>
+    <parameter name="sourceObject" value="$_EP{WRITE.sourceObject}"/>
+    <parameter name="tags" value="INTEGRATION,UNIT"/>
+    <groups>
+      <run>
+        <include name="UNIT"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.informatica.cci.direct.CCIMetadataSearch">
+        <methods>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataSearch -->
+      <class name="com.informatica.cci.direct.CCIMetadataRecordInformation">
+        <methods>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataRecordInformation -->
+      <class name="com.informatica.cci.direct.CCIMetadataRecordDetail">
+        <methods>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIMetadataRecordDetail -->
+      <class name="com.informatica.cci.direct.CCITestConnection">
+        <methods>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCITestConnection -->
+      <class name="com.informatica.cci.direct.CCIRuntimeWriter">
+        <methods>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="write" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIRuntimeWriter -->
+      <class name="com.informatica.cci.direct.CCIRuntimeReaderAllExpr">
+        <methods>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+          <include name="testData"/>
+        </methods>
+      </class> <!-- com.informatica.cci.direct.CCIRuntimeReaderAllExpr -->
+    </classes>
+  </test> <!-- write_edit_metadata(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [SingleStore]] -->

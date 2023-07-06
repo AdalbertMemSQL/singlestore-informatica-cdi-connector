@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<imx:IMX xmlns:imx="http://com.informatica.imx" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" serializationSpecVersion="13.0" crcEnabled="0" xmlns:core="http://com.informatica.metadata.common.core/2" versioncore="2.2.1" xmlns:types="http://com.informatica.metadata.common.types/2" versiontypes="2.4.0" xmlns:directmaps="http://com.informatica.metadata.common.typesystem.directmaps/2" versiondirectmaps="2.1.0" xmlns:description="http://com.informatica.metadata.common.description/2" versiondescription="2.1.0" xmlns:storagesemantics="http://com.informatica.metadata.common.typesystem.storagesemantics/2" versionstoragesemantics="2.1.0" xmlns:typesystem="http://com.informatica.metadata.common.typesystem/2" versiontypesystem="2.2.0" xsi:schemaLocation="http://com.informatica.imx IMX.xsd http://com.informatica.metadata.common.core/2 com.informatica.metadata.common.core.xsd http://com.informatica.metadata.common.types/2 com.informatica.metadata.common.types.xsd http://com.informatica.metadata.common.typesystem.directmaps/2 com.informatica.metadata.common.typesystem.directmaps.xsd http://com.informatica.metadata.common.description/2 com.informatica.metadata.common.description.xsd http://com.informatica.metadata.common.typesystem.storagesemantics/2 com.informatica.metadata.common.typesystem.storagesemantics.xsd http://com.informatica.metadata.common.typesystem/2 com.informatica.metadata.common.typesystem.xsd" serDeCompatibilityAnnotation="com.informatica.metadata.common.typesystem.directmaps#DataTypeMap:bestMapFromForeign=4,lossyToLocal=4,lossyToForeign=4,bestMapFromLocal=4~com.informatica.metadata.common.typesystem.storagesemantics#LengthStorageSemantic:editableLength=4|GregorianTimeStorageSemantic:editableScale=4,monthSupported=4,daySupported=4,defaultScale=4,maxScale=4,hourSupported=4,minuteSupported=4,yearSupported=4,secondSupported=4,timezoneSupported=4|ScientificDecimalStorageSemantic:defaultScale=4,minScale=4|FloatStorageSemantic:exponentMin=4,exponentRadix=4,editablePrecision=4|IntegerStorageSemantic:editablePrecision=4">
+<typesystem:TypeSystem imx:id="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem" name="SINGLESTORE">
+<annotations>
+<Annotation imx:id="ID_1" xsi:type="description:Description" body="SingleStore+Adapter+Type+System"/>
+</annotations>
+<dataTypes>
+<DataType imx:id="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FBOOL" xsi:type="typesystem:DataType" name="BOOL" displayName="BOOL">
+<semantic xsi:type="storagesemantics:IntegerStorageSemantic" defaultPrecision="1" maxPrecision="1"/>
+</DataType>
+<DataType imx:id="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FBOOLEAN" xsi:type="typesystem:DataType" name="BOOLEAN" displayName="BOOLEAN">
+<semantic xsi:type="storagesemantics:IntegerStorageSemantic" defaultPrecision="1" maxPrecision="1"/>
+</DataType>
+<DataType imx:id="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FBIT" xsi:type="typesystem:DataType" name="BIT" displayName="BIT">
+<semantic xsi:type="storagesemantics:LengthStorageSemantic" defaultLength="8" editableLength="true" lengthUnit="characters" maxLength="8" variableAllocation="true"/>
+</DataType>
+<DataType imx:id="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FTINYINT" xsi:type="typesystem:DataType" name="TINYINT" displayName="TINYINT">
+<semantic xsi:type="storagesemantics:IntegerStorageSemantic" defaultPrecision="3" maxPrecision="3"/>
+</DataType>
+<DataType imx:id="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FMEDIUMINT" xsi:type="typesystem:DataType" name="MEDIUMINT" displayName="MEDIUMINT">
+<semantic xsi:type="storagesemantics:IntegerStorageSemantic" defaultPrecision="7" maxPrecision="7"/>
+</DataType>
+<DataType imx:id="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FSMALLINT" xsi:type="typesystem:DataType" name="SMALLINT" displayName="SMALLINT">
+<semantic xsi:type="storagesemantics:IntegerStorageSemantic" defaultPrecision="5" maxPrecision="5"/>
+</DataType>
+<DataType imx:id="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FINT" xsi:type="typesystem:DataType" name="INT" displayName="INT">
+<semantic xsi:type="storagesemantics:IntegerStorageSemantic" defaultPrecision="10" maxPrecision="10"/>
+</DataType>
+<DataType imx:id="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FINTEGER" xsi:type="typesystem:DataType" name="INTEGER" displayName="INTEGER">
+<semantic xsi:type="storagesemantics:IntegerStorageSemantic" defaultPrecision="10" maxPrecision="10"/>
+</DataType>
+<DataType imx:id="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FBIGINT" xsi:type="typesystem:DataType" name="BIGINT" displayName="BIGINT">
+<semantic xsi:type="storagesemantics:IntegerStorageSemantic" defaultPrecision="19" maxPrecision="19"/>
+</DataType>
+<DataType imx:id="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FFLOAT" xsi:type="typesystem:DataType" name="FLOAT" displayName="FLOAT">
+<semantic xsi:type="storagesemantics:FloatStorageSemantic" defaultPrecision="8" exponentMax="8" maxPrecision="8" precisionRadix="decimal"/>
+</DataType>
+<DataType imx:id="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FDOUBLE" xsi:type="typesystem:DataType" name="DOUBLE" displayName="DOUBLE">
+<semantic xsi:type="storagesemantics:FloatStorageSemantic" defaultPrecision="15" exponentMax="11" maxPrecision="15" precisionRadix="decimal"/>
+</DataType>
+<DataType imx:id="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FREAL" xsi:type="typesystem:DataType" name="REAL" displayName="REAL">
+<semantic xsi:type="storagesemantics:FloatStorageSemantic" defaultPrecision="15" exponentMax="11" maxPrecision="15" precisionRadix="decimal"/>
+</DataType>
+<DataType imx:id="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FDATE" xsi:type="typesystem:DataType" name="DATE" displayName="DATE">
+<semantic xsi:type="storagesemantics:GregorianTimeStorageSemantic" daySupported="true" monthSupported="true" yearSupported="true"/>
+</DataType>
+<DataType imx:id="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FTIME" xsi:type="typesystem:DataType" name="TIME" displayName="TIME">
+<semantic xsi:type="storagesemantics:GregorianTimeStorageSemantic" editableScale="true" hourSupported="true" maxScale="6" minuteSupported="true" secondSupported="true"/>
+</DataType>
+<DataType imx:id="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FDATETIME" xsi:type="typesystem:DataType" name="DATETIME" displayName="DATETIME">
+<semantic xsi:type="storagesemantics:GregorianTimeStorageSemantic" daySupported="true" editableScale="true" hourSupported="true" maxScale="6" minuteSupported="true" monthSupported="true" secondSupported="true" yearSupported="true"/>
+</DataType>
+<DataType imx:id="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FTIMESTAMP" xsi:type="typesystem:DataType" name="TIMESTAMP" displayName="TIMESTAMP">
+<semantic xsi:type="storagesemantics:GregorianTimeStorageSemantic" daySupported="true" editableScale="true" hourSupported="true" maxScale="6" minuteSupported="true" monthSupported="true" secondSupported="true" yearSupported="true"/>
+</DataType>
+<DataType imx:id="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FYEAR" xsi:type="typesystem:DataType" name="YEAR" displayName="YEAR">
+<semantic xsi:type="storagesemantics:GregorianTimeStorageSemantic" yearSupported="true"/>
+</DataType>
+<DataType imx:id="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FDECIMAL" xsi:type="typesystem:DataType" name="DECIMAL" displayName="DECIMAL">
+<semantic xsi:type="storagesemantics:ScientificDecimalStorageSemantic" defaultPrecision="10" editablePrecision="true" maxPrecision="38" editableScale="true" maxScale="28"/>
+</DataType>
+<DataType imx:id="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FDEC" xsi:type="typesystem:DataType" name="DEC" displayName="DEC">
+<semantic xsi:type="storagesemantics:ScientificDecimalStorageSemantic" defaultPrecision="10" editablePrecision="true" maxPrecision="38" editableScale="true" maxScale="28"/>
+</DataType>
+<DataType imx:id="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FFIXED" xsi:type="typesystem:DataType" name="FIXED" displayName="FIXED">
+<semantic xsi:type="storagesemantics:ScientificDecimalStorageSemantic" defaultPrecision="10" editablePrecision="true" maxPrecision="38" editableScale="true" maxScale="28"/>
+</DataType>
+<DataType imx:id="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FNUMERIC" xsi:type="typesystem:DataType" name="NUMERIC" displayName="NUMERIC">
+<semantic xsi:type="storagesemantics:ScientificDecimalStorageSemantic" defaultPrecision="10" editablePrecision="true" maxPrecision="38" editableScale="true" maxScale="28"/>
+</DataType>
+<DataType imx:id="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FCHAR" xsi:type="typesystem:DataType" name="CHAR" displayName="CHAR">
+<semantic xsi:type="storagesemantics:LengthStorageSemantic" defaultLength="1" editableLength="true" lengthUnit="characters" maxLength="255" variableAllocation="true"/>
+</DataType>
+<DataType imx:id="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FMEDIUMTEXT" xsi:type="typesystem:DataType" name="MEDIUMTEXT" displayName="MEDIUMTEXT">
+<semantic xsi:type="storagesemantics:LengthStorageSemantic" defaultLength="16777216" lengthUnit="bytes" maxLength="16777216" variableAllocation="true"/>
+</DataType>
+<DataType imx:id="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FBINARY" xsi:type="typesystem:DataType" name="BINARY" displayName="BINARY">
+<semantic xsi:type="storagesemantics:LengthStorageSemantic" defaultLength="1" editableLength="true" lengthUnit="bytes" maxLength="255" variableAllocation="true"/>
+</DataType>
+<DataType imx:id="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FVARCHAR" xsi:type="typesystem:DataType" name="VARCHAR" displayName="VARCHAR">
+<semantic xsi:type="storagesemantics:LengthStorageSemantic" defaultLength="255" editableLength="true" lengthUnit="characters" maxLength="21845" variableAllocation="true"/>
+</DataType>
+<DataType imx:id="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FVARBINARY" xsi:type="typesystem:DataType" name="VARBINARY" displayName="VARBINARY">
+<semantic xsi:type="storagesemantics:LengthStorageSemantic" defaultLength="255" editableLength="true" lengthUnit="characters" maxLength="104857600" variableAllocation="true"/>
+</DataType>
+<DataType imx:id="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FLONGTEXT" xsi:type="typesystem:DataType" name="LONGTEXT" displayName="LONGTEXT">
+<semantic xsi:type="storagesemantics:LengthStorageSemantic" defaultLength="104857600" lengthUnit="bytes" maxLength="104857600" variableAllocation="true"/>
+</DataType>
+<DataType imx:id="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FTEXT" xsi:type="typesystem:DataType" name="TEXT" displayName="TEXT">
+<semantic xsi:type="storagesemantics:LengthStorageSemantic" defaultLength="65535" lengthUnit="bytes" maxLength="65535" variableAllocation="true"/>
+</DataType>
+<DataType imx:id="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FTINYTEXT" xsi:type="typesystem:DataType" name="TINYTEXT" displayName="TINYTEXT">
+<semantic xsi:type="storagesemantics:LengthStorageSemantic" defaultLength="255" lengthUnit="characters" maxLength="255" variableAllocation="true"/>
+</DataType>
+<DataType imx:id="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FLONGBLOB" xsi:type="typesystem:DataType" name="LONGBLOB" displayName="LONGBLOB">
+<semantic xsi:type="storagesemantics:LengthStorageSemantic" defaultLength="104857600" lengthUnit="bytes" maxLength="104857600" variableAllocation="true"/>
+</DataType>
+<DataType imx:id="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FMEDIUMBLOB" xsi:type="typesystem:DataType" name="MEDIUMBLOB" displayName="MEDIUMBLOB">
+<semantic xsi:type="storagesemantics:LengthStorageSemantic" defaultLength="16777216" lengthUnit="bytes" maxLength="16777216" variableAllocation="true"/>
+</DataType>
+<DataType imx:id="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FBLOB" xsi:type="typesystem:DataType" name="BLOB" displayName="BLOB">
+<semantic xsi:type="storagesemantics:LengthStorageSemantic" defaultLength="65535" lengthUnit="bytes" maxLength="65535" variableAllocation="true"/>
+</DataType>
+<DataType imx:id="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FTINYBLOB" xsi:type="typesystem:DataType" name="TINYBLOB" displayName="TINYBLOB">
+<semantic xsi:type="storagesemantics:LengthStorageSemantic" defaultLength="255" lengthUnit="bytes" maxLength="255" variableAllocation="true"/>
+</DataType>
+<DataType imx:id="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FJSON" xsi:type="typesystem:DataType" name="JSON" displayName="JSON">
+<semantic xsi:type="storagesemantics:LengthStorageSemantic" defaultLength="104857600" lengthUnit="characters" maxLength="104857600" variableAllocation="true"/>
+</DataType>
+<DataType imx:id="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FGEOGRAPHY" xsi:type="typesystem:DataType" name="GEOGRAPHY" displayName="GEOGRAPHY">
+<semantic xsi:type="storagesemantics:LengthStorageSemantic" defaultLength="104857600" lengthUnit="characters" maxLength="104857600" variableAllocation="true"/>
+</DataType>
+<DataType imx:id="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FGEOGRAPHYPOINT" xsi:type="typesystem:DataType" name="GEOGRAPHYPOINT" displayName="GEOGRAPHYPOINT">
+<semantic xsi:type="storagesemantics:LengthStorageSemantic" defaultLength="104857600" lengthUnit="characters" maxLength="104857600" variableAllocation="true"/>
+</DataType>
+</dataTypes>
+<ownedMaps>
+<TypeSystemMap imx:id="ID_38" xsi:type="directmaps:DirectTypeSystemMap" to="ID_39">
+<dataTypeMaps>
+<DataTypeMap imx:id="ID_40" xsi:type="directmaps:DataTypeMap" bestMapFromLocal="true" foreignType="ID_41" localType="ID_42"/>
+<DataTypeMap imx:id="ID_43" xsi:type="directmaps:DataTypeMap" foreignType="ID_44" localType="ID_45" lossyToLocal="true"/>
+<DataTypeMap imx:id="ID_46" xsi:type="directmaps:DataTypeMap" foreignType="ID_47" localType="ID_48"/>
+<DataTypeMap imx:id="ID_49" xsi:type="directmaps:DataTypeMap" foreignType="ID_50" localType="ID_51" lossyToForeign="true"/>
+<DataTypeMap imx:id="ID_52" xsi:type="directmaps:DataTypeMap" foreignType="ID_50" localType="ID_53" lossyToForeign="true"/>
+<DataTypeMap imx:id="ID_54" xsi:type="directmaps:DataTypeMap" bestMapFromLocal="true" foreignType="ID_44" localType="ID_55" lossyToLocal="true"/>
+<DataTypeMap imx:id="ID_56" xsi:type="directmaps:DataTypeMap" bestMapFromLocal="true" foreignType="ID_41" localType="ID_57"/>
+<DataTypeMap imx:id="ID_58" xsi:type="directmaps:DataTypeMap" bestMapFromForeign="true" bestMapFromLocal="true" foreignType="ID_41" localType="ID_48"/>
+<DataTypeMap imx:id="ID_59" xsi:type="directmaps:DataTypeMap" foreignType="ID_60" localType="ID_55" lossyToLocal="true"/>
+<DataTypeMap imx:id="ID_61" xsi:type="directmaps:DataTypeMap" foreignType="ID_60" localType="ID_62" lossyToLocal="true"/>
+<DataTypeMap imx:id="ID_63" xsi:type="directmaps:DataTypeMap" bestMapFromForeign="true" bestMapFromLocal="true" foreignType="ID_47" localType="ID_64"/>
+<DataTypeMap imx:id="ID_65" xsi:type="directmaps:DataTypeMap" foreignType="ID_47" localType="ID_66"/>
+<DataTypeMap imx:id="ID_67" xsi:type="directmaps:DataTypeMap" bestMapFromLocal="true" foreignType="ID_44" localType="ID_51" lossyToLocal="true"/>
+<DataTypeMap imx:id="ID_68" xsi:type="directmaps:DataTypeMap" foreignType="ID_47" localType="ID_42"/>
+<DataTypeMap imx:id="ID_69" xsi:type="directmaps:DataTypeMap" foreignType="ID_70" localType="ID_66"/>
+<DataTypeMap imx:id="ID_71" xsi:type="directmaps:DataTypeMap" foreignType="ID_70" localType="ID_72"/>
+<DataTypeMap imx:id="ID_73" xsi:type="directmaps:DataTypeMap" bestMapFromForeign="true" bestMapFromLocal="true" foreignType="ID_60" localType="ID_74" lossyToLocal="true"/>
+<DataTypeMap imx:id="ID_75" xsi:type="directmaps:DataTypeMap" bestMapFromLocal="true" foreignType="ID_47" localType="ID_76"/>
+<DataTypeMap imx:id="ID_77" xsi:type="directmaps:DataTypeMap" bestMapFromForeign="true" bestMapFromLocal="true" foreignType="ID_70" localType="ID_78"/>
+<DataTypeMap imx:id="ID_79" xsi:type="directmaps:DataTypeMap" foreignType="ID_50" localType="ID_45" lossyToForeign="true"/>
+<DataTypeMap imx:id="ID_80" xsi:type="directmaps:DataTypeMap" foreignType="ID_50" localType="ID_78" lossyToForeign="true"/>
+<DataTypeMap imx:id="ID_81" xsi:type="directmaps:DataTypeMap" bestMapFromLocal="true" foreignType="ID_47" localType="ID_82"/>
+<DataTypeMap imx:id="ID_83" xsi:type="directmaps:DataTypeMap" foreignType="ID_47" localType="ID_84"/>
+<DataTypeMap imx:id="ID_85" xsi:type="directmaps:DataTypeMap" bestMapFromLocal="true" foreignType="ID_86" localType="ID_87"/>
+<DataTypeMap imx:id="ID_88" xsi:type="directmaps:DataTypeMap" bestMapFromForeign="true" bestMapFromLocal="true" foreignType="ID_86" localType="ID_89"/>
+<DataTypeMap imx:id="ID_90" xsi:type="directmaps:DataTypeMap" foreignType="ID_47" localType="ID_91"/>
+<DataTypeMap imx:id="ID_92" xsi:type="directmaps:DataTypeMap" bestMapFromLocal="true" foreignType="ID_60" localType="ID_93" lossyToLocal="true"/>
+<DataTypeMap imx:id="ID_94" xsi:type="directmaps:DataTypeMap" foreignType="ID_50" localType="ID_95" lossyToForeign="true"/>
+<DataTypeMap imx:id="ID_96" xsi:type="directmaps:DataTypeMap" foreignType="ID_47" localType="ID_51"/>
+<DataTypeMap imx:id="ID_97" xsi:type="directmaps:DataTypeMap" foreignType="ID_47" localType="ID_95"/>
+<DataTypeMap imx:id="ID_98" xsi:type="directmaps:DataTypeMap" foreignType="ID_50" localType="ID_55" lossyToForeign="true"/>
+<DataTypeMap imx:id="ID_99" xsi:type="directmaps:DataTypeMap" foreignType="ID_47" localType="ID_89"/>
+<DataTypeMap imx:id="ID_100" xsi:type="directmaps:DataTypeMap" foreignType="ID_47" localType="ID_101"/>
+<DataTypeMap imx:id="ID_102" xsi:type="directmaps:DataTypeMap" foreignType="ID_70" localType="ID_55"/>
+<DataTypeMap imx:id="ID_103" xsi:type="directmaps:DataTypeMap" bestMapFromLocal="true" foreignType="ID_47" localType="ID_104"/>
+<DataTypeMap imx:id="ID_105" xsi:type="directmaps:DataTypeMap" bestMapFromLocal="true" foreignType="ID_86" localType="ID_106"/>
+<DataTypeMap imx:id="ID_107" xsi:type="directmaps:DataTypeMap" bestMapFromLocal="true" foreignType="ID_41" localType="ID_101"/>
+<DataTypeMap imx:id="ID_108" xsi:type="directmaps:DataTypeMap" foreignType="ID_47" localType="ID_106"/>
+<DataTypeMap imx:id="ID_109" xsi:type="directmaps:DataTypeMap" foreignType="ID_47" localType="ID_78"/>
+<DataTypeMap imx:id="ID_110" xsi:type="directmaps:DataTypeMap" bestMapFromForeign="true" bestMapFromLocal="true" foreignType="ID_50" localType="ID_72" lossyToForeign="true"/>
+<DataTypeMap imx:id="ID_111" xsi:type="directmaps:DataTypeMap" foreignType="ID_47" localType="ID_62"/>
+<DataTypeMap imx:id="ID_112" xsi:type="directmaps:DataTypeMap" bestMapFromLocal="true" foreignType="ID_86" localType="ID_84"/>
+<DataTypeMap imx:id="ID_113" xsi:type="directmaps:DataTypeMap" foreignType="ID_70" localType="ID_53"/>
+<DataTypeMap imx:id="ID_114" xsi:type="directmaps:DataTypeMap" foreignType="ID_44" localType="ID_93" lossyToLocal="true"/>
+<DataTypeMap imx:id="ID_115" xsi:type="directmaps:DataTypeMap" bestMapFromForeign="true" bestMapFromLocal="true" foreignType="ID_60" localType="ID_53" lossyToLocal="true"/>
+<DataTypeMap imx:id="ID_116" xsi:type="directmaps:DataTypeMap" bestMapFromLocal="true" foreignType="ID_47" localType="ID_117"/>
+<DataTypeMap imx:id="ID_118" xsi:type="directmaps:DataTypeMap" foreignType="ID_50" localType="ID_119" lossyToForeign="true"/>
+<DataTypeMap imx:id="ID_120" xsi:type="directmaps:DataTypeMap" bestMapFromLocal="true" foreignType="ID_47" localType="ID_121"/>
+<DataTypeMap imx:id="ID_122" xsi:type="directmaps:DataTypeMap" foreignType="ID_70" localType="ID_51"/>
+<DataTypeMap imx:id="ID_123" xsi:type="directmaps:DataTypeMap" foreignType="ID_60" localType="ID_66" lossyToLocal="true"/>
+<DataTypeMap imx:id="ID_124" xsi:type="directmaps:DataTypeMap" foreignType="ID_47" localType="ID_125"/>
+<DataTypeMap imx:id="ID_126" xsi:type="directmaps:DataTypeMap" foreignType="ID_47" localType="ID_87"/>
+<DataTypeMap imx:id="ID_127" xsi:type="directmaps:DataTypeMap" foreignType="ID_41" localType="ID_117"/>
+<DataTypeMap imx:id="ID_128" xsi:type="directmaps:DataTypeMap" foreignType="ID_70" localType="ID_93"/>
+<DataTypeMap imx:id="ID_129" xsi:type="directmaps:DataTypeMap" foreignType="ID_41" localType="ID_130"/>
+<DataTypeMap imx:id="ID_131" xsi:type="directmaps:DataTypeMap" foreignType="ID_60" localType="ID_132" lossyToLocal="true"/>
+<DataTypeMap imx:id="ID_133" xsi:type="directmaps:DataTypeMap" foreignType="ID_47" localType="ID_134"/>
+<DataTypeMap imx:id="ID_135" xsi:type="directmaps:DataTypeMap" foreignType="ID_60" localType="ID_51" lossyToLocal="true"/>
+<DataTypeMap imx:id="ID_136" xsi:type="directmaps:DataTypeMap" foreignType="ID_47" localType="ID_119"/>
+<DataTypeMap imx:id="ID_137" xsi:type="directmaps:DataTypeMap" foreignType="ID_44" localType="ID_74" lossyToLocal="true"/>
+<DataTypeMap imx:id="ID_138" xsi:type="directmaps:DataTypeMap" foreignType="ID_60" localType="ID_91" lossyToLocal="true"/>
+<DataTypeMap imx:id="ID_139" xsi:type="directmaps:DataTypeMap" foreignType="ID_50" localType="ID_140" lossyToForeign="true"/>
+<DataTypeMap imx:id="ID_141" xsi:type="directmaps:DataTypeMap" foreignType="ID_47" localType="ID_93"/>
+<DataTypeMap imx:id="ID_142" xsi:type="directmaps:DataTypeMap" bestMapFromLocal="true" foreignType="ID_44" localType="ID_119" lossyToLocal="true"/>
+<DataTypeMap imx:id="ID_143" xsi:type="directmaps:DataTypeMap" foreignType="ID_50" localType="ID_74" lossyToForeign="true"/>
+<DataTypeMap imx:id="ID_144" xsi:type="directmaps:DataTypeMap" bestMapFromLocal="true" foreignType="ID_47" localType="ID_145"/>
+<DataTypeMap imx:id="ID_146" xsi:type="directmaps:DataTypeMap" foreignType="ID_41" localType="ID_145"/>
+<DataTypeMap imx:id="ID_147" xsi:type="directmaps:DataTypeMap" foreignType="ID_47" localType="ID_72"/>
+<DataTypeMap imx:id="ID_148" xsi:type="directmaps:DataTypeMap" foreignType="ID_44" localType="ID_53" lossyToLocal="true"/>
+<DataTypeMap imx:id="ID_149" xsi:type="directmaps:DataTypeMap" foreignType="ID_50" localType="ID_91" lossyToForeign="true"/>
+<DataTypeMap imx:id="ID_150" xsi:type="directmaps:DataTypeMap" foreignType="ID_47" localType="ID_151"/>
+<DataTypeMap imx:id="ID_152" xsi:type="directmaps:DataTypeMap" bestMapFromLocal="true" foreignType="ID_44" localType="ID_95" lossyToLocal="true"/>
+<DataTypeMap imx:id="ID_153" xsi:type="directmaps:DataTypeMap" foreignType="ID_70" localType="ID_74"/>
+<DataTypeMap imx:id="ID_154" xsi:type="directmaps:DataTypeMap" foreignType="ID_60" localType="ID_78" lossyToLocal="true"/>
+<DataTypeMap imx:id="ID_155" xsi:type="directmaps:DataTypeMap" foreignType="ID_50" localType="ID_62" lossyToForeign="true"/>
+<DataTypeMap imx:id="ID_156" xsi:type="directmaps:DataTypeMap" bestMapFromLocal="true" foreignType="ID_41" localType="ID_134"/>
+<DataTypeMap imx:id="ID_157" xsi:type="directmaps:DataTypeMap" bestMapFromLocal="true" foreignType="ID_47" localType="ID_130"/>
+<DataTypeMap imx:id="ID_158" xsi:type="directmaps:DataTypeMap" foreignType="ID_60" localType="ID_87" lossyToLocal="true"/>
+<DataTypeMap imx:id="ID_159" xsi:type="directmaps:DataTypeMap" foreignType="ID_50" localType="ID_87" lossyToForeign="true"/>
+<DataTypeMap imx:id="ID_160" xsi:type="directmaps:DataTypeMap" bestMapFromLocal="true" foreignType="ID_41" localType="ID_125"/>
+<DataTypeMap imx:id="ID_161" xsi:type="directmaps:DataTypeMap" bestMapFromForeign="true" bestMapFromLocal="true" foreignType="ID_44" localType="ID_62" lossyToLocal="true"/>
+<DataTypeMap imx:id="ID_162" xsi:type="directmaps:DataTypeMap" foreignType="ID_47" localType="ID_132"/>
+<DataTypeMap imx:id="ID_163" xsi:type="directmaps:DataTypeMap" foreignType="ID_47" localType="ID_74"/>
+<DataTypeMap imx:id="ID_164" xsi:type="directmaps:DataTypeMap" foreignType="ID_60" localType="ID_119" lossyToLocal="true"/>
+<DataTypeMap imx:id="ID_165" xsi:type="directmaps:DataTypeMap" foreignType="ID_47" localType="ID_45"/>
+<DataTypeMap imx:id="ID_166" xsi:type="directmaps:DataTypeMap" foreignType="ID_70" localType="ID_62"/>
+<DataTypeMap imx:id="ID_167" xsi:type="directmaps:DataTypeMap" foreignType="ID_47" localType="ID_140"/>
+<DataTypeMap imx:id="ID_168" xsi:type="directmaps:DataTypeMap" foreignType="ID_47" localType="ID_53"/>
+<DataTypeMap imx:id="ID_169" xsi:type="directmaps:DataTypeMap" foreignType="ID_50" localType="ID_132" lossyToForeign="true"/>
+<DataTypeMap imx:id="ID_170" xsi:type="directmaps:DataTypeMap" bestMapFromLocal="true" foreignType="ID_41" localType="ID_151"/>
+<DataTypeMap imx:id="ID_171" xsi:type="directmaps:DataTypeMap" foreignType="ID_47" localType="ID_55"/>
+<DataTypeMap imx:id="ID_172" xsi:type="directmaps:DataTypeMap" foreignType="ID_47" localType="ID_173"/>
+<DataTypeMap imx:id="ID_174" xsi:type="directmaps:DataTypeMap" foreignType="ID_44" localType="ID_91" lossyToLocal="true"/>
+<DataTypeMap imx:id="ID_175" xsi:type="directmaps:DataTypeMap" bestMapFromLocal="true" foreignType="ID_70" localType="ID_45"/>
+<DataTypeMap imx:id="ID_176" xsi:type="directmaps:DataTypeMap" foreignType="ID_70" localType="ID_119"/>
+<DataTypeMap imx:id="ID_177" xsi:type="directmaps:DataTypeMap" foreignType="ID_44" localType="ID_78" lossyToLocal="true"/>
+<DataTypeMap imx:id="ID_178" xsi:type="directmaps:DataTypeMap" foreignType="ID_44" localType="ID_72" lossyToLocal="true"/>
+<DataTypeMap imx:id="ID_179" xsi:type="directmaps:DataTypeMap" foreignType="ID_44" localType="ID_87" lossyToLocal="true"/>
+<DataTypeMap imx:id="ID_180" xsi:type="directmaps:DataTypeMap" foreignType="ID_70" localType="ID_140"/>
+<DataTypeMap imx:id="ID_181" xsi:type="directmaps:DataTypeMap" foreignType="ID_50" localType="ID_66" lossyToForeign="true"/>
+<DataTypeMap imx:id="ID_182" xsi:type="directmaps:DataTypeMap" foreignType="ID_70" localType="ID_95"/>
+<DataTypeMap imx:id="ID_183" xsi:type="directmaps:DataTypeMap" foreignType="ID_60" localType="ID_45" lossyToLocal="true"/>
+<DataTypeMap imx:id="ID_184" xsi:type="directmaps:DataTypeMap" foreignType="ID_60" localType="ID_95" lossyToLocal="true"/>
+<DataTypeMap imx:id="ID_185" xsi:type="directmaps:DataTypeMap" bestMapFromLocal="true" foreignType="ID_70" localType="ID_132"/>
+<DataTypeMap imx:id="ID_186" xsi:type="directmaps:DataTypeMap" foreignType="ID_41" localType="ID_187"/>
+<DataTypeMap imx:id="ID_188" xsi:type="directmaps:DataTypeMap" bestMapFromLocal="true" foreignType="ID_86" localType="ID_173"/>
+<DataTypeMap imx:id="ID_189" xsi:type="directmaps:DataTypeMap" bestMapFromLocal="true" foreignType="ID_47" localType="ID_187"/>
+<DataTypeMap imx:id="ID_190" xsi:type="directmaps:DataTypeMap" foreignType="ID_44" localType="ID_132" lossyToLocal="true"/>
+<DataTypeMap imx:id="ID_191" xsi:type="directmaps:DataTypeMap" bestMapFromForeign="true" bestMapFromLocal="true" foreignType="ID_44" localType="ID_66" lossyToLocal="true"/>
+<DataTypeMap imx:id="ID_192" xsi:type="directmaps:DataTypeMap" foreignType="ID_60" localType="ID_72" lossyToLocal="true"/>
+<DataTypeMap imx:id="ID_193" xsi:type="directmaps:DataTypeMap" bestMapFromLocal="true" foreignType="ID_44" localType="ID_140" lossyToLocal="true"/>
+<DataTypeMap imx:id="ID_194" xsi:type="directmaps:DataTypeMap" foreignType="ID_50" localType="ID_93" lossyToForeign="true"/>
+<DataTypeMap imx:id="ID_195" xsi:type="directmaps:DataTypeMap" foreignType="ID_47" localType="ID_57"/>
+<DataTypeMap imx:id="ID_196" xsi:type="directmaps:DataTypeMap" foreignType="ID_70" localType="ID_87"/>
+<DataTypeMap imx:id="ID_197" xsi:type="directmaps:DataTypeMap" foreignType="ID_41" localType="ID_82"/>
+<DataTypeMap imx:id="ID_198" xsi:type="directmaps:DataTypeMap" foreignType="ID_60" localType="ID_140" lossyToLocal="true"/>
+<DataTypeMap imx:id="ID_199" xsi:type="directmaps:DataTypeMap" foreignType="ID_41" localType="ID_64"/>
+<DataTypeMap imx:id="ID_200" xsi:type="directmaps:DataTypeMap" bestMapFromLocal="true" foreignType="ID_70" localType="ID_91"/>
+</dataTypeMaps>
+</TypeSystemMap>
+</ownedMaps>
+</typesystem:TypeSystem>
+<imx:proxies>
+<proxy imx:id="ID_39" objectId="smd:com.informatica.metadata.seed.platform.Platform.typesystem" type="typesystem:TypeSystem" xsi:type="imx:proxy"/>
+<proxy imx:id="ID_41" objectId="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fbinary" type="typesystem:DataType" xsi:type="imx:proxy"/>
+<proxy imx:id="ID_42" objectId="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FBIT" type="typesystem:DataType" xsi:type="imx:proxy"/>
+<proxy imx:id="ID_44" objectId="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Finteger" type="typesystem:DataType" xsi:type="imx:proxy"/>
+<proxy imx:id="ID_45" objectId="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FNUMERIC" type="typesystem:DataType" xsi:type="imx:proxy"/>
+<proxy imx:id="ID_47" objectId="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" type="typesystem:DataType" xsi:type="imx:proxy"/>
+<proxy imx:id="ID_48" objectId="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FBLOB" type="typesystem:DataType" xsi:type="imx:proxy"/>
+<proxy imx:id="ID_50" objectId="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fbigint" type="typesystem:DataType" xsi:type="imx:proxy"/>
+<proxy imx:id="ID_51" objectId="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FBOOLEAN" type="typesystem:DataType" xsi:type="imx:proxy"/>
+<proxy imx:id="ID_53" objectId="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FDOUBLE" type="typesystem:DataType" xsi:type="imx:proxy"/>
+<proxy imx:id="ID_55" objectId="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FTINYINT" type="typesystem:DataType" xsi:type="imx:proxy"/>
+<proxy imx:id="ID_57" objectId="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FMEDIUMBLOB" type="typesystem:DataType" xsi:type="imx:proxy"/>
+<proxy imx:id="ID_60" objectId="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdouble" type="typesystem:DataType" xsi:type="imx:proxy"/>
+<proxy imx:id="ID_62" objectId="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FINTEGER" type="typesystem:DataType" xsi:type="imx:proxy"/>
+<proxy imx:id="ID_64" objectId="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FTEXT" type="typesystem:DataType" xsi:type="imx:proxy"/>
+<proxy imx:id="ID_66" objectId="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FBOOL" type="typesystem:DataType" xsi:type="imx:proxy"/>
+<proxy imx:id="ID_70" objectId="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdecimal" type="typesystem:DataType" xsi:type="imx:proxy"/>
+<proxy imx:id="ID_72" objectId="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FBIGINT" type="typesystem:DataType" xsi:type="imx:proxy"/>
+<proxy imx:id="ID_74" objectId="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FFLOAT" type="typesystem:DataType" xsi:type="imx:proxy"/>
+<proxy imx:id="ID_76" objectId="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FGEOGRAPHY" type="typesystem:DataType" xsi:type="imx:proxy"/>
+<proxy imx:id="ID_78" objectId="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FDECIMAL" type="typesystem:DataType" xsi:type="imx:proxy"/>
+<proxy imx:id="ID_82" objectId="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FMEDIUMTEXT" type="typesystem:DataType" xsi:type="imx:proxy"/>
+<proxy imx:id="ID_84" objectId="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FTIME" type="typesystem:DataType" xsi:type="imx:proxy"/>
+<proxy imx:id="ID_86" objectId="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdate%2Ftime" type="typesystem:DataType" xsi:type="imx:proxy"/>
+<proxy imx:id="ID_87" objectId="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FYEAR" type="typesystem:DataType" xsi:type="imx:proxy"/>
+<proxy imx:id="ID_89" objectId="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FTIMESTAMP" type="typesystem:DataType" xsi:type="imx:proxy"/>
+<proxy imx:id="ID_91" objectId="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FDEC" type="typesystem:DataType" xsi:type="imx:proxy"/>
+<proxy imx:id="ID_93" objectId="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FREAL" type="typesystem:DataType" xsi:type="imx:proxy"/>
+<proxy imx:id="ID_95" objectId="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FINT" type="typesystem:DataType" xsi:type="imx:proxy"/>
+<proxy imx:id="ID_101" objectId="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FVARBINARY" type="typesystem:DataType" xsi:type="imx:proxy"/>
+<proxy imx:id="ID_104" objectId="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FJSON" type="typesystem:DataType" xsi:type="imx:proxy"/>
+<proxy imx:id="ID_106" objectId="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FDATETIME" type="typesystem:DataType" xsi:type="imx:proxy"/>
+<proxy imx:id="ID_117" objectId="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FVARCHAR" type="typesystem:DataType" xsi:type="imx:proxy"/>
+<proxy imx:id="ID_119" objectId="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FMEDIUMINT" type="typesystem:DataType" xsi:type="imx:proxy"/>
+<proxy imx:id="ID_121" objectId="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FGEOGRAPHYPOINT" type="typesystem:DataType" xsi:type="imx:proxy"/>
+<proxy imx:id="ID_125" objectId="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FBINARY" type="typesystem:DataType" xsi:type="imx:proxy"/>
+<proxy imx:id="ID_130" objectId="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FTINYTEXT" type="typesystem:DataType" xsi:type="imx:proxy"/>
+<proxy imx:id="ID_132" objectId="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FFIXED" type="typesystem:DataType" xsi:type="imx:proxy"/>
+<proxy imx:id="ID_134" objectId="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FTINYBLOB" type="typesystem:DataType" xsi:type="imx:proxy"/>
+<proxy imx:id="ID_140" objectId="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FSMALLINT" type="typesystem:DataType" xsi:type="imx:proxy"/>
+<proxy imx:id="ID_145" objectId="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FLONGTEXT" type="typesystem:DataType" xsi:type="imx:proxy"/>
+<proxy imx:id="ID_151" objectId="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FLONGBLOB" type="typesystem:DataType" xsi:type="imx:proxy"/>
+<proxy imx:id="ID_173" objectId="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FDATE" type="typesystem:DataType" xsi:type="imx:proxy"/>
+<proxy imx:id="ID_187" objectId="smd:com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem.typesystem%2FCHAR" type="typesystem:DataType" xsi:type="imx:proxy"/>
+</imx:proxies>
+</imx:IMX>
