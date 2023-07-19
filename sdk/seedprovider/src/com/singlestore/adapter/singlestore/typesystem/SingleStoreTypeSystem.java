@@ -256,12 +256,8 @@ public class SingleStoreTypeSystem  {
                                                       false);
             DirectMapUtils.INSTANCE.createDataTypeMap(singlestorePlatformMap, realDT, Platform.doubleDT, true, false, true, 
                                                       false);
-            DirectMapUtils.INSTANCE.createDataTypeMap(singlestorePlatformMap, intDT, Platform.bigIntegerDT, false, true, 
-                                                      false, false);
             DirectMapUtils.INSTANCE.createDataTypeMap(singlestorePlatformMap, booleanDT, Platform.stringDT, false, false, 
                                                       false, false);
-            DirectMapUtils.INSTANCE.createDataTypeMap(singlestorePlatformMap, intDT, Platform.stringDT, false, false, false, 
-                                                      false);
             DirectMapUtils.INSTANCE.createDataTypeMap(singlestorePlatformMap, tinyintDT, Platform.bigIntegerDT, false, true, 
                                                       false, false);
             DirectMapUtils.INSTANCE.createDataTypeMap(singlestorePlatformMap, timestampDT, Platform.stringDT, false, false, 
@@ -344,7 +340,7 @@ public class SingleStoreTypeSystem  {
                                                       false, false);
             DirectMapUtils.INSTANCE.createDataTypeMap(singlestorePlatformMap, longblobDT, Platform.stringDT, false, false, 
                                                       false, false);
-            DirectMapUtils.INSTANCE.createDataTypeMap(singlestorePlatformMap, intDT, Platform.integerDT, true, false, true, 
+            DirectMapUtils.INSTANCE.createDataTypeMap(singlestorePlatformMap, intDT, Platform.integerDT, false, false, true, 
                                                       false);
             DirectMapUtils.INSTANCE.createDataTypeMap(singlestorePlatformMap, floatDT, Platform.decimalDT, false, false, 
                                                       false, false);
@@ -402,12 +398,8 @@ public class SingleStoreTypeSystem  {
                                                       false, false);
             DirectMapUtils.INSTANCE.createDataTypeMap(singlestorePlatformMap, boolDT, Platform.bigIntegerDT, false, true, 
                                                       false, false);
-            DirectMapUtils.INSTANCE.createDataTypeMap(singlestorePlatformMap, intDT, Platform.decimalDT, false, false, false, 
-                                                      false);
             DirectMapUtils.INSTANCE.createDataTypeMap(singlestorePlatformMap, numericDT, Platform.doubleDT, true, false, 
                                                       false, false);
-            DirectMapUtils.INSTANCE.createDataTypeMap(singlestorePlatformMap, intDT, Platform.doubleDT, true, false, false, 
-                                                      false);
             DirectMapUtils.INSTANCE.createDataTypeMap(singlestorePlatformMap, fixedDT, Platform.decimalDT, false, false, 
                                                       true, false);
             DirectMapUtils.INSTANCE.createDataTypeMap(singlestorePlatformMap, charDT, Platform.binaryDT, false, false, false, 

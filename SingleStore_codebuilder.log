@@ -18717,3 +18717,461 @@ BUILD_RUNTIME_ADAPTER:
 BUILD SUCCESSFUL
 Total time: 1 second
 
+2023-07-11 12:58:19 -INFO :Executing Command [[/home/amakarovych-ua/Tools/new_eclipse/eclipse/plugins/org.apache.ant_1.10.8.v20200515-1239/bin/ant, -buildfile, /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/build.xml]].
+2023-07-11 12:58:25 -INFO :Buildfile: /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/build.xml
+
+all:
+
+BUILD_ADAPTER_FEATURE:
+
+BUILD_RUNTIME_ANNOTATED:
+
+BUILD_UI_WIZARD:
+
+BUILD_RUNTIME_MODEL:
+
+BUILD_ADAPTER_CONTRIBUTION:
+
+BUILD_MODEL_ATTRIBUTES:
+
+BUILD_LICENSE_CHECKER:
+
+BUILD_LIBRARY_INFO:
+
+BUILD_ADAPTER_CONTRIBUTION:
+
+BUILD_METADATA_ANNOTATED:
+
+BUILD_SEEDPROVIDER:
+
+BUILD_METADATA_MODEL:
+
+BUILD_TYPESYSTEM:
+
+BUILD_RUNTIME_ANNOTATED:
+
+BUILD_RUNTIME_MODEL:
+
+BUILD_RUNTIME_SEMANTIC:
+
+BUILD_CONNECT_INFO_ANNOTATED:
+
+BUILD_CONNECTION_MODEL:
+
+BUILD_ADAPTER_CONTRIBUTION:
+
+BUILD_METAMODEL:
+
+BUILD_METADATA_ANNOTATED:
+
+BUILD_METADATA_MODEL:
+
+BUILD_METADATA_SEMANTIC:
+
+BUILD_CONNECT_INFO_ANNOTATED:
+
+BUILD_CONNECTION_MODEL:
+
+BUILD_DESIGN_MESSAGES:
+
+BUILD_CONNECTION_ADAPTER:
+
+BUILD_METADATA_ADAPTER:
+
+BUILD_RUNTIME_MESSAGES:
+
+BUILD_RUNTIME_ADAPTER:
+     [java] Generating seed for com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem in /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/typesystem
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+
+2023-07-11 13:03:25 -INFO :Executing Command [[/home/amakarovych-ua/Tools/new_eclipse/eclipse/plugins/org.apache.ant_1.10.8.v20200515-1239/bin/ant, -buildfile, /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/build.xml]].
+2023-07-11 13:03:31 -INFO :Buildfile: /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/build.xml
+
+all:
+
+BUILD_LIBRARY_INFO:
+
+BUILD_ADAPTER_CONTRIBUTION:
+
+BUILD_MODEL_ATTRIBUTES:
+
+BUILD_LICENSE_CHECKER:
+
+BUILD_RUNTIME_ANNOTATED:
+
+BUILD_RUNTIME_MODEL:
+
+BUILD_ADAPTER_CONTRIBUTION:
+
+BUILD_UI_WIZARD:
+
+BUILD_ADAPTER_FEATURE:
+
+BUILD_SEEDPROVIDER:
+
+BUILD_METADATA_ANNOTATED:
+
+BUILD_METADATA_MODEL:
+
+BUILD_TYPESYSTEM:
+
+BUILD_RUNTIME_ANNOTATED:
+
+BUILD_RUNTIME_MODEL:
+
+BUILD_RUNTIME_SEMANTIC:
+
+BUILD_CONNECT_INFO_ANNOTATED:
+
+BUILD_CONNECTION_MODEL:
+
+BUILD_ADAPTER_CONTRIBUTION:
+
+BUILD_METADATA_ANNOTATED:
+
+BUILD_METADATA_MODEL:
+
+BUILD_METAMODEL:
+
+BUILD_METADATA_SEMANTIC:
+
+BUILD_CONNECT_INFO_ANNOTATED:
+
+BUILD_CONNECTION_MODEL:
+
+BUILD_DESIGN_MESSAGES:
+
+BUILD_CONNECTION_ADAPTER:
+
+BUILD_METADATA_ADAPTER:
+
+BUILD_RUNTIME_MESSAGES:
+
+BUILD_RUNTIME_ADAPTER:
+     [java] Generating seed for com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem in /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/typesystem
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+
+2023-07-11 13:06:29 -INFO :Executing Command [[/home/amakarovych-ua/Tools/new_eclipse/eclipse/plugins/org.apache.ant_1.10.8.v20200515-1239/bin/ant, -buildfile, /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/build.xml]].
+2023-07-11 13:06:34 -INFO :Buildfile: /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/build.xml
+
+all:
+
+BUILD_LIBRARY_INFO:
+
+BUILD_ADAPTER_CONTRIBUTION:
+
+BUILD_MODEL_ATTRIBUTES:
+
+BUILD_UI_WIZARD:
+
+BUILD_ADAPTER_FEATURE:
+
+BUILD_RUNTIME_ANNOTATED:
+
+BUILD_RUNTIME_MODEL:
+
+BUILD_ADAPTER_CONTRIBUTION:
+
+BUILD_LICENSE_CHECKER:
+
+BUILD_METADATA_ANNOTATED:
+
+BUILD_METADATA_MODEL:
+
+BUILD_SEEDPROVIDER:
+
+BUILD_TYPESYSTEM:
+
+BUILD_RUNTIME_SEMANTIC:
+
+BUILD_RUNTIME_ANNOTATED:
+
+BUILD_RUNTIME_MODEL:
+
+BUILD_ADAPTER_CONTRIBUTION:
+
+BUILD_METADATA_ANNOTATED:
+
+BUILD_METADATA_MODEL:
+
+BUILD_CONNECT_INFO_ANNOTATED:
+
+BUILD_CONNECTION_MODEL:
+
+BUILD_METADATA_SEMANTIC:
+
+BUILD_METAMODEL:
+
+BUILD_CONNECT_INFO_ANNOTATED:
+
+BUILD_CONNECTION_MODEL:
+
+BUILD_DESIGN_MESSAGES:
+
+BUILD_CONNECTION_ADAPTER:
+
+BUILD_METADATA_ADAPTER:
+
+BUILD_RUNTIME_MESSAGES:
+
+BUILD_RUNTIME_ADAPTER:
+     [java] Generating seed for com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem in /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/typesystem
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+
+2023-07-19 12:14:18 -INFO :Generating Project:ADAPTER_CONTRIBUTION
+2023-07-19 12:14:18 -INFO :Code generation for Project [ADAPTER_CONTRIBUTION] completed
+2023-07-19 12:14:18 -INFO :Code generation for Project [ADAPTER_CONTRIBUTION] completed
+2023-07-19 12:14:18 -INFO :Generating Project:CONNECT_INFO_ANNOTATED
+2023-07-19 12:14:18 -INFO :Executing Command [[/home/amakarovych-ua/Tools/azule-openjdk/zulu8.50.0.51-ca-jdk8.0.275-linux_x64/bin/javac, -cp, /home/amakarovych-ua/Informatica/IDP10.4.0_new/ict/Application/jars/*:, -d, /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/models.connection.annotatedjava/classes, -sourcepath, /home/amakarovych-ua/eclipse-workspace4/SingleStore/sdk/models.connection.annotatedjava/src, /home/amakarovych-ua/eclipse-workspace4/SingleStore/sdk/models.connection.annotatedjava/src/com/singlestore/adapter/singlestore/connection/model/SingleStoreConnectInfo.java, /home/amakarovych-ua/eclipse-workspace4/SingleStore/sdk/models.connection.annotatedjava/src/com/singlestore/adapter/singlestore/connection/model/package-info.java, /home/amakarovych-ua/eclipse-workspace4/SingleStore/sdk/models.connection.annotatedjava/src/com/singlestore/adapter/singlestore/connection/model/SingleStoreConnectInfoExtension.java]].
+2023-07-19 12:14:21 -INFO :
+2023-07-19 12:14:21 -INFO :Executing Command [[/home/amakarovych-ua/Tools/azule-openjdk/zulu8.50.0.51-ca-jdk8.0.275-linux_x64/bin/jar, cvf, /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/models.connection.annotatedjava/table.com.singlestore.adapter.singlestore.models.connection.annotatedjava_1.0.0.jar, .]].
+2023-07-19 12:14:23 -INFO :added manifest
+adding: com/(in = 0) (out= 0)(stored 0%)
+adding: com/singlestore/(in = 0) (out= 0)(stored 0%)
+adding: com/singlestore/adapter/(in = 0) (out= 0)(stored 0%)
+adding: com/singlestore/adapter/singlestore/(in = 0) (out= 0)(stored 0%)
+adding: com/singlestore/adapter/singlestore/connection/(in = 0) (out= 0)(stored 0%)
+adding: com/singlestore/adapter/singlestore/connection/model/(in = 0) (out= 0)(stored 0%)
+adding: com/singlestore/adapter/singlestore/connection/model/package-info.class(in = 265) (out= 200)(deflated 24%)
+adding: com/singlestore/adapter/singlestore/connection/model/SingleStoreConnectInfoExtension.class(in = 2288) (out= 922)(deflated 59%)
+adding: com/singlestore/adapter/singlestore/connection/model/SingleStoreConnectInfo.class(in = 673) (out= 367)(deflated 45%)
+
+2023-07-19 12:14:23 -INFO :Executing Command [[/home/amakarovych-ua/Tools/azule-openjdk/zulu8.50.0.51-ca-jdk8.0.275-linux_x64/jre/bin/java, -classpath, .:/home/amakarovych-ua/Informatica/IDP10.4.0_new/ict/Application/jars/*:, com.informatica.imf.codegen.AnnotJava2Java, -sourceLocation, /home/amakarovych-ua/eclipse-workspace4/SingleStore//sdk/models.connection.annotatedjava/src, -targetLocation, /home/amakarovych-ua/eclipse-workspace4/SingleStore//sdk/connection.model/src, -dependencies, /home/amakarovych-ua/Informatica/IDP10.4.0_new/ict/Application/jars]].
+2023-07-19 12:14:27 -INFO :
+2023-07-19 12:14:27 -INFO :Code generation for Project [CONNECT_INFO_ANNOTATED] completed
+2023-07-19 12:14:27 -INFO :Code generation for Project [CONNECT_INFO_ANNOTATED] completed
+2023-07-19 12:14:27 -INFO :Generating Project:CONNECTION_MODEL
+2023-07-19 12:14:27 -INFO :Code generation for Project [CONNECTION_MODEL] completed
+2023-07-19 12:14:27 -INFO :Code generation for Project [CONNECTION_MODEL] completed
+2023-07-19 12:14:27 -INFO :Generating Project:CONNECTION_ADAPTER
+2023-07-19 12:14:27 -INFO :Code generation for Project [CONNECTION_ADAPTER] completed
+2023-07-19 12:14:27 -INFO :Code generation for Project [CONNECTION_ADAPTER] completed
+2023-07-19 12:14:27 -INFO :Generating Project:SEEDPROVIDER
+2023-07-19 12:14:27 -INFO :Code generation for Project [SEEDPROVIDER] completed
+2023-07-19 12:14:27 -INFO :Code generation for Project [SEEDPROVIDER] completed
+2023-07-19 12:14:27 -INFO :Generating Project:TYPESYSTEM
+2023-07-19 12:14:27 -INFO :Code generation for Project [TYPESYSTEM] completed
+2023-07-19 12:14:27 -INFO :Code generation for Project [TYPESYSTEM] completed
+2023-07-19 12:14:27 -INFO :Generating Project:RUNTIME_ANNOTATED
+2023-07-19 12:14:27 -INFO :Executing Command [[/home/amakarovych-ua/Tools/azule-openjdk/zulu8.50.0.51-ca-jdk8.0.275-linux_x64/bin/javac, -cp, /home/amakarovych-ua/Informatica/IDP10.4.0_new/ict/Application/jars/*:, -d, /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/models.runtime.annotatedjava/classes, -sourcepath, /home/amakarovych-ua/eclipse-workspace4/SingleStore/sdk/models.runtime.annotatedjava/src, /home/amakarovych-ua/eclipse-workspace4/SingleStore/sdk/models.runtime.annotatedjava/src/com/singlestore/adapter/singlestore/table/runtime/capability/model/package-info.java, /home/amakarovych-ua/eclipse-workspace4/SingleStore/sdk/models.runtime.annotatedjava/src/com/singlestore/adapter/singlestore/table/runtime/capability/model/TableReadCapabilityAttributesExtension.java, /home/amakarovych-ua/eclipse-workspace4/SingleStore/sdk/models.runtime.annotatedjava/src/com/singlestore/adapter/singlestore/table/runtime/capability/model/TableCallCapabilityAttributesExtension.java, /home/amakarovych-ua/eclipse-workspace4/SingleStore/sdk/models.runtime.annotatedjava/src/com/singlestore/adapter/singlestore/table/runtime/capability/model/TableLookupCapabilityAttributesExtension.java, /home/amakarovych-ua/eclipse-workspace4/SingleStore/sdk/models.runtime.annotatedjava/src/com/singlestore/adapter/singlestore/table/runtime/capability/model/TableWriteCapabilityAttributesExtension.java, /home/amakarovych-ua/eclipse-workspace4/SingleStore/sdk/models.runtime.annotatedjava/src/com/singlestore/adapter/singlestore/runtime/aso/model/package-info.java, /home/amakarovych-ua/eclipse-workspace4/SingleStore/sdk/models.runtime.annotatedjava/src/com/singlestore/adapter/singlestore/runtime/aso/model/ComplexASO.java]].
+2023-07-19 12:14:30 -INFO :
+2023-07-19 12:14:30 -INFO :Executing Command [[/home/amakarovych-ua/Tools/azule-openjdk/zulu8.50.0.51-ca-jdk8.0.275-linux_x64/bin/jar, cvf, /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/models.runtime.annotatedjava/table.com.singlestore.adapter.singlestore.models.runtime.annotatedjava_1.0.0.jar, .]].
+2023-07-19 12:14:32 -INFO :added manifest
+adding: com/(in = 0) (out= 0)(stored 0%)
+adding: com/singlestore/(in = 0) (out= 0)(stored 0%)
+adding: com/singlestore/adapter/(in = 0) (out= 0)(stored 0%)
+adding: com/singlestore/adapter/singlestore/(in = 0) (out= 0)(stored 0%)
+adding: com/singlestore/adapter/singlestore/table/(in = 0) (out= 0)(stored 0%)
+adding: com/singlestore/adapter/singlestore/table/runtime/(in = 0) (out= 0)(stored 0%)
+adding: com/singlestore/adapter/singlestore/table/runtime/capability/(in = 0) (out= 0)(stored 0%)
+adding: com/singlestore/adapter/singlestore/table/runtime/capability/model/(in = 0) (out= 0)(stored 0%)
+adding: com/singlestore/adapter/singlestore/table/runtime/capability/model/package-info.class(in = 279) (out= 209)(deflated 25%)
+adding: com/singlestore/adapter/singlestore/table/runtime/capability/model/TableCallCapabilityAttributesExtension.class(in = 822) (out= 424)(deflated 48%)
+adding: com/singlestore/adapter/singlestore/table/runtime/capability/model/TableLookupCapabilityAttributesExtension.class(in = 832) (out= 427)(deflated 48%)
+adding: com/singlestore/adapter/singlestore/table/runtime/capability/model/TableReadCapabilityAttributesExtension.class(in = 822) (out= 424)(deflated 48%)
+adding: com/singlestore/adapter/singlestore/table/runtime/capability/model/TableWriteCapabilityAttributesExtension.class(in = 1181) (out= 577)(deflated 51%)
+adding: com/singlestore/adapter/singlestore/runtime/(in = 0) (out= 0)(stored 0%)
+adding: com/singlestore/adapter/singlestore/runtime/aso/(in = 0) (out= 0)(stored 0%)
+adding: com/singlestore/adapter/singlestore/runtime/aso/model/(in = 0) (out= 0)(stored 0%)
+adding: com/singlestore/adapter/singlestore/runtime/aso/model/package-info.class(in = 266) (out= 200)(deflated 24%)
+adding: com/singlestore/adapter/singlestore/runtime/aso/model/ComplexASO.class(in = 612) (out= 355)(deflated 41%)
+
+2023-07-19 12:14:32 -INFO :Executing Command [[/home/amakarovych-ua/Tools/azule-openjdk/zulu8.50.0.51-ca-jdk8.0.275-linux_x64/jre/bin/java, -classpath, .:/home/amakarovych-ua/Informatica/IDP10.4.0_new/ict/Application/jars/*:, com.informatica.imf.codegen.AnnotJava2Java, -sourceLocation, /home/amakarovych-ua/eclipse-workspace4/SingleStore//sdk/models.runtime.annotatedjava/src, -targetLocation, /home/amakarovych-ua/eclipse-workspace4/SingleStore//sdk/runtime.model/src, -dependencies, /home/amakarovych-ua/Informatica/IDP10.4.0_new/ict/Application/jars]].
+2023-07-19 12:14:36 -INFO :
+2023-07-19 12:14:36 -INFO :Code generation for Project [RUNTIME_ANNOTATED] completed
+2023-07-19 12:14:36 -INFO :Code generation for Project [RUNTIME_ANNOTATED] completed
+2023-07-19 12:14:36 -INFO :Generating Project:RUNTIME_MODEL
+2023-07-19 12:14:36 -INFO :Code generation for Project [RUNTIME_MODEL] completed
+2023-07-19 12:14:36 -INFO :Code generation for Project [RUNTIME_MODEL] completed
+2023-07-19 12:14:36 -INFO :Generating Project:RUNTIME_SEMANTIC
+2023-07-19 12:14:36 -INFO :Executing Command [[/home/amakarovych-ua/Tools/azule-openjdk/zulu8.50.0.51-ca-jdk8.0.275-linux_x64/jre/bin/java, -classpath, .:/home/amakarovych-ua/Informatica/IDP10.4.0_new/ict/Application/jars/*:/home/amakarovych-ua/eclipse-workspace4/SingleStore/build/models.runtime.annotatedjava/table.com.singlestore.adapter.singlestore.models.runtime.annotatedjava_1.0.0.jar:, com.informatica.metadata.adaptersdk.internal.codegen.Main, -gen com.informatica.metadata.adaptersdk.internal.codegen.sem.GeneratorMainSemanticClasses, -ini /home/amakarovych-ua/eclipse-workspace4/SingleStore//usr/runtime.semantic/codegen_table.ini, -m2repo file://], -version 0, -basemodel.version 0, -adapter.version 0]].
+2023-07-19 12:14:36 -INFO :Executing Command [[/home/amakarovych-ua/Tools/azule-openjdk/zulu8.50.0.51-ca-jdk8.0.275-linux_x64/jre/bin/java, -classpath, .:/home/amakarovych-ua/Informatica/IDP10.4.0_new/ict/Application/jars/*:/home/amakarovych-ua/eclipse-workspace4/SingleStore/build/models.runtime.annotatedjava/table.com.singlestore.adapter.singlestore.models.runtime.annotatedjava_1.0.0.jar:, com.informatica.metadata.adaptersdk.internal.codegen.Main, -gen com.informatica.metadata.adaptersdk.internal.codegen.val.GeneratorMainValidationClasses, -ini /home/amakarovych-ua/eclipse-workspace4/SingleStore//usr/runtime.semantic/codegen_table.ini, -m2repo file://], -version 0, -basemodel.version 0, -adapter.version 0]].
+2023-07-19 12:14:36 -INFO :Executing Command [[/home/amakarovych-ua/Tools/azule-openjdk/zulu8.50.0.51-ca-jdk8.0.275-linux_x64/jre/bin/java, -classpath, .:/home/amakarovych-ua/Informatica/IDP10.4.0_new/ict/Application/jars/*:/home/amakarovych-ua/eclipse-workspace4/SingleStore/build/models.runtime.annotatedjava/table.com.singlestore.adapter.singlestore.models.runtime.annotatedjava_1.0.0.jar:, com.informatica.metadata.adaptersdk.internal.codegen.Main, -gen com.informatica.metadata.adaptersdk.internal.codegen.factory.GeneratorMainFactory, -ini /home/amakarovych-ua/eclipse-workspace4/SingleStore//usr/runtime.semantic/codegen_table.ini, -m2repo file://], -version 0, -basemodel.version 0, -adapter.version 0]].
+2023-07-19 12:14:36 -INFO :Executing Command [[/home/amakarovych-ua/Tools/azule-openjdk/zulu8.50.0.51-ca-jdk8.0.275-linux_x64/jre/bin/java, -classpath, .:/home/amakarovych-ua/Informatica/IDP10.4.0_new/ict/Application/jars/*:/home/amakarovych-ua/eclipse-workspace4/SingleStore/build/models.runtime.annotatedjava/table.com.singlestore.adapter.singlestore.models.runtime.annotatedjava_1.0.0.jar:, com.informatica.metadata.adaptersdk.internal.codegen.Main, -gen com.informatica.metadata.adaptersdk.internal.codegen.iface.GeneratorMainIface, -ini /home/amakarovych-ua/eclipse-workspace4/SingleStore//usr/runtime.semantic/codegen_table.ini, -m2repo file://], -version 0, -basemodel.version 0, -adapter.version 0]].
+2023-07-19 12:14:39 -INFO :*** Start GeneratorMainSemanticClasses ***
+Using cfg file: /home/amakarovych-ua/eclipse-workspace4/SingleStore/usr/runtime.semantic/codegen_table.ini
+
+2023-07-19 12:14:39 -INFO :*** Start GeneratorMainIface ***
+Using cfg file: /home/amakarovych-ua/eclipse-workspace4/SingleStore/usr/runtime.semantic/codegen_table.ini
+
+2023-07-19 12:14:39 -INFO :*** Start GeneratorMainFactory ***
+Using cfg file: /home/amakarovych-ua/eclipse-workspace4/SingleStore/usr/runtime.semantic/codegen_table.ini
+
+2023-07-19 12:14:39 -INFO :*** Start GeneratorMainValidationClasses ***
+Using cfg file: /home/amakarovych-ua/eclipse-workspace4/SingleStore/usr/runtime.semantic/codegen_table.ini
+
+2023-07-19 12:14:39 -INFO :Code generation for Project [RUNTIME_SEMANTIC] completed
+2023-07-19 12:14:39 -INFO :Code generation for Project [RUNTIME_SEMANTIC] completed
+2023-07-19 12:14:39 -INFO :Generating Project:METAMODEL
+2023-07-19 12:14:39 -INFO :Code generation for Project [METAMODEL] completed
+2023-07-19 12:14:39 -INFO :Code generation for Project [METAMODEL] completed
+2023-07-19 12:14:39 -INFO :Generating Project:METADATA_ADAPTER
+2023-07-19 12:14:39 -INFO :Code generation for Project [METADATA_ADAPTER] completed
+2023-07-19 12:14:39 -INFO :Code generation for Project [METADATA_ADAPTER] completed
+2023-07-19 12:14:39 -INFO :Generating Project:MODEL_ATTRIBUTES
+2023-07-19 12:14:39 -INFO :Code generation for Project [MODEL_ATTRIBUTES] completed
+2023-07-19 12:14:39 -INFO :Code generation for Project [MODEL_ATTRIBUTES] completed
+2023-07-19 12:14:39 -INFO :Generating Project:LICENSE_CHECKER
+2023-07-19 12:14:39 -INFO :Code generation for Project [LICENSE_CHECKER] completed
+2023-07-19 12:14:39 -INFO :Code generation for Project [LICENSE_CHECKER] completed
+2023-07-19 12:14:39 -INFO :Generating Project:UI_WIZARD
+2023-07-19 12:14:39 -INFO :Code generation for Project [UI_WIZARD] completed
+2023-07-19 12:14:39 -INFO :Code generation for Project [UI_WIZARD] completed
+2023-07-19 12:14:39 -INFO :Generating Project:LIBRARY_INFO
+2023-07-19 12:14:39 -INFO :Code generation for Project [LIBRARY_INFO] completed
+2023-07-19 12:14:39 -INFO :Code generation for Project [LIBRARY_INFO] completed
+2023-07-19 12:14:39 -INFO :Generating Project:ADAPTER_FEATURE
+2023-07-19 12:14:39 -INFO :Code generation for Project [ADAPTER_FEATURE] completed
+2023-07-19 12:14:39 -INFO :Code generation for Project [ADAPTER_FEATURE] completed
+2023-07-19 12:14:39 -INFO :Generating Project:MESSAGES
+2023-07-19 12:14:39 -INFO :Code generation for Project [MESSAGES] completed
+2023-07-19 12:14:39 -INFO :Code generation for Project [MESSAGES] completed
+2023-07-19 12:14:39 -INFO :Generating Project:DESIGN_MESSAGES
+2023-07-19 12:14:39 -INFO :Code generation for Project [DESIGN_MESSAGES] completed
+2023-07-19 12:14:39 -INFO :Code generation for Project [DESIGN_MESSAGES] completed
+2023-07-19 12:14:39 -INFO :Generating Project:RUNTIME_MESSAGES
+2023-07-19 12:14:39 -INFO :Code generation for Project [RUNTIME_MESSAGES] completed
+2023-07-19 12:14:39 -INFO :Code generation for Project [RUNTIME_MESSAGES] completed
+2023-07-19 12:15:58 -INFO :Executing Command [[/home/amakarovych-ua/Tools/new_eclipse/eclipse/plugins/org.apache.ant_1.10.8.v20200515-1239/bin/ant, -buildfile, /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/build.xml]].
+2023-07-19 12:16:11 -INFO :Buildfile: /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/build.xml
+
+all:
+
+BUILD_LICENSE_CHECKER:
+
+BUILD_ADAPTER_CONTRIBUTION:
+
+BUILD_ADAPTER_CONTRIBUTION:
+
+BUILD_UI_WIZARD:
+
+BUILD_MODEL_ATTRIBUTES:
+
+BUILD_ADAPTER_FEATURE:
+
+BUILD_LIBRARY_INFO:
+
+BUILD_RUNTIME_ANNOTATED:
+
+BUILD_RUNTIME_MODEL:
+     [copy] Copying 1 file to /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/ui.wizard/classes/icons
+     [copy] Copying 1 file to /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/libraryinfo/classes
+     [copy] Copying 3 files to /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/runtime.model/classes
+     [copy] Copying 1 file to /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/adapter.contribution/classes
+     [copy] Copying 7 files to /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/modelattributes/classes/icons
+     [copy] Copying 1 file to /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/adapter.contribution/classes
+    [javac] Compiling 1 source file to /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/licensechecker/classes
+     [copy] Copying 1 file to /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/ui.wizard/classes/i18n
+     [copy] Copying 1 file to /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/modelattributes/classes
+     [copy] Copying 1 file to /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/ui.wizard/classes
+    [javac] Compiling 1 source file to /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/ui.wizard/classes
+      [jar] Building jar: /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/adapter.contribution/com.singlestore.adapter.singlestore.adapter.contribution_1.0.0.jar
+      [jar] Building jar: /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/libraryinfo/com.singlestore.adapter.singlestore.libraryInfo_1.0.0.jar
+      [jar] Building jar: /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/adapter.contribution/com.singlestore.adapter.singlestore.adapter.contribution_1.0.0.jar
+    [javac] Compiling 20 source files to /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/runtime.model/classes
+      [jar] Building jar: /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/modelattributes/com.singlestore.adapter.singlestore.modelattributes_1.0.0.jar
+
+BUILD_SEEDPROVIDER:
+
+BUILD_METADATA_ANNOTATED:
+
+BUILD_METADATA_MODEL:
+     [copy] Copying 1 file to /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/seedprovider/classes
+    [javac] Compiling 1 source file to /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/seedprovider/classes
+
+BUILD_RUNTIME_ANNOTATED:
+
+BUILD_RUNTIME_MODEL:
+    [javac] Compiling 20 source files to /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/runtime.model/classes
+      [jar] Building jar: /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/ui.wizard/com.singlestore.adapter.singlestore.ui.wizard_1.0.0.jar
+      [jar] Building jar: /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/licensechecker/com.singlestore.adapter.singlestore.licensechecker_1.0.0.jar
+      [jar] Building jar: /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/seedprovider/com.singlestore.adapter.singlestore.seedprovider_1.0.0.jar
+
+BUILD_TYPESYSTEM:
+     [copy] Copying 1 file to /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/typesystem/classes
+      [jar] Building jar: /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/typesystem/com.singlestore.adapter.singlestore.typesystem_1.0.0.jar
+    [javac] Creating empty /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/runtime.model/classes/com/singlestore/adapter/singlestore/runtime/aso/package-info.class
+    [javac] Creating empty /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/runtime.model/classes/com/singlestore/adapter/singlestore/table/runtime/capability/package-info.class
+      [jar] Building jar: /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/runtime.model/com.singlestore.adapter.singlestore.runtime.model_1.0.0.jar
+      [jar] error while reading original manifest in file: /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/runtime.model/com.singlestore.adapter.singlestore.runtime.model_1.0.0.jar due to error in opening zip file
+      [jar] Building jar: /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/runtime.model/com.singlestore.adapter.singlestore.runtime.model_1.0.0.jar
+
+BUILD_CONNECT_INFO_ANNOTATED:
+
+BUILD_CONNECTION_MODEL:
+     [copy] Copying 2 files to /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/connection.model/classes
+    [javac] Compiling 9 source files to /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/connection.model/classes
+
+BUILD_RUNTIME_SEMANTIC:
+    [javac] Compiling 16 source files to /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/runtime.semantic/classes
+     [java] Generating seed for com.singlestore.adapter.singlestore.typesystem.SingleStoreTypeSystem in /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/typesystem
+    [javac] Creating empty /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/connection.model/classes/com/singlestore/adapter/singlestore/connection/package-info.class
+      [jar] Building jar: /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/connection.model/com.singlestore.adapter.singlestore.connection.model_1.0.0.jar
+
+BUILD_METAMODEL:
+     [copy] Copying 1 file to /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/metamodel/classes
+      [jar] Building jar: /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/metamodel/com.singlestore.adapter.singlestore.metamodel_1.0.0.jar
+      [jar] Building jar: /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/runtime.semantic/com.singlestore.adapter.singlestore.runtime.semantic_1.0.0.jar
+
+BUILD_ADAPTER_CONTRIBUTION:
+
+BUILD_METADATA_ANNOTATED:
+
+BUILD_METADATA_MODEL:
+
+BUILD_METADATA_SEMANTIC:
+
+BUILD_CONNECT_INFO_ANNOTATED:
+
+BUILD_CONNECTION_MODEL:
+
+BUILD_DESIGN_MESSAGES:
+     [copy] Copying 1 file to /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/messages.design/classes/i18n
+     [copy] Copying 1 file to /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/messages.design/classes
+    [javac] Compiling 2 source files to /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/messages.design/classes
+      [jar] Building jar: /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/messages.design/com.singlestore.adapter.singlestore.messages.design_1.0.0.jar
+
+BUILD_CONNECTION_ADAPTER:
+     [copy] Copying 2 files to /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/connection.adapter/classes/i18n
+     [copy] Copying 1 file to /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/connection.adapter/classes
+    [javac] Compiling 1 source file to /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/connection.adapter/classes
+      [jar] Building jar: /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/connection.adapter/com.singlestore.adapter.singlestore.connection.adapter_1.0.0.jar
+
+BUILD_METADATA_ADAPTER:
+    [javac] Compiling 3 source files to /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/metadata.adapter/classes
+      [jar] Building jar: /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/metadata.adapter/com.singlestore.adapter.singlestore.metadata.adapter_1.0.0.jar
+
+BUILD_RUNTIME_MESSAGES:
+     [copy] Copying 1 file to /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/messages.runtime/classes/i18n
+     [copy] Copying 1 file to /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/messages.runtime/classes
+    [javac] Compiling 2 source files to /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/messages.runtime/classes
+      [jar] Building jar: /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/messages.runtime/com.singlestore.adapter.singlestore.messages.runtime_1.0.0.jar
+
+BUILD_RUNTIME_ADAPTER:
+
+BUILD SUCCESSFUL
+Total time: 10 seconds
+
+2023-07-19 12:18:36 -INFO :Generating Project:CCI_DEPLOY
+2023-07-19 12:18:36 -INFO :Code generation for Project [CCI_DEPLOY] completed
+2023-07-19 12:18:36 -INFO :Code generation for Project [CCI_DEPLOY] completed
+2023-07-19 12:18:36 -INFO :Executing Command [[/home/amakarovych-ua/Tools/new_eclipse/eclipse/plugins/org.apache.ant_1.10.8.v20200515-1239/bin/ant, -buildfile, /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/ccibuild.xml]].
+2023-07-19 12:18:40 -INFO :Buildfile: /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/ccibuild.xml
+
+all:
+
+BUILD_CCI_DEPLOY:
+     [copy] Copying 2 files to /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/cci.deploy/classes/META-INF
+    [javac] Compiling 1 source file to /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/cci.deploy/classes
+      [jar] Building jar: /home/amakarovych-ua/eclipse-workspace4/SingleStore/build/cci.deploy/com.singlestore.adapter.singlestore.cci.deploy_1.0.0.jar
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+
+2023-07-19 12:18:44 -ERROR:java.lang.ClassCastException: java.lang.String cannot be cast to java.lang.Integer

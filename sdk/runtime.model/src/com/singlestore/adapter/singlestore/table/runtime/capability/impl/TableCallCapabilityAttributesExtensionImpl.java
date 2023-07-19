@@ -5,7 +5,7 @@
 /*
  * This file is generated. Do not modify.
  * IMF Version: 9.5.0
- * Generation time: 2023-06-15 16:24:31
+ * Generation time: 2023-07-19 12:14:34
  */
 package com.singlestore.adapter.singlestore.table.runtime.capability.impl;
 

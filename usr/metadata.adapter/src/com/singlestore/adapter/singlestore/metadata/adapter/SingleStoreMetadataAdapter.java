@@ -2,8 +2,6 @@ package com.singlestore.adapter.singlestore.metadata.adapter;
 
 import com.informatica.sdk.adapter.metadata.provider.AbstractMetadataAdapter;
 
-import java.io.FileWriter;
-import java.io.IOException;
 import java.sql.DatabaseMetaData;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -15,9 +13,6 @@ import java.util.List;
 import java.util.Map;
 import com.informatica.sdk.adapter.metadata.common.Option;
 import com.informatica.sdk.adapter.metadata.patternblocks.catalog.semantic.iface.Catalog;
-import com.informatica.sdk.adapter.metadata.patternblocks.procedure.semantic.iface.Parameter;
-import com.informatica.sdk.adapter.metadata.patternblocks.procedure.semantic.iface.Procedure;
-import com.informatica.sdk.adapter.metadata.patternblocks.hierrecord.semantic.iface.HierRecord;
 import com.informatica.sdk.adapter.metadata.patternblocks.index.semantic.iface.Index;
 import com.informatica.sdk.adapter.metadata.patternblocks.index.semantic.iface.IndexField;
 import com.informatica.sdk.adapter.metadata.patternblocks.shared.semantic.iface.Record;
@@ -25,32 +20,22 @@ import com.informatica.sdk.adapter.metadata.patternblocks.shared.semantic.iface.
 import com.informatica.sdk.adapter.metadata.patternblocks.constraint.semantic.iface.PrimaryKey;
 import com.informatica.sdk.adapter.metadata.patternblocks.constraint.semantic.iface.UniqueKey;
 import com.informatica.sdk.adapter.metadata.provider.Connection;
-import com.informatica.sdk.adapter.metadata.common.CCatalogImportOpts;
 import com.informatica.sdk.adapter.metadata.patternblocks.semantic.iface.Factory;
 import com.informatica.sdk.adapter.metadata.patternblocks.field.semantic.iface.Field;
 import com.informatica.sdk.adapter.metadata.patternblocks.flatrecord.semantic.iface.FlatRecord;
 import com.informatica.sdk.adapter.metadata.patternblocks.container.semantic.iface.Package;
 import com.informatica.sdk.adapter.metadata.common.CWriteObjectsOpts;
-import com.informatica.sdk.adapter.metadata.common.Option;
 import com.informatica.sdk.adapter.metadata.common.Status;
 import com.informatica.sdk.adapter.metadata.common.StatusEnum;
 import com.informatica.sdk.adapter.metadata.common.semantic.iface.MetadataObject;
-import com.informatica.sdk.adapter.metadata.provider.ConnectionPoolingOptions;
 import com.informatica.sdk.adapter.metadata.writeback.ActionTypeEnum;
 import com.informatica.sdk.adapter.metadata.writeback.MetadataWriteAction;
 import com.informatica.sdk.adapter.metadata.writeback.MetadataWriteOptions;
-import com.informatica.sdk.adapter.metadata.writeback.MetadataWriteResults;
 import com.informatica.sdk.adapter.metadata.writeback.MetadataWriteSession;
 import com.informatica.sdk.adapter.metadata.field.semantic.iface.FieldBase;
 import com.informatica.sdk.exceptions.ExceptionManager;
-import com.informatica.sdk.adapter.metadata.common.semantic.iface.ChangedProperty;
 import com.informatica.sdk.adapter.metadata.common.semantic.iface.MetadataChanges;
-import com.informatica.sdk.adapter.metadata.common.CDetailImportOpts;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import java.io.BufferedWriter;
 
-@SuppressWarnings("unused")
 public class SingleStoreMetadataAdapter extends AbstractMetadataAdapter  {
 	
 	public static String escapeIdentifier(String ident) {
@@ -88,14 +73,6 @@ public class SingleStoreMetadataAdapter extends AbstractMetadataAdapter  {
 
     @Override
     public Boolean populateObjectCatalog(Connection connection, List<Option> options, Catalog catalog) {
-    	try {
-        	FileWriter fw = new FileWriter("/home/amakarovych-ua/Test/log", true);    		
-        	fw.write("Populating catalog\n");
-        	fw.close();
-    	} catch (Exception e) {
-    		
-    	}
-
     	Factory sdkFactory = catalog.getFactory();
     	// Use the startFolder for incremental browsing of metadata
     	Package startFolder =  MetadataUtils.getStartFolder(options);
@@ -146,14 +123,6 @@ public class SingleStoreMetadataAdapter extends AbstractMetadataAdapter  {
 			ExceptionManager.createNonNlsAdapterSDKException("An error occured while populating object catalog:[" + e.getMessage() + "]");
     	}
 
-    	try {
-        	FileWriter fw = new FileWriter("/home/amakarovych-ua/Test/log", true);    		
-        	fw.write("Finished Populating catalog\n");
-        	fw.close();
-    	} catch (Exception e) {
-    		
-    	}
-
     	return true;
     }
     
@@ -183,15 +152,6 @@ public class SingleStoreMetadataAdapter extends AbstractMetadataAdapter  {
     @Override
     public void populateObjectDetails(Connection connection, List<Option> options, List<ImportableObject> importableObjects, Catalog catalog) {
     	try {
-        	FileWriter fw = new FileWriter("/home/amakarovych-ua/Test/log", true);    		
-        	fw.write("Populating details\n");
-        	fw.close();
-    	} catch (Exception e) {
-    		
-    	}
-
-    	
-    	try {
         	java.sql.Connection nativeConnection = (java.sql.Connection)((SingleStoreConnection)connection).getNativeConnection();
     		for (ImportableObject obj : importableObjects) {
     			FlatRecord record = (FlatRecord) obj;
@@ -200,14 +160,6 @@ public class SingleStoreMetadataAdapter extends AbstractMetadataAdapter  {
     	} catch (SQLException ex) {
     		ExceptionManager.createNonNlsAdapterSDKException("An error occured while populating object details:["
 					+ ex.getMessage() + "]");
-    	}
-
-    	try {
-        	FileWriter fw = new FileWriter("/home/amakarovych-ua/Test/log", true);    		
-        	fw.write("Finnished Populating details\n");
-        	fw.close();
-    	} catch (Exception e) {
-    		
     	}
     }
     
@@ -356,7 +308,6 @@ public class SingleStoreMetadataAdapter extends AbstractMetadataAdapter  {
     	int precision = columnsIter.getInt(7);
     	int scale = columnsIter.getInt(9);
     	boolean isNullable = columnsIter.getBoolean(11);
-    	String defValue = columnsIter.getString(13);
 		int length = columnsIter.getInt(16);
 		
 		if (typeName.equalsIgnoreCase("BIT") && precision == 3) {

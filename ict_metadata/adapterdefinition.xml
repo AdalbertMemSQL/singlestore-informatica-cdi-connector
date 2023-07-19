@@ -148,15 +148,7 @@
             </NativeDataType>
             <NativeDataType semanticType="Integer" name="INT" comments="" maxPrecision="10" defaultPrecision="10" editablePrecision="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="semanticIntegerType">
                <NativeToPlatformDataTypeMaps>
-                  <NativeToPlatformDataTypeMap platformDataType="string" nativeDataType="INT" javaDataType="STRING" lossyToNative="false" lossyToForeign="false" bestMapFromNative="false" bestMapFromForeign="false"/>
                   <NativeToPlatformDataTypeMap platformDataType="integer" nativeDataType="INT" javaDataType="INTEGER" lossyToNative="false" lossyToForeign="false" bestMapFromNative="true" bestMapFromForeign="false"/>
-                  <NativeToPlatformDataTypeMap platformDataType="integer" nativeDataType="INT" javaDataType="SHORT" lossyToNative="true" lossyToForeign="false" bestMapFromNative="false" bestMapFromForeign="false"/>
-                  <NativeToPlatformDataTypeMap platformDataType="integer" nativeDataType="INT" javaDataType="BOOLEAN" lossyToNative="true" lossyToForeign="false" bestMapFromNative="false" bestMapFromForeign="false"/>
-                  <NativeToPlatformDataTypeMap platformDataType="biginteger" nativeDataType="INT" javaDataType="LONG" lossyToNative="false" lossyToForeign="false" bestMapFromNative="false" bestMapFromForeign="false"/>
-                  <NativeToPlatformDataTypeMap platformDataType="double" nativeDataType="INT" javaDataType="DOUBLE" lossyToNative="false" lossyToForeign="false" bestMapFromNative="false" bestMapFromForeign="false"/>
-                  <NativeToPlatformDataTypeMap platformDataType="double" nativeDataType="INT" javaDataType="FLOAT" lossyToNative="true" lossyToForeign="false" bestMapFromNative="false" bestMapFromForeign="false"/>
-                  <NativeToPlatformDataTypeMap platformDataType="biginteger" nativeDataType="INT" javaDataType="BIGINTEGER" lossyToNative="false" lossyToForeign="true" bestMapFromNative="false" bestMapFromForeign="false"/>
-                  <NativeToPlatformDataTypeMap platformDataType="decimal" nativeDataType="INT" javaDataType="BIGDECIMAL" lossyToNative="false" lossyToForeign="false" bestMapFromNative="false" bestMapFromForeign="false"/>
                </NativeToPlatformDataTypeMaps>
             </NativeDataType>
             <NativeDataType semanticType="Integer" name="INTEGER" comments="" maxPrecision="10" defaultPrecision="10" editablePrecision="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="semanticIntegerType">
@@ -645,8 +637,12 @@
          <WorkflowTask id="CONNECTION_PRESENTATION_SingleStore" taskType="CONNECTION_PRESENTATION" componentName="SingleStore" status="GENERATED" taskKind="CodeGenerationTask"/>
          <WorkflowTask id="TEST_CONNECTION_SingleStore" taskType="TEST_CONNECTION" componentName="SingleStore" status="NONE" taskKind="TestTask"/>
          <WorkflowTask id="CONNECTION_MODEL_SingleStore" taskType="CONNECTION_MODEL" componentName="SingleStore" status="GENERATED" taskKind="CodeGenerationTask"/>
+         <WorkflowTask id="CONNECTION_PRESENTATION_SingleStore" taskType="CONNECTION_PRESENTATION" componentName="SingleStore" status="GENERATED" taskKind="CodeGenerationTask"/>
+         <WorkflowTask id="TEST_CONNECTION_SingleStore" taskType="TEST_CONNECTION" componentName="SingleStore" status="NONE" taskKind="TestTask"/>
+         <WorkflowTask id="CONNECTION_MODEL_SingleStore" taskType="CONNECTION_MODEL" componentName="SingleStore" status="GENERATED" taskKind="CodeGenerationTask"/>
          <WorkflowTask id="CONNECTION_PRESENTATION_SingleStore" taskType="CONNECTION_PRESENTATION" componentName="SingleStore" status="GENERATED" taskKind="CodeGenerationTask">
             <DepenendentTasks>
+               <dependentTasks>CONNECTION_MODEL_SingleStore</dependentTasks>
                <dependentTasks>CONNECTION_MODEL_SingleStore</dependentTasks>
                <dependentTasks>CONNECTION_MODEL_SingleStore</dependentTasks>
                <dependentTasks>CONNECTION_MODEL_SingleStore</dependentTasks>
@@ -679,6 +675,8 @@
          </WorkflowTask>
          <WorkflowTask id="TEST_CONNECTION_SingleStore" taskType="TEST_CONNECTION" componentName="SingleStore" status="NONE" taskKind="TestTask">
             <DepenendentTasks>
+               <dependentTasks>CONNECTION_PRESENTATION_SingleStore</dependentTasks>
+               <dependentTasks>CONNECTION_MODEL_SingleStore</dependentTasks>
                <dependentTasks>CONNECTION_PRESENTATION_SingleStore</dependentTasks>
                <dependentTasks>CONNECTION_MODEL_SingleStore</dependentTasks>
                <dependentTasks>CONNECTION_PRESENTATION_SingleStore</dependentTasks>
